@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ShiftStudio connects strategy, design, and digital growth.">
-  <title>ShiftStudio</title>
+  <title>ShiftStudio – Work</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
@@ -17,512 +17,116 @@
     .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:blur(14px)}.wordmark{color:var(--blue);font-size:1.35rem;font-weight:700;letter-spacing:-.09em;text-decoration:none}
     .nav-link,.footer-link{color:var(--muted);font-size:.81rem;font-weight:700;text-decoration:none;transition:color .18s ease}.nav-link{position:relative;padding:.5rem .1rem}.nav-link:hover,.nav-link.active,.footer-link:hover,.footer-link.active{color:var(--blue)}.nav-link.active:after{position:absolute;right:0;bottom:-.82rem;left:0;height:2px;background:var(--blue);content:""}
     .mobile-menu{display:none;border-top:1px solid var(--line)}.mobile-menu.open{display:block}.mobile-link{display:block;padding:.8rem;border-radius:.65rem}.mobile-link.active{background:var(--soft)}
-    .icon-button,.button-primary,.button-secondary,.filter-button{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:.72rem;font-weight:700;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}.icon-button{width:2.65rem;height:2.65rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.button-primary,.button-secondary{padding:.88rem 1.05rem;border:1px solid;cursor:pointer}.button-primary{border-color:var(--blue);background:var(--blue);color:#fff}.button-secondary,.filter-button{border:1px solid var(--line);background:var(--surface);color:var(--ink)}.button-primary:hover{background:var(--blue-deep);transform:translateY(-2px)}.button-secondary:hover,.icon-button:hover,.filter-button:hover{border-color:var(--blue);transform:translateY(-2px)}.filter-button{padding:.55rem .8rem;cursor:pointer}.filter-button.active{border-color:var(--blue);background:var(--soft);color:var(--blue)}
+    .icon-button,.button-primary,.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:.72rem;font-weight:700;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}.icon-button{width:2.65rem;height:2.65rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.button-primary,.button-secondary{padding:.88rem 1.05rem;border:1px solid;cursor:pointer}.button-primary{border-color:var(--blue);background:var(--blue);color:#fff}.button-secondary{border:1px solid var(--line);background:var(--surface);color:var(--ink)}.button-primary:hover{background:var(--blue-deep);transform:translateY(-2px)}.button-secondary:hover,.icon-button:hover{border-color:var(--blue);transform:translateY(-2px)}
     .eyebrow{color:var(--blue);font-family:"Space Mono",monospace;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.display{max-width:880px;font-size:clamp(3.2rem,8vw,7rem);font-weight:700;letter-spacing:-.09em;line-height:.88}.section-heading{font-size:clamp(2.15rem,4vw,4.2rem);font-weight:700;letter-spacing:-.075em;line-height:.94}.card-title{font-size:1.35rem;font-weight:700;letter-spacing:-.055em}.body-copy{color:var(--muted);line-height:1.72}.section-pad{padding:4.7rem 1.5rem}.grid-hero{position:relative;overflow:hidden;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:27px 27px}.grid-hero:before{position:absolute;top:-6rem;right:-2.5rem;width:16rem;height:16rem;border:1px solid var(--blue);border-radius:50%;content:"";opacity:.55}.grid-hero:after{position:absolute;right:14%;bottom:-2.2rem;width:5.5rem;height:5.5rem;border:1px solid var(--blue);content:"";opacity:.55;transform:rotate(28deg)}.hero-rule{width:5rem;height:2px;background:var(--blue)}
-    .card,.media-placeholder,.form-card,.detail-panel{border:1px solid var(--line);border-radius:1rem;background:var(--surface)}.card{padding:1.45rem;transition:transform .2s ease,border-color .2s ease}.card:hover{border-color:var(--blue);transform:translateY(-4px)}.media-placeholder{display:flex;min-height:13rem;align-items:center;justify-content:center;padding:1.5rem;background:linear-gradient(135deg,var(--soft),var(--surface));color:var(--muted);text-align:center}.media-placeholder.large{min-height:23rem}.route-view{display:none}.route-view.active{display:block}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:.35rem .6rem;color:var(--muted);font-family:"Space Mono",monospace;font-size:.62rem}.process-number{color:var(--blue);font-family:"Space Mono",monospace;font-size:.72rem;font-weight:700}
-    .overlay{display:none;position:fixed;z-index:60;inset:0;align-items:center;justify-content:center;padding:1rem;background:rgba(4,8,16,.62)}.overlay.open{display:flex}.detail-panel{width:100%;max-width:760px;max-height:calc(90 * min(var(--vh,1vh),1vh));overflow:auto;padding:1.5rem;box-shadow:0 24px 70px rgba(0,0,0,.28)}
-    .contact-link{display:flex;align-items:flex-start;gap:.85rem;padding:1rem 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;transition:color .18s ease,transform .18s ease}.contact-link:last-child{border-bottom:0}.contact-link:hover{color:var(--blue);transform:translateX(3px)}.contact-icon{display:inline-flex;width:2.25rem;height:2.25rem;flex:none;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:.65rem;background:var(--soft);color:var(--blue)}
-    .form-field{display:grid;gap:.48rem}.form-label{color:var(--ink);font-size:.87rem;font-weight:700}.form-control{width:100%;border:1px solid var(--line);border-radius:.7rem;background:var(--paper);color:var(--ink);padding:.78rem .85rem;font:inherit}.form-control:hover,.form-control:focus{border-color:var(--blue)}textarea.form-control{min-height:8.5rem;resize:vertical}.field-error{min-height:1.1rem;color:var(--error);font-size:.78rem}.invalid{border-color:var(--error)!important}.consent-row{display:flex;align-items:flex-start;gap:.7rem}.consent-row input{width:1.1rem;height:1.1rem;margin-top:.22rem;accent-color:var(--blue)}.demo-note{border-left:2px solid var(--blue);color:var(--muted);font-size:.84rem;line-height:1.55;padding-left:.8rem}.success-panel{display:none;margin-top:1.25rem;border:1px solid var(--success);border-radius:.8rem;background:color-mix(in srgb,var(--success) 10%,var(--surface));padding:1rem}.success-panel.show{display:block}.footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 62%,transparent)}
+    .card,.media-placeholder{border:1px solid var(--line);border-radius:1rem;background:var(--surface)}.card{padding:1.45rem;transition:transform .2s ease,border-color .2s ease}.card:hover{border-color:var(--blue);transform:translateY(-4px)}.media-placeholder{display:flex;min-height:13rem;align-items:center;justify-content:center;padding:1.5rem;background:linear-gradient(135deg,var(--soft),var(--surface));color:var(--muted);text-align:center}
+    .route-view{display:block}.footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 62%,transparent)}
     .reveal{animation:rise .55s both}.reveal-delay{animation:rise .55s .12s both}@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(min-width:768px){.section-pad{padding:6.5rem 2.5rem}.grid-hero{padding:7.5rem 2.5rem!important}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
 </head>
-<body data-template-id="__page-root">
+<body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
-    <!-- Header (unchanged) -->
+    <!-- HEADER (links to separate files) -->
     <header class="site-header">
       <div class="content-width flex items-center justify-between gap-4 px-5 py-4">
-        <a href="#/" class="wordmark" aria-label="ShiftStudio home"><span data-template-id="brand-name" class="canva-text" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span></a>
+        <a href="index.html" class="wordmark" aria-label="ShiftStudio home"><span style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span></a>
         <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation">
-          <a href="#/work" data-route="/work" data-template-id="nav-work" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a>
-          <a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a>
-          <a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a>
-          <a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a>
-          <a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a>
-          <a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+          <a href="work.html" class="nav-link active">Work</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="lab.html" class="nav-link">Lab</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </nav>
         <div class="flex items-center gap-2">
-          <a href="#/contact" data-template-id="header-cta" class="canva-button button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+          <a href="contact.html" class="button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
           <button id="theme-toggle" class="icon-button" type="button" aria-label="Enable dark mode" aria-pressed="false"><i data-lucide="moon" width="18" height="18"></i></button>
           <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" width="19" height="19"></i></button>
         </div>
       </div>
       <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
         <div class="grid gap-1 pt-3">
-          <a href="#/work" data-route="/work" data-template-id="mobile-work" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a>
-          <a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a>
-          <a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a>
-          <a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a>
-          <a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a>
-          <a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
-          <a href="#/contact" data-template-id="mobile-cta" class="canva-button button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+          <a href="work.html" class="nav-link mobile-link active">Work</a>
+          <a href="services.html" class="nav-link mobile-link">Services</a>
+          <a href="about.html" class="nav-link mobile-link">About</a>
+          <a href="lab.html" class="nav-link mobile-link">Lab</a>
+          <a href="blog.html" class="nav-link mobile-link">Blog</a>
+          <a href="contact.html" class="nav-link mobile-link">Contact</a>
+          <a href="contact.html" class="button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
         </div>
       </nav>
     </header>
 
     <main id="main-content" tabindex="-1">
-      <!-- All sections remain exactly the same -->
-      <!-- Work View -->
-      <section id="work-view" class="route-view" data-view="/work" aria-labelledby="work-title">
+      <!-- WORK CONTENT -->
+      <section id="work-view" aria-labelledby="work-title">
         <div class="grid-hero section-pad">
           <div class="content-width relative z-10">
-            <p data-template-id="work-eyebrow" class="canva-text eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SHIFTSTUDIO</p>
-            <h1 id="work-title" data-template-id="work-title" class="canva-text display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Strategy, design, and digital growth that move together.</h1>
+            <p class="eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SHIFTSTUDIO</p>
+            <h1 id="work-title" class="display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Strategy, design, and digital growth that move together.</h1>
             <div class="hero-rule mt-8"></div>
-            <p data-template-id="work-copy" class="canva-text body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio is a solo web design and digital marketing practice connecting strategy, design, and digital growth into clear systems for the next move.</p>
-            <a href="#/contact" data-template-id="work-cta" class="canva-button button-primary mt-8 reveal-delay" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+            <p class="body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio is a solo web design and digital marketing practice connecting strategy, design, and digital growth into clear systems for the next move.</p>
+            <a href="contact.html" class="button-primary mt-8 reveal-delay" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
           </div>
         </div>
         <div class="section-pad">
           <div class="content-width">
-            <p data-template-id="work-projects-label" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SELECTED WORK</p>
-            <h2 data-template-id="work-projects-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A curated space for what comes next.</h2>
+            <p class="eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SELECTED WORK</p>
+            <h2 class="section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A curated space for what comes next.</h2>
             <div class="mt-9 grid gap-5 md:grid-cols-3">
-              <article data-template-id="work-card-1" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="work-media-1" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p data-template-id="work-category-1" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 data-template-id="work-title-1" class="canva-text card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p data-template-id="work-copy-1" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
+              <article class="card">
+                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
+                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
+                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
+                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
               </article>
-              <article data-template-id="work-card-2" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="work-media-2" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p data-template-id="work-category-2" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 data-template-id="work-title-2" class="canva-text card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p data-template-id="work-copy-2" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
+              <article class="card">
+                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
+                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
+                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
+                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
               </article>
-              <article data-template-id="work-card-3" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="work-media-3" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p data-template-id="work-category-3" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 data-template-id="work-title-3" class="canva-text card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p data-template-id="work-copy-3" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services View -->
-      <section id="services-view" class="route-view" data-view="/services" aria-labelledby="services-title">
-        <div class="grid-hero section-pad">
-          <div class="content-width relative z-10">
-            <p data-template-id="services-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WHAT I DO</p>
-            <h1 id="services-title" data-template-id="services-title" class="canva-text display mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Useful by design.</h1>
-            <p data-template-id="services-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio connects strategy, design, and digital growth into clear systems that move organisations forward.</p>
-          </div>
-        </div>
-        <div class="section-pad">
-          <div class="content-width">
-            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <article data-template-id="service-card-1" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-1" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Web Design &amp; Development</h2>
-                <p data-template-id="service-copy-1" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Clear, responsive websites shaped around useful content and confident action.</p>
-              </article>
-              <article data-template-id="service-card-2" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-2" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">UI/UX Design</h2>
-                <p data-template-id="service-copy-2" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Interfaces that make information easier to understand and use.</p>
-              </article>
-              <article data-template-id="service-card-3" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-3" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Brand Identity</h2>
-                <p data-template-id="service-copy-3" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A visual and verbal foundation designed for recognition and consistency.</p>
-              </article>
-              <article data-template-id="service-card-4" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-4" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">SEO &amp; Organic Growth</h2>
-                <p data-template-id="service-copy-4" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Search-friendly structure and content priorities that support discoverability.</p>
-              </article>
-              <article data-template-id="service-card-5" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-5" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Performance Marketing</h2>
-                <p data-template-id="service-copy-5" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Focused digital campaigns aligned to a clear offer and audience.</p>
-              </article>
-              <article data-template-id="service-card-6" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-6" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Conversion Optimization</h2>
-                <p data-template-id="service-copy-6" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Practical improvements that reduce friction in important journeys.</p>
-              </article>
-              <article data-template-id="service-card-7" class="canva-card card md:col-span-2 lg:col-span-3" style="background: rgb(255, 255, 255);">
-                <h2 data-template-id="service-title-7" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Ongoing Strategy</h2>
-                <p data-template-id="service-copy-7" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A considered rhythm for reviewing priorities, learning, and making the next useful shift.</p>
+              <article class="card">
+                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
+                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
+                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
+                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
               </article>
             </div>
-          </div>
-        </div>
-        <div class="section-pad pt-0">
-          <div class="content-width">
-            <p data-template-id="process-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">HOW IT MOVES</p>
-            <h2 data-template-id="process-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A simple working rhythm.</h2>
-            <div class="mt-9 grid gap-5 md:grid-cols-4">
-              <article class="card"><span class="process-number">01</span><h3 data-template-id="process-title-1" class="canva-text card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Discover</h3></article>
-              <article class="card"><span class="process-number">02</span><h3 data-template-id="process-title-2" class="canva-text card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Design</h3></article>
-              <article class="card"><span class="process-number">03</span><h3 data-template-id="process-title-3" class="canva-text card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Launch</h3></article>
-              <article class="card"><span class="process-number">04</span><h3 data-template-id="process-title-4" class="canva-text card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Grow</h3></article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About View -->
-      <section id="about-view" class="route-view" data-view="/about" aria-labelledby="about-title">
-        <div class="grid-hero section-pad">
-          <div class="content-width relative z-10">
-            <p data-template-id="about-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">ABOUT SHIFTSTUDIO</p>
-            <h1 id="about-title" data-template-id="about-title" class="canva-text display mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">A clearer way forward.</h1>
-            <p data-template-id="about-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio brings strategy, design, and digital growth together to help organisations communicate clearly and move with confidence.</p>
-          </div>
-        </div>
-        <div class="section-pad">
-          <div class="content-width grid gap-8 lg:grid-cols-2">
-            <div>
-              <p data-template-id="founder-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">FOUNDER STORY</p>
-              <h2 data-template-id="founder-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Built around useful collaboration.</h2>
-              <p data-template-id="founder-copy" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace this with a founder story that introduces the perspective, working style, and reason ShiftStudio exists.</p>
-            </div>
-            <div class="media-placeholder large"><span data-template-id="founder-media" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with founder photo</span></div>
-          </div>
-        </div>
-        <div class="section-pad pt-0">
-          <div class="content-width">
-            <p data-template-id="values-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">VALUES</p>
-            <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              <article class="card"><h2 data-template-id="value-title-1" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Clarity</h2></article>
-              <article class="card"><h2 data-template-id="value-title-2" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Craft</h2></article>
-              <article class="card"><h2 data-template-id="value-title-3" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Momentum</h2></article>
-              <article class="card"><h2 data-template-id="value-title-4" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Partnership</h2></article>
-            </div>
-            <h2 data-template-id="approach-title" class="canva-text section-heading mt-14" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">An approach that connects the dots.</h2>
-            <div class="mt-8 grid gap-5 md:grid-cols-3">
-              <article class="card"><h3 data-template-id="approach-title-1" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Strategy</h3></article>
-              <article class="card"><h3 data-template-id="approach-title-2" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Design</h3></article>
-              <article class="card"><h3 data-template-id="approach-title-3" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Growth</h3></article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Lab View -->
-      <section id="lab-view" class="route-view" data-view="/lab" aria-labelledby="lab-title">
-        <div class="grid-hero section-pad">
-          <div class="content-width relative z-10">
-            <p data-template-id="lab-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">THE LAB</p>
-            <h1 id="lab-title" data-template-id="lab-title" class="canva-text display mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Ideas in motion.</h1>
-            <p data-template-id="lab-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">A flexible collection of editable concept placeholders for experiments, prototypes, and digital directions.</p>
-          </div>
-        </div>
-        <div class="section-pad">
-          <div class="content-width">
-            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <!-- 6 lab cards (unchanged) -->
-              <article data-template-id="lab-card-1" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-1" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-1" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">CONCEPT</span>
-                <h2 data-template-id="lab-title-1" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-1" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WEB DESIGN</p>
-                <p data-template-id="lab-copy-1" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-1" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-              <article data-template-id="lab-card-2" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-2" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-2" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">EXPLORING</span>
-                <h2 data-template-id="lab-title-2" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-2" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">BRAND SYSTEM</p>
-                <p data-template-id="lab-copy-2" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-2" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-              <article data-template-id="lab-card-3" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-3" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-3" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">PROTOTYPE</span>
-                <h2 data-template-id="lab-title-3" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-3" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">UX</p>
-                <p data-template-id="lab-copy-3" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-3" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-              <article data-template-id="lab-card-4" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-4" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-4" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">CONCEPT</span>
-                <h2 data-template-id="lab-title-4" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-4" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">CONTENT</p>
-                <p data-template-id="lab-copy-4" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-4" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-              <article data-template-id="lab-card-5" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-5" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-5" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">EXPLORING</span>
-                <h2 data-template-id="lab-title-5" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-5" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">GROWTH</p>
-                <p data-template-id="lab-copy-5" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-5" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-              <article data-template-id="lab-card-6" class="canva-card card" style="background: rgb(255, 255, 255);">
-                <div class="media-placeholder"><span data-template-id="lab-media-6" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <span data-template-id="lab-status-6" class="canva-tag tag mt-5" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 400; font-style: normal; font-size: 16px;">PROTOTYPE</span>
-                <h2 data-template-id="lab-title-6" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-                <p data-template-id="lab-category-6" class="canva-text eyebrow mt-3" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">CAMPAIGN</p>
-                <p data-template-id="lab-copy-6" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A concise editable description for this concept.</p>
-                <button class="button-secondary mt-5 lab-open" data-panel="lab-panel-6" type="button"><span data-template-id="lab-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View concept</span></button>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Blog View -->
-      <section id="blog-view" class="route-view" data-view="/blog" aria-labelledby="blog-title">
-        <div class="grid-hero section-pad">
-          <div class="content-width relative z-10">
-            <p data-template-id="blog-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">NOTES</p>
-            <h1 id="blog-title" data-template-id="blog-title" class="canva-text display mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Useful thoughts for digital work.</h1>
-            <p data-template-id="blog-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">Editable placeholder articles about designing clearer digital systems and making better next moves.</p>
-          </div>
-        </div>
-        <div class="section-pad">
-          <div class="content-width">
-            <div id="blog-filters" class="flex flex-wrap gap-2" aria-label="Blog categories">
-              <button class="filter-button active" data-filter="All" aria-pressed="true" type="button"><span data-template-id="filter-all" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">All</span></button>
-              <button class="filter-button" data-filter="Web Design" aria-pressed="false" type="button"><span data-template-id="filter-web" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Web Design</span></button>
-              <button class="filter-button" data-filter="Strategy" aria-pressed="false" type="button"><span data-template-id="filter-strategy" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Strategy</span></button>
-              <button class="filter-button" data-filter="SEO" aria-pressed="false" type="button"><span data-template-id="filter-seo" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">SEO</span></button>
-              <button class="filter-button" data-filter="Conversion" aria-pressed="false" type="button"><span data-template-id="filter-conversion" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Conversion</span></button>
-              <button class="filter-button" data-filter="Process" aria-pressed="false" type="button"><span data-template-id="filter-process" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Process</span></button>
-            </div>
-            <div id="post-list" class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <article data-template-id="post-card-1" class="canva-card card post-card" data-category="Web Design" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-1" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WEB DESIGN</p>
-                <h2 data-template-id="post-title-1" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-1" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-1" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-              <!-- 5 more blog cards (same as original, omitted for brevity) -->
-              <article data-template-id="post-card-2" class="canva-card card post-card" data-category="Strategy" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-2" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">STRATEGY</p>
-                <h2 data-template-id="post-title-2" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-2" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-2" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-              <article data-template-id="post-card-3" class="canva-card card post-card" data-category="SEO" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-3" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SEO</p>
-                <h2 data-template-id="post-title-3" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-3" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-3" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-              <article data-template-id="post-card-4" class="canva-card card post-card" data-category="Conversion" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-4" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">CONVERSION</p>
-                <h2 data-template-id="post-title-4" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-4" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-4" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-              <article data-template-id="post-card-5" class="canva-card card post-card" data-category="Process" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-5" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROCESS</p>
-                <h2 data-template-id="post-title-5" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-5" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-5" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-              <article data-template-id="post-card-6" class="canva-card card post-card" data-category="Web Design" style="background: rgb(255, 255, 255);">
-                <p data-template-id="post-category-6" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WEB DESIGN</p>
-                <h2 data-template-id="post-title-6" class="canva-text card-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Article title placeholder</h2>
-                <p data-template-id="post-copy-6" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A short editable excerpt introducing the article idea.</p>
-                <button class="button-secondary mt-5 post-open" data-panel="post-panel-6" type="button"><span data-template-id="post-open" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</span></button>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact View -->
-      <section id="contact-view" class="route-view" data-view="/contact" aria-labelledby="contact-title">
-        <div class="grid-hero section-pad">
-          <div class="content-width relative z-10">
-            <p data-template-id="contact-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">LET’S TALK</p>
-            <h1 id="contact-title" data-template-id="contact-title" class="canva-text display mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Make the next move.</h1>
-            <p data-template-id="contact-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">Share the context, challenge, or opportunity in front of you. ShiftStudio can help create a clear direction for what comes next.</p>
-          </div>
-        </div>
-        <div class="section-pad">
-          <div class="content-width grid gap-8 lg:grid-cols-[.78fr_1.22fr]">
-            <aside data-template-id="contact-card" class="canva-card card h-fit" style="background: rgb(255, 255, 255);">
-              <p data-template-id="contact-direct-label" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">DIRECT CONTACT</p>
-              <h2 data-template-id="contact-direct-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Start where it feels easiest.</h2>
-              <div class="mt-7">
-                <a href="tel:0700843176" class="contact-link"><span class="contact-icon"><i data-lucide="phone" width="18" height="18"></i></span><strong>0700843176</strong></a>
-                <a href="mailto:ianm49444@gmail.com" class="contact-link"><span class="contact-icon"><i data-lucide="mail" width="18" height="18"></i></span><strong>ianm49444@gmail.com</strong></a>
-                <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-icon"><i data-lucide="message-circle" width="18" height="18"></i></span><span data-template-id="whatsapp-copy" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Message on WhatsApp</span></a>
-              </div>
-              <p data-template-id="instagram-placeholder" class="canva-text body-copy mt-7" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Instagram URL placeholder — replace with your profile link.</p>
-              <p data-template-id="x-placeholder" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">X URL placeholder — replace with your profile link.</p>
-            </aside>
-            <section data-template-id="form-card" class="canva-panel form-card card" style="background: rgb(255, 255, 255);">
-              <p data-template-id="form-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">ENQUIRY</p>
-              <h2 data-template-id="form-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Tell us what is shifting.</h2>
-              <p data-template-id="form-copy" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A few useful details are enough to frame the conversation.</p>
-              <form id="enquiry-form" class="mt-8 grid gap-5" novalidate>
-                <div class="grid gap-5 md:grid-cols-2">
-                  <div class="form-field">
-                    <label for="name" data-template-id="name-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Name *</label>
-                    <input id="name" required type="text" autocomplete="name" class="form-control">
-                    <p id="name-error" class="field-error"></p>
-                  </div>
-                  <div class="form-field">
-                    <label for="email" data-template-id="email-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Email *</label>
-                    <input id="email" required type="email" autocomplete="email" class="form-control">
-                    <p id="email-error" class="field-error"></p>
-                  </div>
-                </div>
-                <div class="form-field">
-                  <label for="company" data-template-id="company-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Company or project *</label>
-                  <input id="company" required type="text" autocomplete="organization" class="form-control">
-                  <p id="company-error" class="field-error"></p>
-                </div>
-                <div class="grid gap-5 md:grid-cols-2">
-                  <div class="form-field">
-                    <label for="service" data-template-id="service-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Service interest *</label>
-                    <select id="service" required class="form-control">
-                      <option value="">Select an option</option>
-                      <option>Web Design &amp; Development</option>
-                      <option>UI/UX Design</option>
-                      <option>Brand Identity</option>
-                      <option>Growth support</option>
-                    </select>
-                    <p id="service-error" class="field-error"></p>
-                  </div>
-                  <div class="form-field">
-                    <label for="budget" data-template-id="budget-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Budget range *</label>
-                    <select id="budget" required class="form-control">
-                      <option value="">Select an option</option>
-                      <option>Exploring options</option>
-                      <option>Defined budget</option>
-                      <option>Need guidance</option>
-                    </select>
-                    <p id="budget-error" class="field-error"></p>
-                  </div>
-                </div>
-                <div class="form-field">
-                  <label for="details" data-template-id="details-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Project details *</label>
-                  <textarea id="details" required class="form-control"></textarea>
-                  <p id="details-error" class="field-error"></p>
-                </div>
-                <div class="form-field">
-                  <div class="consent-row">
-                    <input id="consent" required type="checkbox">
-                    <label for="consent" data-template-id="consent-label" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">I understand this is a front-end demo and this form does not send or store my enquiry.</label>
-                  </div>
-                  <p id="consent-error" class="field-error"></p>
-                </div>
-                <p data-template-id="demo-note" class="canva-text demo-note" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Demo only: submitting validates fields locally and does not send a message.</p>
-                <div>
-                  <button data-template-id="submit-button" class="canva-button button-primary" type="submit" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Validate enquiry</button>
-                </div>
-                <div id="form-success" class="success-panel" role="status" tabindex="-1">
-                  <p data-template-id="success-title" class="canva-text" style="color: rgb(24, 121, 78); font-weight: 700; font-style: normal; font-size: 16px;">Your demo enquiry is complete.</p>
-                  <p data-template-id="success-copy" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">The form was validated in this page only. No message has been sent.</p>
-                </div>
-              </form>
-            </section>
-          </div>
-        </div>
-        <div class="section-pad pt-0">
-          <div class="content-width grid gap-5 md:grid-cols-3">
-            <article class="card"><h2 data-template-id="step-title-1" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Share the context</h2></article>
-            <article class="card"><h2 data-template-id="step-title-2" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Get a clear direction</h2></article>
-            <article class="card"><h2 data-template-id="step-title-3" class="canva-text card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Make the shift</h2></article>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer px-5 py-10">
       <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
         <section>
-          <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
-          <p data-template-id="footer-tagline" class="canva-text body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Thoughtful strategy, web design, and digital growth for the next move.</p>
+          <p class="wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
+          <p class="body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Thoughtful strategy, web design, and digital growth for the next move.</p>
         </section>
         <nav class="grid content-start gap-3" aria-label="Footer navigation">
-          <a href="#/work" data-route="/work" data-template-id="footer-work" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a>
-          <a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a>
-          <a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a>
-          <a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a>
-          <a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a>
-          <a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+          <a href="work.html" class="footer-link active">Work</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="lab.html" class="footer-link">Lab</a>
+          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="contact.html" class="footer-link">Contact</a>
         </nav>
         <address class="not-italic">
-          <a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a>
-          <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a>
-          <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" data-template-id="footer-whatsapp" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp</a>
-          <p data-template-id="footer-social-placeholder" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Instagram and X links are placeholders to replace.</p>
+          <a href="tel:0700843176" class="footer-link block">0700843176</a>
+          <a href="mailto:ianm49444@gmail.com" class="footer-link mt-3 block">ianm49444@gmail.com</a>
+          <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" class="footer-link mt-3 block">WhatsApp</a>
+          <p class="body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Instagram and X links are placeholders to replace.</p>
         </address>
       </div>
     </footer>
   </div>
 
-  <!-- Modal overlays (unchanged) -->
-  <div id="lab-panel-1" class="overlay" role="dialog" aria-modal="true" aria-label="Lab concept detail">
-    <section class="detail-panel">
-      <button class="button-secondary panel-close" type="button"><span data-template-id="close-label" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Close</span></button>
-      <h2 data-template-id="lab-detail-title-1" class="canva-text section-heading mt-7" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Concept title placeholder</h2>
-      <p data-template-id="lab-detail-copy" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace this with a fuller concept description, process note, or future direction.</p>
-    </section>
-  </div>
-  <!-- other panels omitted for brevity – they are identical -->
-  <!-- post-panel-1..6 similarly -->
-  <!-- I'll include a minimal set of panels to keep the code clean, but you can restore all 6 lab and 6 post panels from the original -->
-
   <script>
-    // Viewport height fix for mobile
-    function setVH() {
-      document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px');
-    }
-    setVH();
-    window.addEventListener('resize', setVH);
-
-    // DOM references
-    const menu = document.getElementById("mobile-menu");
-    const menuButton = document.getElementById("menu-toggle");
-    const main = document.getElementById("main-content");
+    // Dark mode
     const theme = document.getElementById("theme-toggle");
-    let opener = null;
-    let openPanel = null;
-
-    const routes = ["/work","/services","/about","/lab","/blog","/contact"];
-
-    function closeMenu() {
-      menu.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Open navigation menu");
-    }
-
-    function closePanel() {
-      if (!openPanel) return;
-      openPanel.classList.remove("open");
-      const last = opener;
-      openPanel = null;
-      opener = null;
-      if (last) last.focus();
-    }
-
-    function renderRoute() {
-      let route = location.hash.replace("#", "") || "/";
-      if (route === "/") route = "/work";
-      if (!routes.includes(route)) {
-        location.hash = "/work";
-        return;
-      }
-      closeMenu();
-      closePanel();
-      document.querySelectorAll(".route-view").forEach(view =>
-        view.classList.toggle("active", view.dataset.view === route)
-      );
-      document.querySelectorAll("[data-route]").forEach(link => {
-        const active = link.dataset.route === route;
-        link.classList.toggle("active", active);
-        if (active) link.setAttribute("aria-current", "page");
-        else link.removeAttribute("aria-current");
-      });
-      window.scrollTo({ top: 0, behavior: "auto" });
-      main.focus({ preventScroll: true });
-    }
-
-    menuButton.addEventListener("click", () => {
-      const open = menu.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(open));
-      menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
-    });
-
     theme.addEventListener("click", () => {
       const dark = document.body.classList.toggle("dark");
       theme.setAttribute("aria-pressed", String(dark));
@@ -531,88 +135,25 @@
       lucide.createIcons();
     });
 
-    document.querySelectorAll(".lab-open, .post-open").forEach(button => {
-      button.addEventListener("click", () => {
-        opener = button;
-        openPanel = document.getElementById(button.dataset.panel);
-        openPanel.classList.add("open");
-        openPanel.querySelector(".panel-close").focus();
+    // Mobile menu toggle
+    const menu = document.getElementById("mobile-menu");
+    const menuButton = document.getElementById("menu-toggle");
+    menuButton.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
       });
     });
 
-    document.querySelectorAll(".panel-close").forEach(button =>
-      button.addEventListener("click", closePanel)
-    );
-    document.querySelectorAll(".overlay").forEach(panel =>
-      panel.addEventListener("click", event => {
-        if (event.target === panel) closePanel();
-      })
-    );
-
-    // Blog filter with aria-pressed
-    document.getElementById("blog-filters").addEventListener("click", event => {
-      const button = event.target.closest("[data-filter]");
-      if (!button) return;
-      document.querySelectorAll("[data-filter]").forEach(item => {
-        const isActive = item === button;
-        item.classList.toggle("active", isActive);
-        item.setAttribute("aria-pressed", isActive ? "true" : "false");
-      });
-      const filter = button.dataset.filter;
-      document.querySelectorAll(".post-card").forEach(card => {
-        card.style.display = (filter === "All" || card.dataset.category === filter) ? "block" : "none";
-      });
-    });
-
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape") {
-        if (openPanel) closePanel();
-        else if (menu.classList.contains("open")) {
-          closeMenu();
-          menuButton.focus();
-        }
-      }
-    });
-
-    // Form validation
-    const form = document.getElementById("enquiry-form");
-    const success = document.getElementById("form-success");
-
-    function validate(field) {
-      const invalid = field.type === "checkbox" ? !field.checked : !field.value.trim() || (field.type === "email" && !field.validity.valid);
-      field.classList.toggle("invalid", invalid);
-      const errorEl = document.getElementById(field.id + "-error");
-      if (errorEl) {
-        errorEl.textContent = invalid ? "Please complete this field before continuing." : "";
-      }
-      return !invalid;
-    }
-
-    form.querySelectorAll("input, select, textarea").forEach(field => {
-      field.addEventListener("blur", () => validate(field));
-      field.addEventListener("change", () => validate(field));
-    });
-
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      success.classList.remove("show");
-      const fields = [...form.querySelectorAll("[required]")];
-      const allValid = fields.map(validate).every(Boolean);
-      if (!allValid) {
-        const firstInvalid = form.querySelector(".invalid");
-        if (firstInvalid) firstInvalid.focus();
-        return;
-      }
-      form.reset();
-      // Clear any remaining error messages
-      form.querySelectorAll(".field-error").forEach(el => el.textContent = "");
-      success.classList.add("show");
-      success.focus();
-    });
-
-    window.addEventListener("hashchange", renderRoute);
     lucide.createIcons();
-    renderRoute();
   </script>
 </body>
 </html>
