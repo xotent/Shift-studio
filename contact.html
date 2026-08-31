@@ -2,679 +2,346 @@
 <html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-05-891237f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact ShiftStudio for web design, brand presence, and growth-focused digital systems.">
+  <meta name="description" content="Contact ShiftStudio to share your next digital challenge or opportunity.">
   <title>ShiftStudio — Contact</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
   <style>
     :root {
-      --ink: #101217;
-      --paper: #f7f7f4;
-      --surface: #ffffff;
-      --muted: #626978;
-      --line: #dce0e8;
-      --blue: #135cff;
-      --blue-deep: #093bb2;
-      --soft-blue: #eaf0ff;
-      --grid: rgba(26, 55, 110, .075);
-      --radius: 1.15rem;
+      --ink:#101217; --paper:#f7f7f4; --surface:#ffffff; --muted:#626978;
+      --line:#dce0e8; --blue:#135cff; --blue-deep:#093bb2; --soft:#eaf0ff;
+      --grid:rgba(26,55,110,.075); --success:#18794e; --error:#b42318;
     }
-
     body.dark {
-      --ink: #f5f7ff;
-      --paper: #0c1018;
-      --surface: #151b26;
-      --muted: #afb7c6;
-      --line: #2b3546;
-      --blue: #82adff;
-      --blue-deep: #b4cbff;
-      --soft-blue: #13254f;
-      --grid: rgba(166, 191, 246, .09);
+      --ink:#f5f7ff; --paper:#0c1018; --surface:#151b26; --muted:#afb7c6;
+      --line:#2b3546; --blue:#82adff; --blue-deep:#b4cbff; --soft:#13254f;
+      --grid:rgba(166,191,246,.09); --success:#76d6a5; --error:#ff9c96;
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
     body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "DM Sans", sans-serif;
-      transition: background .22s ease, color .22s ease;
+      margin:0; background:var(--paper); color:var(--ink);
+      font-family:"DM Sans",sans-serif; transition:background .2s ease,color .2s ease;
     }
-
-    button, a, input, select, textarea { outline-offset: 4px; }
-    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-      outline: 3px solid var(--blue);
+    a,button,input,textarea,select { outline-offset:4px; }
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible {
+      outline:3px solid var(--blue);
     }
-
-    .site-shell {
-      width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      overflow: hidden;
-    }
-
-    .content-width {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
+    .site-shell { width:100%; min-height:calc(100 * min(var(--vh,1vh),1vh)); overflow:hidden; }
+    .content-width { width:100%; max-width:1180px; margin:0 auto; }
     .skip-link {
-      position: absolute;
-      top: -5rem;
-      left: 1rem;
-      z-index: 100;
-      padding: .7rem 1rem;
-      border-radius: .6rem;
-      background: var(--blue);
-      color: #fff;
-      font-weight: 700;
-      text-decoration: none;
+      position:absolute; top:-5rem; left:1rem; z-index:100; padding:.75rem 1rem;
+      border-radius:.55rem; background:var(--blue); color:#fff; font-weight:700; text-decoration:none;
     }
-
-    .skip-link:focus { top: 1rem; }
-
+    .skip-link:focus { top:1rem; }
     .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      border-bottom: 1px solid var(--line);
-      background: color-mix(in srgb, var(--paper) 92%, transparent);
-      backdrop-filter: blur(16px);
+      position:sticky; top:0; z-index:30; border-bottom:1px solid var(--line);
+      background:color-mix(in srgb,var(--paper) 93%,transparent); backdrop-filter:blur(14px);
     }
-
     .wordmark {
-      color: var(--ink);
-      font-size: 1.42rem;
-      font-weight: 700;
-      letter-spacing: -.085em;
-      text-decoration: none;
+      color:var(--blue); font-size:1.35rem; font-weight:700; letter-spacing:-.09em; text-decoration:none;
     }
-
-    .wordmark-mark { color: var(--blue); }
-
-    .nav-link, .footer-link, .contact-link {
-      color: var(--muted);
-      font-size: .82rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: color .2s ease;
+    .nav-link,.footer-link {
+      color:var(--muted); font-size:.81rem; font-weight:700; text-decoration:none; transition:color .18s ease;
     }
-
-    .nav-link {
-      position: relative;
-      padding: .45rem .1rem;
+    .nav-link { position:relative; padding:.5rem .1rem; }
+    .nav-link:hover,.nav-link.active,.footer-link:hover,.footer-link.active { color:var(--blue); }
+    .nav-link.active:after {
+      position:absolute; right:0; bottom:-.82rem; left:0; height:2px; background:var(--blue); content:"";
     }
-
-    .nav-link:hover, .nav-link.active, .footer-link:hover, .contact-link:hover { color: var(--blue); }
-
-    .nav-link.active::after {
-      position: absolute;
-      right: 0;
-      bottom: -.68rem;
-      left: 0;
-      height: 2px;
-      background: var(--blue);
-      content: "";
+    .mobile-menu { display:none; border-top:1px solid var(--line); }
+    .mobile-menu.open { display:block; }
+    .mobile-link { display:block; padding:.8rem; border-radius:.65rem; }
+    .mobile-link.active { background:var(--soft); }
+    .icon-button,.button-primary,.button-secondary {
+      display:inline-flex; align-items:center; justify-content:center; gap:.55rem; border-radius:.72rem;
+      font-weight:700; text-decoration:none; transition:transform .18s ease,border-color .18s ease,background .18s ease;
     }
-
-    .mobile-menu { display: none; border-top: 1px solid var(--line); }
-    .mobile-menu.open { display: block; }
-
-    .mobile-link {
-      display: block;
-      padding: .8rem .9rem;
-      border-radius: .65rem;
-    }
-
-    .mobile-link.active {
-      background: var(--soft-blue);
-      color: var(--blue);
-    }
-
-    .mobile-link.active::after { display: none; }
-
-    .icon-button, .button-primary, .button-secondary, .contact-card, .submit-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .55rem;
-      border-radius: .75rem;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
-    }
-
     .icon-button {
-      width: 2.7rem;
-      height: 2.7rem;
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: var(--ink);
+      width:2.65rem; height:2.65rem; border:1px solid var(--line); background:var(--surface); color:var(--ink); cursor:pointer;
     }
-
-    .button-primary, .button-secondary, .submit-button { padding: .9rem 1.12rem; border: 1px solid transparent; }
-    .button-primary, .submit-button { border-color: var(--blue); background: var(--blue); color: #fff; }
-    .button-secondary { border-color: var(--line); background: var(--surface); color: var(--ink); }
-
-    .icon-button:hover, .button-secondary:hover, .contact-card:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-      transform: translateY(-2px);
-    }
-
-    .button-primary:hover, .submit-button:hover { background: var(--blue-deep); transform: translateY(-2px); }
-
+    .button-primary,.button-secondary { padding:.88rem 1.05rem; border:1px solid; cursor:pointer; }
+    .button-primary { border-color:var(--blue); background:var(--blue); color:#fff; }
+    .button-secondary { border-color:var(--line); background:var(--surface); color:var(--ink); }
+    .button-primary:hover { background:var(--blue-deep); transform:translateY(-2px); }
+    .button-secondary:hover,.icon-button:hover { border-color:var(--blue); transform:translateY(-2px); }
     .eyebrow {
-      color: var(--blue);
-      font-family: "Space Mono", monospace;
-      font-size: .67rem;
-      font-weight: 700;
-      letter-spacing: .11em;
-      text-transform: uppercase;
+      color:var(--blue); font-family:"Space Mono",monospace; font-size:.65rem; font-weight:700;
+      letter-spacing:.12em; text-transform:uppercase;
     }
-
-    .display { letter-spacing: -.075em; line-height: .94; }
-    .body-copy { color: var(--muted); line-height: 1.72; }
-
-    .contact-hero {
-      position: relative;
-      overflow: hidden;
-      padding: 5.7rem 1.5rem 4.6rem;
-      background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 27px 27px;
+    .display {
+      max-width:850px; font-size:clamp(3.4rem,8vw,7rem); font-weight:700;
+      letter-spacing:-.09em; line-height:.88;
     }
-
-    .contact-hero::before {
-      position: absolute;
-      top: -8rem;
-      right: 6%;
-      width: 19rem;
-      height: 19rem;
-      border: 1px solid var(--blue);
-      border-radius: 50%;
-      content: "";
-      opacity: .55;
+    .section-heading {
+      font-size:clamp(2.15rem,4vw,4.2rem); font-weight:700; letter-spacing:-.075em; line-height:.94;
     }
-
-    .contact-hero::after {
-      position: absolute;
-      right: 22%;
-      bottom: -3rem;
-      width: 8rem;
-      height: 8rem;
-      border: 1px solid var(--blue);
-      content: "";
-      opacity: .5;
-      transform: rotate(27deg);
+    .body-copy { color:var(--muted); line-height:1.72; }
+    .section-pad { padding:4.7rem 1.5rem; }
+    .grid-hero {
+      position:relative; overflow:hidden;
+      background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+      background-size:27px 27px;
     }
-
-    .hero-index {
-      display: inline-flex;
-      align-items: center;
-      gap: .65rem;
-      color: var(--muted);
-      font-family: "Space Mono", monospace;
-      font-size: .7rem;
+    .grid-hero:before {
+      position:absolute; top:-6rem; right:-2.5rem; width:16rem; height:16rem;
+      border:1px solid var(--blue); border-radius:50%; content:""; opacity:.55;
     }
-
-    .hero-index::before {
-      width: 2.2rem;
-      height: 1px;
-      background: var(--blue);
-      content: "";
+    .grid-hero:after {
+      position:absolute; right:14%; bottom:-2.2rem; width:5.5rem; height:5.5rem;
+      border:1px solid var(--blue); content:""; opacity:.55; transform:rotate(28deg);
     }
-
-    .section-pad { padding: 4rem 1.5rem 5.4rem; }
-
-    .contact-layout {
-      display: grid;
-      gap: 1.2rem;
-      align-items: start;
+    .hero-rule { width:5rem; height:2px; background:var(--blue); }
+    .contact-card,.form-card,.step-card {
+      border:1px solid var(--line); border-radius:1rem; background:var(--surface);
     }
-
-    .contact-side {
-      display: grid;
-      gap: 1rem;
+    .contact-card { padding:1.5rem; }
+    .contact-link {
+      display:flex; align-items:flex-start; gap:.85rem; padding:1rem 0;
+      border-bottom:1px solid var(--line); color:var(--ink); text-decoration:none;
+      transition:color .18s ease,transform .18s ease;
     }
-
-    .info-panel, .form-panel, .next-panel {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
+    .contact-link:last-child { border-bottom:0; }
+    .contact-link:hover { color:var(--blue); transform:translateX(3px); }
+    .contact-icon {
+      display:inline-flex; width:2.25rem; height:2.25rem; flex:none; align-items:center; justify-content:center;
+      border:1px solid var(--line); border-radius:.65rem; background:var(--soft); color:var(--blue);
     }
-
-    .info-panel { padding: 1.35rem; }
-    .form-panel { padding: 1.35rem; }
-
-    .contact-card {
-      width: 100%;
-      justify-content: flex-start;
-      min-height: 5.5rem;
-      padding: 1rem;
-      border: 1px solid var(--line);
-      background: color-mix(in srgb, var(--surface) 90%, var(--soft-blue));
-      color: var(--ink);
-      text-align: left;
+    .form-card { padding:1.5rem; }
+    .form-field { display:grid; gap:.48rem; }
+    .form-label { color:var(--ink); font-size:.87rem; font-weight:700; }
+    .form-control {
+      width:100%; border:1px solid var(--line); border-radius:.7rem; background:var(--paper);
+      color:var(--ink); padding:.78rem .85rem; font:inherit; transition:border-color .18s ease,box-shadow .18s ease;
     }
-
-    .contact-card-icon {
-      display: inline-flex;
-      width: 2.4rem;
-      height: 2.4rem;
-      flex: 0 0 auto;
-      align-items: center;
-      justify-content: center;
-      border-radius: .65rem;
-      background: var(--soft-blue);
-      color: var(--blue);
+    .form-control:hover { border-color:var(--blue); }
+    .form-control:focus { border-color:var(--blue); box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 16%,transparent); }
+    textarea.form-control { min-height:8.5rem; resize:vertical; }
+    .field-error { min-height:1.1rem; color:var(--error); font-size:.78rem; line-height:1.35; }
+    .invalid { border-color:var(--error)!important; }
+    .consent-row { display:flex; align-items:flex-start; gap:.7rem; }
+    .consent-row input { width:1.1rem; height:1.1rem; margin-top:.22rem; accent-color:var(--blue); }
+    .demo-note {
+      border-left:2px solid var(--blue); color:var(--muted); font-size:.84rem; line-height:1.55; padding-left:.8rem;
     }
-
-    .contact-card-copy { display: grid; gap: .15rem; }
-    .contact-card-label { color: var(--muted); font-family: "Space Mono", monospace; font-size: .64rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    .contact-card-value { color: var(--ink); font-size: .96rem; font-weight: 700; overflow-wrap: anywhere; }
-
-    .placeholder-row {
-      display: flex;
-      align-items: flex-start;
-      gap: .75rem;
-      padding: .85rem 0;
-      border-top: 1px solid var(--line);
+    .success-panel {
+      display:none; margin-top:1.25rem; border:1px solid color-mix(in srgb,var(--success) 45%,var(--line));
+      border-radius:.8rem; background:color-mix(in srgb,var(--success) 10%,var(--surface)); padding:1rem;
     }
-
-    .placeholder-row:first-of-type { margin-top: .35rem; }
-
-    .placeholder-label {
-      color: var(--muted);
-      font-family: "Space Mono", monospace;
-      font-size: .65rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
+    .success-panel.show { display:block; }
+    .step-card { padding:1.45rem; transition:transform .2s ease,border-color .2s ease; }
+    .step-card:hover { border-color:var(--blue); transform:translateY(-4px); }
+    .step-number {
+      display:inline-flex; width:2rem; height:2rem; align-items:center; justify-content:center;
+      border:1px solid var(--blue); border-radius:50%; color:var(--blue); font-family:"Space Mono",monospace; font-size:.7rem;
     }
-
-    .placeholder-copy { color: var(--ink); font-size: .87rem; font-weight: 600; }
-
-    .form-grid { display: grid; gap: 1rem; }
-    .field-group { display: grid; gap: .48rem; }
-
-    .field-label {
-      color: var(--ink);
-      font-size: .86rem;
-      font-weight: 700;
-    }
-
-    .required-mark { color: var(--blue); }
-
-    .field-control {
-      width: 100%;
-      min-height: 2.9rem;
-      padding: .72rem .8rem;
-      border: 1px solid var(--line);
-      border-radius: .7rem;
-      background: var(--paper);
-      color: var(--ink);
-      font: inherit;
-      transition: border-color .2s ease, box-shadow .2s ease;
-    }
-
-    .field-control::placeholder { color: var(--muted); opacity: .9; }
-    .field-control:hover, .field-control:focus { border-color: var(--blue); }
-    textarea.field-control { min-height: 8.2rem; resize: vertical; }
-
-    .check-row {
-      display: flex;
-      align-items: flex-start;
-      gap: .7rem;
-      padding: .15rem 0;
-    }
-
-    .check-row input {
-      width: 1.1rem;
-      height: 1.1rem;
-      margin-top: .15rem;
-      accent-color: var(--blue);
-    }
-
-    .check-label { color: var(--muted); font-size: .86rem; line-height: 1.55; }
-    .field-error { min-height: 1.1rem; color: #c52c48; font-size: .77rem; font-weight: 700; }
-
-    .form-note {
-      padding: .85rem 1rem;
-      border-left: 3px solid var(--blue);
-      background: var(--soft-blue);
-      color: var(--muted);
-      font-size: .8rem;
-      line-height: 1.58;
-    }
-
-    .form-success {
-      display: none;
-      margin-top: 1rem;
-      padding: 1rem;
-      border: 1px solid var(--blue);
-      border-radius: .75rem;
-      background: var(--soft-blue);
-    }
-
-    .form-success.show { display: block; }
-
-    .success-title { color: var(--ink); font-size: .95rem; font-weight: 700; }
-    .success-copy { color: var(--muted); font-size: .85rem; line-height: 1.58; }
-
-    .next-section {
-      position: relative;
-      overflow: hidden;
-      padding: 0 1.5rem 5.4rem;
-    }
-
-    .next-panel {
-      position: relative;
-      overflow: hidden;
-      padding: 1.5rem;
-      background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 23px 23px;
-    }
-
-    .next-panel::after {
-      position: absolute;
-      right: -1.5rem;
-      bottom: -2.5rem;
-      width: 8rem;
-      height: 8rem;
-      border: 1px solid var(--blue);
-      border-radius: 50%;
-      content: "";
-      opacity: .5;
-    }
-
-    .steps-grid {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      gap: .8rem;
-      margin-top: 1.5rem;
-    }
-
-    .step-card {
-      display: grid;
-      gap: .75rem;
-      padding: 1rem;
-      border: 1px solid var(--line);
-      border-radius: .8rem;
-      background: color-mix(in srgb, var(--surface) 88%, transparent);
-    }
-
-    .step-number { color: var(--blue); font-family: "Space Mono", monospace; font-size: .7rem; font-weight: 700; }
-    .step-title { color: var(--ink); font-size: 1rem; font-weight: 700; letter-spacing: -.03em; }
-
-    .footer {
-      border-top: 1px solid var(--line);
-      background: color-mix(in srgb, var(--surface) 60%, transparent);
-    }
-
-    .footer-bottom { border-top: 1px solid var(--line); }
-
+    .footer { border-top:1px solid var(--line); background:color-mix(in srgb,var(--surface) 62%,transparent); }
     .social-placeholder {
-      display: inline-flex;
-      align-items: center;
-      gap: .45rem;
-      color: var(--muted);
-      font-size: .78rem;
-      font-weight: 700;
+      display:inline-flex; width:2.55rem; height:2.55rem; align-items:center; justify-content:center;
+      border:1px solid var(--line); border-radius:.72rem; background:var(--surface); color:var(--muted);
+      transition:border-color .18s ease,color .18s ease,transform .18s ease;
     }
-
-    @media (min-width: 700px) {
-      .contact-hero { padding: 7rem 2.5rem 5.9rem; }
-      .section-pad { padding: 5rem 2.5rem 5.8rem; }
-      .next-section { padding: 0 2.5rem 6.2rem; }
-      .contact-layout { grid-template-columns: minmax(0, .74fr) minmax(0, 1.26fr); gap: 1.5rem; }
-      .info-panel, .form-panel { padding: 1.7rem; }
-      .next-panel { padding: 2rem; }
-      .form-grid.two-column { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .social-placeholder:hover { border-color:var(--blue); color:var(--blue); transform:translateY(-2px); }
+    .reveal { animation:rise .55s both; }
+    .reveal-delay { animation:rise .55s .12s both; }
+    @keyframes rise { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+    @media (min-width:768px) {
+      .section-pad { padding:6.5rem 2.5rem; }
+      .grid-hero { padding:7.5rem 2.5rem!important; }
+      .form-card,.contact-card { padding:2rem; }
     }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important;
-        animation-duration: .01ms !important;
-        transition-duration: .01ms !important;
-      }
+    @media (prefers-reduced-motion:reduce) {
+      *,*:before,*:after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; }
     }
   </style>
   <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
  </head>
- <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a class="skip-link" href="#main-content">Skip to main content</a>
+ <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
    <header class="site-header">
-    <div class="content-width flex items-center justify-between px-5 py-4"><a href="#/" data-route="/" data-template-id="brand-link" class="canva-link wordmark" aria-label="ShiftStudio Work homepage" style="color: rgb(16, 18, 23);"> <span data-template-id="brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</span> </a>
-     <nav class="hidden items-center gap-5 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-home" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+    <div class="content-width flex items-center justify-between gap-4 px-5 py-4"><a href="#/contact" class="wordmark" aria-label="ShiftStudio Contact page"> <span data-template-id="brand-name" class="canva-text" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span> </a>
+     <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-work" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
      </nav>
-     <div class="flex items-center gap-2"><a href="#/contact" data-route="/contact" data-template-id="header-book-call" class="canva-link button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a> <button id="theme-toggle" class="icon-button" type="button" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" height="18"></i> </button> <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"> <i data-lucide="menu" width="19" height="19"></i> </button>
+     <div class="flex items-center gap-2"><a href="#/" data-template-id="header-work-cta" class="canva-button button-secondary hidden sm:inline-flex" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">View Work</a> <button id="theme-toggle" type="button" class="icon-button" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" height="18"></i> </button> <button id="menu-toggle" type="button" class="icon-button md:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"> <i data-lucide="menu" width="19" height="19"></i> </button>
      </div>
     </div>
     <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
-     <div class="grid gap-1 pt-3"><a href="#/" data-route="/" data-template-id="mobile-home" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-book-call" class="canva-link button-primary mt-2" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+     <div class="grid gap-1 pt-3"><a href="#/" data-route="/" data-template-id="mobile-work" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a> <a href="#/" data-template-id="mobile-work-cta" class="canva-button button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to Work</a>
      </div>
     </nav>
    </header>
    <main id="main-content" tabindex="-1">
-    <section class="contact-hero" aria-labelledby="contact-title">
+    <section class="grid-hero section-pad" aria-labelledby="contact-title">
      <div class="content-width relative z-10">
-      <p data-template-id="contact-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">START A CONVERSATION</p>
-      <h1 id="contact-title" data-template-id="contact-title" class="canva-text display mt-5 max-w-4xl font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 54px; letter-spacing: -0.075rem; line-height: 0.94;">Let’s make the next shift.</h1>
-      <p data-template-id="contact-intro" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">Whether you need a new website, a sharper brand presence, or a growth-focused digital system, ShiftStudio is ready to help you create a clearer next move.</p><a href="#/contact" data-route="/contact" data-template-id="hero-book-call" class="canva-link button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-      <p data-template-id="contact-index" class="canva-text hero-index mt-10" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">05 — LET’S TALK</p>
+      <p data-template-id="contact-eyebrow" class="canva-text eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">LET’S TALK</p>
+      <h1 id="contact-title" data-template-id="contact-title" class="canva-text display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Make the next move.</h1>
+      <div class="hero-rule mt-8 reveal-delay"></div>
+      <p data-template-id="contact-intro" class="canva-text body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">Share the context, challenge, or opportunity in front of you. ShiftStudio can help bring the useful questions into focus and create a clear direction for what comes next.</p><a href="#/" data-template-id="hero-work-link" class="canva-button button-primary mt-8 reveal-delay" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Explore the work</a>
      </div>
     </section>
     <section class="section-pad" aria-labelledby="enquiry-title">
-     <div class="content-width contact-layout">
-      <aside class="contact-side" aria-labelledby="contact-options-title">
-       <section data-template-id="contact-options-panel" class="canva-panel info-panel" style="background: rgb(255, 255, 255);">
-        <p data-template-id="contact-options-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">CONTACT OPTIONS</p>
-        <h2 id="contact-options-title" data-template-id="contact-options-title" class="canva-text display mt-4 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 30px; letter-spacing: -0.06rem; line-height: 0.98;">Choose the easiest way in.</h2>
-        <p data-template-id="contact-options-copy" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A short message is enough to start. Reach out directly, or use the demo enquiry form to shape your brief.</p>
-        <div class="mt-7 grid gap-3"><a href="tel:0700843176" data-template-id="phone-card" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23);"> <span class="contact-card-icon" aria-hidden="true"><i data-lucide="phone" width="18" height="18"></i></span> <span class="contact-card-copy"> <span data-template-id="phone-card-label" class="canva-text contact-card-label" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Phone</span> <span data-template-id="phone-card-value" class="canva-text contact-card-value" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</span> </span> </a> <a href="mailto:ianm49444@gmail.com" data-template-id="email-card" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23);"> <span class="contact-card-icon" aria-hidden="true"><i data-lucide="mail" width="18" height="18"></i></span> <span class="contact-card-copy"> <span data-template-id="email-card-label" class="canva-text contact-card-label" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Email</span> <span data-template-id="email-card-value" class="canva-text contact-card-value" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</span> </span> </a> <a href="https://wa.me/254700843176" target="_blank" rel="noopener noreferrer" data-template-id="whatsapp-card" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23);"> <span class="contact-card-icon" aria-hidden="true"><i data-lucide="message-circle" width="18" height="18"></i></span> <span class="contact-card-copy"> <span data-template-id="whatsapp-card-label" class="canva-text contact-card-label" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp</span> <span data-template-id="whatsapp-card-value" class="canva-text contact-card-value" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Message ShiftStudio</span> </span> </a>
+     <div class="content-width grid gap-8 lg:grid-cols-[.78fr_1.22fr]">
+      <aside class="contact-card canva-card h-fit" aria-labelledby="contact-options-title">
+       <p data-template-id="contact-options-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">DIRECT CONTACT</p>
+       <h2 id="contact-options-title" data-template-id="contact-options-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Start where it feels easiest.</h2>
+       <p data-template-id="contact-options-copy" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use the channel that suits your conversation. The enquiry form is here when a little more detail will help.</p>
+       <div class="mt-7"><a href="tel:0700843176" data-template-id="contact-phone" class="canva-link contact-link" style="color: rgb(16, 18, 23);"> <span class="contact-icon" aria-hidden="true"><i data-lucide="phone" width="18" height="18"></i></span> <span> <span data-template-id="phone-label" class="canva-text eyebrow block" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">PHONE</span> <span class="mt-2 block font-bold">0700843176</span> </span> </a> <a href="mailto:ianm49444@gmail.com" data-template-id="contact-email" class="canva-link contact-link" style="color: rgb(16, 18, 23);"> <span class="contact-icon" aria-hidden="true"><i data-lucide="mail" width="18" height="18"></i></span> <span> <span data-template-id="email-label" class="canva-text eyebrow block" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">EMAIL</span> <span class="mt-2 block break-all font-bold">ianm49444@gmail.com</span> </span> </a> <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" data-template-id="contact-whatsapp" class="canva-link contact-link" style="color: rgb(16, 18, 23);"> <span class="contact-icon" aria-hidden="true"><i data-lucide="message-circle" width="18" height="18"></i></span> <span> <span data-template-id="whatsapp-label" class="canva-text eyebrow block" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">WHATSAPP</span> <span data-template-id="whatsapp-copy" class="canva-text mt-2 block font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Message on WhatsApp</span> </span> </a>
+       </div>
+       <div class="mt-7 border-t border-[var(--line)] pt-6">
+        <p data-template-id="social-label" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">SOCIAL PLACEHOLDERS</p>
+        <div class="mt-4 grid gap-3"><span data-template-id="instagram-placeholder" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Instagram URL placeholder — replace with your profile link.</span> <span data-template-id="x-placeholder" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">X URL placeholder — replace with your profile link.</span>
         </div>
-       </section>
-       <section data-template-id="social-placeholders-panel" class="canva-panel info-panel" aria-labelledby="social-title" style="background: rgb(255, 255, 255);">
-        <p data-template-id="social-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SOCIAL LINKS</p>
-        <h2 id="social-title" data-template-id="social-title" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 20px;">Find ShiftStudio elsewhere.</h2>
-        <div class="mt-4">
-         <div class="placeholder-row"><i data-lucide="instagram" width="17" height="17" aria-hidden="true"></i>
-          <div>
-           <p data-template-id="instagram-placeholder-label" class="canva-text placeholder-label" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Instagram</p>
-           <p data-template-id="instagram-placeholder-copy" class="canva-text placeholder-copy mt-1" style="color: rgb(16, 18, 23); font-weight: 600; font-style: normal; font-size: 16px;">Add Instagram URL in Canva</p>
-          </div>
-         </div>
-         <div class="placeholder-row"><i data-lucide="twitter" width="17" height="17" aria-hidden="true"></i>
-          <div>
-           <p data-template-id="x-placeholder-label" class="canva-text placeholder-label" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">X</p>
-           <p data-template-id="x-placeholder-copy" class="canva-text placeholder-copy mt-1" style="color: rgb(16, 18, 23); font-weight: 600; font-style: normal; font-size: 16px;">Add X URL in Canva</p>
-          </div>
-         </div>
-        </div>
-       </section>
+       </div>
       </aside>
-      <section data-template-id="enquiry-form-panel" class="canva-panel form-panel" style="background: rgb(255, 255, 255);">
-       <p data-template-id="form-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT ENQUIRY</p>
-       <h2 id="enquiry-title" data-template-id="enquiry-title" class="canva-text display mt-4 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 34px; letter-spacing: -0.065rem; line-height: 0.96;">Give the next move some context.</h2>
-       <p data-template-id="form-intro" class="canva-text body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">This is a local demo enquiry form. Nothing is sent or stored here; use it to organise the essentials before reaching out directly.</p>
-       <form id="enquiry-form" class="mt-8" novalidate="">
-        <div class="form-grid two-column">
-         <div class="field-group"><label for="name" data-template-id="name-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Name *</label> <input id="name" name="name" type="text" class="field-control" autocomplete="name" required="" aria-describedby="name-error">
+      <section class="form-card canva-panel" aria-labelledby="enquiry-title">
+       <p data-template-id="form-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">ENQUIRY</p>
+       <h2 id="enquiry-title" data-template-id="form-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Tell us what is shifting.</h2>
+       <p data-template-id="form-copy" class="canva-text body-copy mt-5 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A few useful details are enough to frame the conversation. This enquiry form is a front-end demonstration only.</p>
+       <form id="enquiry-form" class="mt-8 grid gap-5" novalidate="">
+        <div class="grid gap-5 md:grid-cols-2">
+         <div class="form-field"><label for="name" data-template-id="name-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Name *</label> <input id="name" name="name" type="text" class="form-control" required="" autocomplete="name" aria-describedby="name-error">
           <p id="name-error" class="field-error" aria-live="polite"></p>
          </div>
-         <div class="field-group"><label for="email" data-template-id="email-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Email *</label> <input id="email" name="email" type="email" class="field-control" autocomplete="email" required="" aria-describedby="email-error">
+         <div class="form-field"><label for="email" data-template-id="email-label-form" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Email *</label> <input id="email" name="email" type="email" class="form-control" required="" autocomplete="email" aria-describedby="email-error">
           <p id="email-error" class="field-error" aria-live="polite"></p>
          </div>
         </div>
-        <div class="form-grid two-column mt-4">
-         <div class="field-group"><label for="company" data-template-id="company-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Company or project</label> <input id="company" name="company" type="text" class="field-control" autocomplete="organization">
-          <p id="company-error" class="field-error" aria-live="polite"></p>
-         </div>
-         <div class="field-group"><label for="service" data-template-id="service-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Service interest *</label> <select id="service" name="service" class="field-control" required="" aria-describedby="service-error"> <option value="" data-template-id="service-option-placeholder" style="font-weight: 400; font-style: normal; font-size: 16px;">Choose a service</option> <option value="website" data-template-id="service-option-website" style="font-weight: 400; font-style: normal; font-size: 16px;">Website design</option> <option value="brand" data-template-id="service-option-brand" style="font-weight: 400; font-style: normal; font-size: 16px;">Brand presence</option> <option value="growth" data-template-id="service-option-growth" style="font-weight: 400; font-style: normal; font-size: 16px;">Growth-focused digital system</option> <option value="other" data-template-id="service-option-other" style="font-weight: 400; font-style: normal; font-size: 16px;">Something else</option> </select>
+        <div class="form-field"><label for="company-project" data-template-id="company-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Company or project *</label> <input id="company-project" name="company-project" type="text" class="form-control" required="" autocomplete="organization" aria-describedby="company-error">
+         <p id="company-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2">
+         <div class="form-field"><label for="service-interest" data-template-id="service-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Service interest *</label> <select id="service-interest" name="service-interest" class="form-control" required="" aria-describedby="service-error"> <option value="">Select an option</option> <option value="Brand direction">Brand direction</option> <option value="Website design">Website design</option> <option value="Digital strategy">Digital strategy</option> <option value="A combination">A combination</option> </select>
           <p id="service-error" class="field-error" aria-live="polite"></p>
          </div>
-        </div>
-        <div class="form-grid two-column mt-4">
-         <div class="field-group"><label for="budget" data-template-id="budget-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Budget range *</label> <select id="budget" name="budget" class="field-control" required="" aria-describedby="budget-error"> <option value="" data-template-id="budget-option-placeholder" style="font-weight: 400; font-style: normal; font-size: 16px;">Choose a range</option> <option value="starter" data-template-id="budget-option-starter" style="font-weight: 400; font-style: normal; font-size: 16px;">Starting out</option> <option value="growth" data-template-id="budget-option-growth" style="font-weight: 400; font-style: normal; font-size: 16px;">Growth investment</option> <option value="established" data-template-id="budget-option-established" style="font-weight: 400; font-style: normal; font-size: 16px;">Established project</option> <option value="discuss" data-template-id="budget-option-discuss" style="font-weight: 400; font-style: normal; font-size: 16px;">Let’s discuss</option> </select>
+         <div class="form-field"><label for="budget-range" data-template-id="budget-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Budget range *</label> <select id="budget-range" name="budget-range" class="form-control" required="" aria-describedby="budget-error"> <option value="">Select an option</option> <option value="Exploring options">Exploring options</option> <option value="Defined budget">Defined budget</option> <option value="Need guidance">Need guidance</option> </select>
           <p id="budget-error" class="field-error" aria-live="polite"></p>
          </div>
         </div>
-        <div class="field-group mt-4"><label for="details" data-template-id="details-label" class="canva-text field-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Project details *</label> <textarea id="details" name="details" class="field-control" required="" aria-describedby="details-error"></textarea>
+        <div class="form-field"><label for="project-details" data-template-id="details-label" class="canva-text form-label" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Project details *</label> <textarea id="project-details" name="project-details" class="form-control" required="" aria-describedby="details-error"></textarea>
          <p id="details-error" class="field-error" aria-live="polite"></p>
         </div>
-        <div class="mt-4">
-         <div class="check-row"><input id="consent" name="consent" type="checkbox" required="" aria-describedby="consent-error"> <label for="consent" data-template-id="consent-label" class="canva-text check-label" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">I’m happy for ShiftStudio to contact me about this enquiry. *</label>
+        <div class="form-field">
+         <div class="consent-row"><input id="consent" name="consent" type="checkbox" required="" aria-describedby="consent-error"> <label for="consent" data-template-id="consent-label" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">I understand this is a front-end demo and this form does not send or store my enquiry.</label>
          </div>
-         <p id="consent-error" class="field-error mt-1" aria-live="polite"></p>
+         <p id="consent-error" class="field-error" aria-live="polite"></p>
         </div>
-        <p data-template-id="privacy-note" class="canva-text form-note mt-5" style="background: rgb(234, 240, 255); color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Privacy note: this demo form stays in your browser and does not send or save your personal information.</p><button id="submit-enquiry" data-template-id="submit-enquiry" class="canva-button submit-button mt-6" type="submit" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Check my enquiry</button>
-        <div id="form-success" class="form-success" role="status" aria-live="polite">
-         <p data-template-id="success-title" class="canva-text success-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Your demo enquiry is ready.</p>
-         <p data-template-id="success-copy" class="canva-text success-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Nothing has been sent or stored. You can now use the phone, email, or WhatsApp options to start the real conversation.</p>
+        <p data-template-id="demo-note" class="canva-text demo-note" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Demo only: submitting this form validates the fields locally and does not send a message.</p>
+        <div><button id="submit-button" type="submit" data-template-id="submit-button" class="canva-button button-primary" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Validate enquiry</button>
+        </div>
+        <div id="form-success" class="success-panel" role="status" aria-live="polite">
+         <p data-template-id="success-title" class="canva-text font-bold" style="color: rgb(24, 121, 78); font-weight: 700; font-style: normal; font-size: 16px;">Your demo enquiry is complete.</p>
+         <p data-template-id="success-copy" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">The form was validated in this page only. No message has been sent.</p>
         </div>
        </form>
       </section>
      </div>
     </section>
-    <section class="next-section" aria-labelledby="next-title">
-     <div data-template-id="next-panel" class="canva-panel next-panel content-width" style="background: rgb(255, 255, 255);">
-      <p data-template-id="next-eyebrow" class="canva-text eyebrow relative z-10" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WHAT HAPPENS NEXT</p>
-      <h2 id="next-title" data-template-id="next-title" class="canva-text display relative z-10 mt-4 max-w-2xl font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 34px; letter-spacing: -0.065rem; line-height: 0.96;">A focused conversation, then a clear next move.</h2>
-      <div class="steps-grid">
-       <article class="step-card"><span data-template-id="step-number-1" class="canva-text step-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">01</span>
-        <h3 data-template-id="step-title-1" class="canva-text step-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Share the context</h3>
+    <section class="section-pad pt-0" aria-labelledby="next-steps-title">
+     <div class="content-width">
+      <p data-template-id="steps-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">A SIMPLE NEXT STEP</p>
+      <h2 id="next-steps-title" data-template-id="steps-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A clearer way forward.</h2>
+      <div class="mt-9 grid gap-5 md:grid-cols-3">
+       <article data-template-id="step-card-1" class="canva-card step-card" style="background: rgb(255, 255, 255);"><span class="step-number" aria-hidden="true">01</span>
+        <h3 data-template-id="step-title-1" class="canva-text mt-6 text-2xl font-bold tracking-[-.06em]" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Share the context</h3>
+        <p data-template-id="step-copy-1" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Bring the current situation, the questions, and the opportunity you want to explore.</p>
        </article>
-       <article class="step-card"><span data-template-id="step-number-2" class="canva-text step-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">02</span>
-        <h3 data-template-id="step-title-2" class="canva-text step-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Get a clear direction</h3>
+       <article data-template-id="step-card-2" class="canva-card step-card" style="background: rgb(255, 255, 255);"><span class="step-number" aria-hidden="true">02</span>
+        <h3 data-template-id="step-title-2" class="canva-text mt-6 text-2xl font-bold tracking-[-.06em]" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Get a clear direction</h3>
+        <p data-template-id="step-copy-2" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use the conversation to find the priorities and shape a useful path for the work ahead.</p>
        </article>
-       <article class="step-card"><span data-template-id="step-number-3" class="canva-text step-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">03</span>
-        <h3 data-template-id="step-title-3" class="canva-text step-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Make the shift</h3>
+       <article data-template-id="step-card-3" class="canva-card step-card" style="background: rgb(255, 255, 255);"><span class="step-number" aria-hidden="true">03</span>
+        <h3 data-template-id="step-title-3" class="canva-text mt-6 text-2xl font-bold tracking-[-.06em]" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Make the shift</h3>
+        <p data-template-id="step-copy-3" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Move from a broad possibility to a more confident next action with purpose behind it.</p>
        </article>
-      </div><a href="#/contact" data-route="/contact" data-template-id="next-book-call" class="canva-link button-primary relative z-10 mt-7" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+      </div>
      </div>
     </section>
    </main>
    <footer class="footer px-5 py-10">
-    <div class="content-width grid gap-10 md:grid-cols-[1.15fr_.85fr]">
-     <section aria-label="ShiftStudio information">
-      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</p>
+    <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
+     <section>
+      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
       <p data-template-id="footer-tagline" class="canva-text body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Thoughtful brand, web, and digital marketing systems for the next move.</p>
-      <div class="mt-6 grid gap-2"><a href="tel:0700843176" class="contact-link"><span data-template-id="footer-phone" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</span></a> <a href="mailto:ianm49444@gmail.com" class="contact-link"><span data-template-id="footer-email" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</span></a>
-      </div>
-      <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2" aria-label="Social and contact placeholders"><span class="social-placeholder"><i data-lucide="instagram" width="15" height="15"></i><span data-template-id="footer-instagram" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Instagram URL placeholder</span></span> <span class="social-placeholder"><i data-lucide="twitter" width="15" height="15"></i><span data-template-id="footer-x" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">X URL placeholder</span></span>
+      <p data-template-id="footer-copyright" class="canva-text mt-7 text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 ShiftStudio. All rights reserved.</p>
+     </section>
+     <nav class="grid content-start gap-3" aria-label="Footer navigation"><a href="#/" data-route="/" data-template-id="footer-work" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+     </nav>
+     <section>
+      <address class="not-italic"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a></address>
+      <div class="mt-6 flex gap-2" aria-label="Social contact links and placeholders"><span data-template-id="footer-instagram-placeholder" class="canva-button social-placeholder" role="img" aria-label="Instagram URL placeholder to replace" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"> <i data-lucide="instagram" width="17" height="17"></i> </span> <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" data-template-id="footer-whatsapp" class="canva-button social-placeholder" aria-label="Contact ShiftStudio on WhatsApp" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"> <i data-lucide="message-circle" width="17" height="17"></i> </a> <span data-template-id="footer-x-placeholder" class="canva-button social-placeholder" role="img" aria-label="X URL placeholder to replace" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"> <i data-lucide="twitter" width="17" height="17"></i> </span>
       </div>
      </section>
-     <nav class="grid grid-cols-2 content-start gap-x-6 gap-y-3 sm:grid-cols-3" aria-label="Footer navigation"><a href="#/" data-route="/" data-template-id="footer-home" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a> <a href="#/contact" data-route="/contact" data-template-id="footer-book-call" class="canva-link button-secondary mt-3 w-fit" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-     </nav>
-    </div>
-    <div class="content-width footer-bottom mt-10 pt-5">
-     <p data-template-id="footer-copyright" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 13px;">© 2026 ShiftStudio. All rights reserved.</p>
     </div>
    </footer>
   </div>
   <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
   <script>
+    const supportedRoute = "/contact";
     const menu = document.getElementById("mobile-menu");
     const menuButton = document.getElementById("menu-toggle");
-    const themeButton = document.getElementById("theme-toggle");
+    const themeToggle = document.getElementById("theme-toggle");
+    const mainContent = document.getElementById("main-content");
     const form = document.getElementById("enquiry-form");
     const successPanel = document.getElementById("form-success");
 
-    // Hash routing is intentional for GitHub Pages compatibility.
-    function currentRoute() {
-      return window.location.hash.replace(/^#/, "") || "/contact";
-    }
-
-    function closeMobileMenu() {
+    // Hash routing is intentional for GitHub Pages compatibility on this standalone Contact page.
+    function closeMenu() {
       menu.classList.remove("open");
       menuButton.setAttribute("aria-expanded", "false");
       menuButton.setAttribute("aria-label", "Open navigation menu");
     }
 
-    function setRouteState(scrollToTop) {
-      const route = currentRoute();
-
+    function updateNavigation() {
       document.querySelectorAll("[data-route]").forEach((link) => {
-        const active = link.dataset.route === route;
+        const active = link.dataset.route === supportedRoute;
         link.classList.toggle("active", active);
         if (active) link.setAttribute("aria-current", "page");
         else link.removeAttribute("aria-current");
       });
-
-      closeMobileMenu();
-
-      if (scrollToTop) {
-        window.scrollTo({ top: 0, behavior: "auto" });
-      }
     }
 
-    function showError(fieldId, message) {
-      const field = document.getElementById(fieldId);
-      const error = document.getElementById(fieldId + "-error");
-      error.textContent = message;
-      field.setAttribute("aria-invalid", message ? "true" : "false");
+    function renderRoute(focusMain) {
+      closeMenu();
+      if (location.hash.slice(1) !== supportedRoute) {
+        location.hash = supportedRoute;
+        return;
+      }
+      updateNavigation();
+      window.scrollTo({ top: 0, behavior: "auto" });
+      if (focusMain) mainContent.focus({ preventScroll: true });
     }
 
-    function validateForm() {
-      let valid = true;
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const service = document.getElementById("service");
-      const budget = document.getElementById("budget");
-      const details = document.getElementById("details");
-      const consent = document.getElementById("consent");
+    function setError(field, message) {
+      const error = document.getElementById(field.id + "-error");
+      field.classList.toggle("invalid", Boolean(message));
+      field.setAttribute("aria-invalid", Boolean(message) ? "true" : "false");
+      if (error) error.textContent = message;
+    }
 
-      if (!name.value.trim()) {
-        showError("name", "Please add your name.");
-        valid = false;
-      } else {
-        showError("name", "");
+    function validateField(field) {
+      const labels = {
+        name: "Please enter your name.",
+        email: "Please enter a valid email address.",
+        "company-project": "Please tell us about your company or project.",
+        "service-interest": "Please choose a service interest.",
+        "budget-range": "Please choose a budget range.",
+        "project-details": "Please share a few project details.",
+        consent: "Please confirm consent before continuing."
+      };
+
+      let message = "";
+      if (field.type === "checkbox") {
+        if (!field.checked) message = labels[field.id];
+      } else if (!field.value.trim()) {
+        message = labels[field.id];
+      } else if (field.type === "email" && !field.validity.valid) {
+        message = labels[field.id];
       }
 
-      if (!email.value.trim()) {
-        showError("email", "Please add your email address.");
-        valid = false;
-      } else if (!email.validity.valid) {
-        showError("email", "Please use a valid email address.");
-        valid = false;
-      } else {
-        showError("email", "");
-      }
-
-      if (!service.value) {
-        showError("service", "Please choose a service interest.");
-        valid = false;
-      } else {
-        showError("service", "");
-      }
-
-      if (!budget.value) {
-        showError("budget", "Please choose a budget range.");
-        valid = false;
-      } else {
-        showError("budget", "");
-      }
-
-      if (!details.value.trim()) {
-        showError("details", "Please share a few project details.");
-        valid = false;
-      } else {
-        showError("details", "");
-      }
-
-      const consentError = document.getElementById("consent-error");
-      consentError.textContent = consent.checked ? "" : "Please confirm that ShiftStudio can contact you.";
-      consent.setAttribute("aria-invalid", String(!consent.checked));
-      if (!consent.checked) valid = false;
-
-      return valid;
+      setError(field, message);
+      return !message;
     }
 
     menuButton.addEventListener("click", () => {
@@ -683,30 +350,50 @@
       menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     });
 
-    themeButton.addEventListener("click", () => {
+    themeToggle.addEventListener("click", () => {
       const dark = document.body.classList.toggle("dark");
-      themeButton.setAttribute("aria-pressed", String(dark));
-      themeButton.setAttribute("aria-label", dark ? "Enable light mode" : "Enable dark mode");
+      themeToggle.setAttribute("aria-pressed", String(dark));
+      themeToggle.setAttribute("aria-label", dark ? "Enable light mode" : "Enable dark mode");
+      themeToggle.innerHTML = dark
+        ? '<i data-lucide="sun" width="18" height="18"></i>'
+        : '<i data-lucide="moon" width="18" height="18"></i>';
+      lucide.createIcons();
+    });
+
+    form.querySelectorAll("input, select, textarea").forEach((field) => {
+      field.addEventListener("blur", () => validateField(field));
+      field.addEventListener("change", () => validateField(field));
     });
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       successPanel.classList.remove("show");
 
-      if (!validateForm()) {
+      const fields = [...form.querySelectorAll("input[required], select[required], textarea[required]")];
+      const valid = fields.map(validateField).every(Boolean);
+
+      if (!valid) {
         const firstInvalid = form.querySelector('[aria-invalid="true"]');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
 
       form.reset();
+      fields.forEach((field) => setError(field, ""));
       successPanel.classList.add("show");
-      successPanel.focus();
+      successPanel.focus({ preventScroll: true });
     });
 
-    window.addEventListener("hashchange", () => setRouteState(true));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menu.classList.contains("open")) {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+
+    window.addEventListener("hashchange", () => renderRoute(true));
     lucide.createIcons();
-    setRouteState(false);
+    renderRoute(false);
   </script>
  
 </body></html>
