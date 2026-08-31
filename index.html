@@ -2,8 +2,8 @@
 <html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-05-891237f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Selected work from ShiftStudio.">
-  <title>Work — ShiftStudio</title>
+  <meta name="description" content="ShiftStudio portfolio — thoughtful web design and digital marketing systems.">
+  <title>ShiftStudio</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
@@ -18,9 +18,8 @@
       --blue-dark: #0a3db0;
       --soft-blue: #eaf0ff;
       --radius: 1.25rem;
-      --shadow: 0 18px 50px rgba(18, 29, 61, .09);
+      --shadow: 0 18px 50px rgba(18,29,61,.10);
     }
-
     body.dark {
       --ink: #f4f7ff;
       --paper: #0c1018;
@@ -30,9 +29,8 @@
       --blue: #70a0ff;
       --blue-dark: #a8c2ff;
       --soft-blue: #13254f;
-      --shadow: 0 20px 55px rgba(0, 0, 0, .30);
+      --shadow: 0 20px 55px rgba(0,0,0,.30);
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -42,646 +40,196 @@
       font-family: "DM Sans", sans-serif;
       transition: background .25s ease, color .25s ease;
     }
-
-    button, select { font: inherit; }
-    button, a, select { outline-offset: 4px; }
-    button:focus-visible, a:focus-visible, select:focus-visible {
-      outline: 3px solid var(--blue);
-    }
-
+    button, a { outline-offset: 4px; }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--blue); }
+    .site-shell { width: 100%; min-height: calc(100 * min(var(--vh, 1vh), 1vh)); overflow: hidden; }
+    .content-width { width: 100%; max-width: 1180px; margin: 0 auto; }
     .skip-link {
-      position: absolute;
-      left: 1rem;
-      top: -5rem;
-      z-index: 100;
-      padding: .75rem 1rem;
-      border-radius: .65rem;
-      background: var(--blue);
-      color: #fff;
-      font-weight: 700;
+      position: absolute; top: -5rem; left: 1rem; z-index: 100; padding: .75rem 1rem;
+      border-radius: .7rem; background: var(--blue); color: #fff; font-weight: 700; text-decoration: none;
     }
-
     .skip-link:focus { top: 1rem; }
-
-    .site-shell {
-      width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      overflow: hidden;
-    }
-
-    .content-width {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
     .site-header {
-      border-bottom: 1px solid var(--line);
-      background: color-mix(in srgb, var(--paper) 90%, transparent);
+      border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 91%, transparent);
       backdrop-filter: blur(16px);
     }
-
-    .wordmark {
-      color: var(--ink);
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -.08em;
-    }
-
-    .wordmark span { color: var(--blue); }
-
+    .wordmark { color: var(--ink); font-size: 1.5rem; font-weight: 700; letter-spacing: -.08em; text-decoration: none; }
+    .wordmark-mark { color: var(--blue); }
     .nav-link {
-      color: var(--muted);
-      font-size: .88rem;
-      font-weight: 700;
-      text-decoration: none;
+      position: relative; color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none;
       transition: color .2s ease;
     }
-
     .nav-link:hover, .nav-link.active { color: var(--blue); }
-
-    .button-primary,
-    .button-secondary,
-    .filter-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .55rem;
-      cursor: pointer;
-      font-weight: 700;
-      transition: transform .2s ease, color .2s ease, background .2s ease, border-color .2s ease;
+    .nav-link.active::after {
+      position: absolute; right: 0; bottom: -.52rem; left: 0; height: 2px; border-radius: 999px;
+      background: var(--blue); content: "";
     }
-
+    .mobile-nav-link { border-radius: .75rem; padding: .8rem .9rem; }
+    .mobile-nav-link.active { background: var(--soft-blue); }
+    .mobile-nav-link.active::after { display: none; }
+    .button-primary, .button-secondary {
+      display: inline-flex; align-items: center; justify-content: center; gap: .55rem; cursor: pointer;
+      font-weight: 700; text-decoration: none; transition: transform .2s ease, color .2s ease, background .2s ease, border-color .2s ease;
+    }
     .button-primary {
-      border: 1px solid var(--blue);
-      border-radius: .75rem;
-      padding: .72rem .85rem;
-      background: var(--blue);
-      color: #fff;
+      border: 1px solid var(--blue); border-radius: .8rem; padding: .9rem 1.1rem; background: var(--blue); color: #fff;
     }
-
     .button-secondary {
-      border: 1px solid var(--line);
-      border-radius: .75rem;
-      padding: .75rem .95rem;
-      background: var(--surface);
-      color: var(--ink);
+      border: 1px solid var(--line); border-radius: .8rem; padding: .78rem 1rem; background: var(--surface); color: var(--ink);
     }
-
-    .button-primary:hover,
-    .button-secondary:hover { transform: translateY(-2px); }
-
-    .button-secondary:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-    }
-
-    .mobile-menu {
-      display: none;
-      border-top: 1px solid var(--line);
-    }
-
+    .button-primary:hover, .button-secondary:hover { transform: translateY(-2px); }
+    .button-primary:hover { background: var(--blue-dark); }
+    .button-secondary:hover { border-color: var(--blue); color: var(--blue); }
+    .mobile-menu { display: none; border-top: 1px solid var(--line); }
     .mobile-menu.open { display: block; }
-
-    .work-hero {
-      position: relative;
-      overflow: hidden;
-      padding: 5.5rem 1.5rem 3.75rem;
-      background-image:
-        linear-gradient(var(--line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    .eyebrow { color: var(--blue); font-family: "Space Mono", monospace; font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+    .display { letter-spacing: -.075em; line-height: .94; }
+    .body-copy { color: var(--muted); line-height: 1.72; }
+    .hero-grid {
+      position: relative; overflow: hidden; padding: 5.8rem 1.5rem 5rem;
+      background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
       background-size: 34px 34px;
     }
-
-    .work-hero::before,
-    .work-hero::after {
-      position: absolute;
-      content: "";
-      pointer-events: none;
-      border-radius: 999px;
+    .hero-grid::before {
+      position: absolute; top: -7rem; right: -5rem; width: 18rem; height: 18rem; border: 2px solid var(--blue);
+      border-radius: 50%; content: ""; opacity: .28;
     }
-
-    .work-hero::before {
-      width: 25rem;
-      height: 25rem;
-      top: -13rem;
-      right: -9rem;
-      background: var(--blue);
-      opacity: .10;
+    .hero-grid::after {
+      position: absolute; right: 20%; bottom: -3rem; width: 6rem; height: 6rem; border: 2px solid var(--blue);
+      content: ""; opacity: .3; transform: rotate(28deg);
     }
-
-    .work-hero::after {
-      width: 7rem;
-      height: 7rem;
-      right: 13%;
-      bottom: -3rem;
-      border: 2px solid var(--blue);
-      opacity: .28;
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      font-family: "Space Mono", monospace;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
-
-    .display {
-      letter-spacing: -.075em;
-      line-height: .94;
-    }
-
-    .work-area { padding: 1.5rem 1.5rem 6rem; }
-
-    .filter-button {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: .58rem .88rem;
-      background: var(--surface);
-      color: var(--muted);
-      font-size: .86rem;
-    }
-
-    .filter-button:hover,
-    .filter-button.active {
-      border-color: var(--blue);
-      background: var(--blue);
-      color: #fff;
-    }
-
-    .mobile-filter {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: .75rem;
-      padding: .85rem .9rem;
-      background: var(--surface);
-      color: var(--ink);
-      font-weight: 700;
-    }
-
-    .case-card {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
-    }
-
-    .case-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--blue);
-      box-shadow: 0 24px 58px rgba(18, 29, 61, .15);
-    }
-
-    .case-card[hidden] { display: none; }
-
-    .media-slot {
-      position: relative;
-      display: flex;
-      min-height: 12rem;
-      aspect-ratio: 16 / 10;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border-bottom: 1px solid var(--line);
-      background:
-        linear-gradient(135deg, transparent 49%, rgba(19,92,255,.22) 50%, transparent 51%),
-        linear-gradient(45deg, transparent 49%, rgba(19,92,255,.14) 50%, transparent 51%),
-        var(--soft-blue);
-      background-size: 44px 44px, 44px 44px, auto;
-    }
-
-    .media-slot::before {
-      position: absolute;
-      width: 42%;
-      aspect-ratio: 1;
-      content: "";
-      border: 1px solid rgba(19, 92, 255, .42);
-      border-radius: 50%;
-    }
-
-    .media-slot::after {
-      position: absolute;
-      width: 20%;
-      aspect-ratio: 1;
-      content: "";
-      border: 2px solid var(--blue);
-      border-radius: .8rem;
-      transform: rotate(24deg);
-    }
-
-    .media-slot.detail-media {
-      min-height: 10rem;
-      border: 1px solid var(--line);
-      border-radius: 1rem;
-    }
-
+    .section-pad { padding: 4.75rem 1.5rem; }
+    .project-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 1.35rem; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .project-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .project-media { position: relative; min-height: 13rem; overflow: hidden; border: 1px solid var(--line); border-radius: .9rem; background: var(--soft-blue); }
+    .project-media img { width: 100%; height: 100%; min-height: 13rem; object-fit: cover; opacity: .68; filter: saturate(.72); transition: opacity .25s ease, transform .4s ease; }
+    .project-card:hover .project-media img { opacity: .86; transform: scale(1.03); }
     .media-label {
-      position: relative;
-      z-index: 2;
-      max-width: 80%;
-      padding: .56rem .7rem;
-      border-radius: .45rem;
-      background: rgba(10, 16, 30, .86);
-      color: #fff;
-      font-family: "Space Mono", monospace;
-      font-size: .65rem;
-      font-weight: 700;
-      line-height: 1.45;
-      text-align: center;
+      position: absolute; right: .75rem; bottom: .75rem; left: .75rem; padding: .65rem .75rem;
+      border: 1px solid color-mix(in srgb, var(--blue) 36%, transparent); border-radius: .65rem;
+      background: color-mix(in srgb, var(--paper) 90%, transparent); color: var(--ink);
+      font-family: "Space Mono", monospace; font-size: .65rem; font-weight: 700; line-height: 1.45; backdrop-filter: blur(10px);
     }
-
-    .tag {
-      display: inline-flex;
-      border-radius: 999px;
-      padding: .35rem .6rem;
-      background: var(--soft-blue);
-      color: var(--blue);
-      font-family: "Space Mono", monospace;
-      font-size: .68rem;
-      font-weight: 700;
+    .guidance { color: var(--muted); font-size: .76rem; line-height: 1.5; }
+    .footer-link { color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none; transition: color .2s ease; }
+    .footer-link:hover { color: var(--blue); }
+    .social-link {
+      display: inline-flex; align-items: center; justify-content: center; width: 2.35rem; height: 2.35rem;
+      border: 1px solid var(--line); border-radius: .7rem; color: var(--ink); transition: color .2s ease, border-color .2s ease, transform .2s ease;
     }
-
-    .summary { color: var(--muted); line-height: 1.65; }
-
-    .detail-panel {
-      display: none;
-      scroll-margin-top: 7rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
-      box-shadow: var(--shadow);
-    }
-
-    .detail-panel.open {
-      display: block;
-      animation: enter .34s ease both;
-    }
-
-    @keyframes enter {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .detail-copy { color: var(--muted); line-height: 1.7; }
-
-    .tiny-rule {
-      height: 1px;
-      background: var(--line);
-    }
-
+    .social-link:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
     @media (min-width: 768px) {
-      .work-hero { padding: 7.5rem 2.5rem 5rem; }
-      .work-area { padding: 2.25rem 2.5rem 7rem; }
+      .hero-grid { padding: 7.5rem 2.5rem 6rem; }
+      .section-pad { padding: 6.5rem 2.5rem; }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: .01ms !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-      }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
     }
   </style>
-  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
   <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
  </head>
- <body data-template-id="__page-root" style="background: rgb(247, 247, 244);">
-  <a class="skip-link" href="#main-content">Skip to work</a>
+ <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-shell">
    <header class="site-header sticky top-0 z-50">
-    <div class="content-width flex items-center justify-between px-5 py-4">
-     <a href="#main-content" data-template-id="brand-wordmark" class="canva-link wordmark" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"><span data-template-id="brand-name" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span></a>
-     <nav class="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
-      <a href="#main-content" data-template-id="nav-work" class="canva-link nav-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <span data-template-id="nav-services" class="canva-text nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</span> <span data-template-id="nav-about" class="canva-text nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</span> <span data-template-id="nav-lab" class="canva-text nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</span> <span data-template-id="nav-blog" class="canva-text nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</span> <span data-template-id="nav-contact" class="canva-text nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</span>
+    <div class="content-width flex items-center justify-between px-5 py-4"><a href="#" data-home-link="" data-template-id="brand-wordmark" class="canva-link wordmark" aria-label="ShiftStudio home" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"> <span data-template-id="brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span> </a>
+     <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation"><a href="#" data-home-link="" data-template-id="nav-home" class="canva-link nav-link active" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
      </nav>
-     <div class="flex items-center gap-2">
-      <button id="theme-toggle" type="button" class="button-secondary !p-2.5" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" aria-hidden="true"></i> </button> <button id="menu-toggle" type="button" class="button-secondary !p-2.5 lg:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"> <i data-lucide="menu" width="19" aria-hidden="true"></i> </button>
+     <div class="flex items-center gap-2"><button id="theme-toggle" type="button" class="button-secondary !p-2.5" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" aria-hidden="true"></i> </button> <button id="menu-toggle" type="button" class="button-secondary !p-2.5 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"> <i data-lucide="menu" width="19" aria-hidden="true"></i> </button>
      </div>
     </div>
-    <nav id="mobile-menu" class="mobile-menu lg:hidden px-5 pb-4" aria-label="Mobile navigation">
-     <div class="grid gap-1 pt-3">
-      <a href="#main-content" data-template-id="mobile-work" class="canva-link nav-link active p-3" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <span data-template-id="mobile-services" class="canva-text nav-link p-3" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</span> <span data-template-id="mobile-about" class="canva-text nav-link p-3" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</span> <span data-template-id="mobile-lab" class="canva-text nav-link p-3" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</span> <span data-template-id="mobile-blog" class="canva-text nav-link p-3" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</span> <span data-template-id="mobile-contact" class="canva-text nav-link p-3" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</span>
+    <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
+     <div class="grid gap-1 pt-3"><a href="#" data-home-link="" data-template-id="mobile-home" class="canva-link nav-link mobile-nav-link active" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
      </div>
     </nav>
    </header>
-   <main id="main-content">
-    <section class="work-hero">
-     <div class="content-width relative z-10">
-      <p data-template-id="work-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Selected work</p>
-      <h1 data-template-id="work-title" class="canva-text display mt-5 max-w-5xl text-5xl font-bold md:text-7xl" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 32px;">Work that makes the next move easier.</h1>
-      <p data-template-id="work-copy" class="canva-text mt-7 max-w-2xl text-lg leading-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.7;">A selection of brand, web, and growth systems designed to make the value clearer, the journey stronger, and the next decision more confident.</p>
-     </div>
-    </section>
-    <section class="work-area">
-     <div class="content-width">
-      <div class="flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
-       <div>
-        <h2 data-template-id="filter-title" class="canva-text text-xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 20px;">Explore by focus</h2>
-        <p data-template-id="filter-copy" class="canva-text mt-1" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Choose a category to narrow the selected work.</p>
-       </div>
-       <div class="hidden flex-wrap gap-2 sm:flex" role="group" aria-label="Filter selected work">
-        <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button> <button type="button" class="filter-button" data-filter="web" aria-pressed="false">Web Design</button> <button type="button" class="filter-button" data-filter="branding" aria-pressed="false">Branding</button> <button type="button" class="filter-button" data-filter="growth" aria-pressed="false">Growth</button> <button type="button" class="filter-button" data-filter="strategy" aria-pressed="false">Strategy</button>
-       </div>
-       <div class="sm:hidden">
-        <label data-template-id="mobile-filter-label" class="canva-text mb-2 block font-bold" for="mobile-filter" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Filter selected work</label> <select id="mobile-filter" class="mobile-filter"> <option value="all">All</option> <option value="web">Web Design</option> <option value="branding">Branding</option> <option value="growth">Growth</option> <option value="strategy">Strategy</option> </select>
-       </div>
+   <main id="main-content" tabindex="-1">
+    <section aria-labelledby="portfolio-title">
+     <div class="hero-grid">
+      <div class="content-width relative z-10">
+       <p data-template-id="work-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Selected work</p>
+       <h1 id="portfolio-title" data-template-id="work-title" class="canva-text display mt-5 max-w-3xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 32px; letter-spacing: -0.075rem; line-height: 0.94;">Room for the work to speak.</h1>
+       <p data-template-id="work-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">A flexible portfolio space for the website, brand, and digital marketing projects that best show how ShiftStudio helps organisations make their next move with more clarity.</p>
       </div>
-      <p id="filter-status" class="sr-only" aria-live="polite"></p>
-      <div id="case-grid" class="mt-9 grid gap-6 md:grid-cols-2">
-       <article class="case-card" data-case-id="wellness" data-category="web branding">
-        <div data-template-id="case-media-wellness" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(234, 240, 255), rgb(203, 217, 255));">
-         <span data-template-id="case-media-label-wellness" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+     </div>
+     <section class="section-pad" aria-label="Selected ShiftStudio projects">
+      <div class="content-width grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+       <article data-template-id="project-card-one" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-one" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A stylish workspace featuring a laptop and monitors displaying design software.">
+         <p data-template-id="project-media-label-one" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-wellness" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Wellness · Web Design</p>
-         <h2 data-template-id="case-title-wellness" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A calmer path to conversion</h2>
-         <p data-template-id="case-summary-wellness" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A considered digital platform that makes a nuanced wellness offer feel simple to enter.</p><button type="button" class="case-open button-secondary mt-6" data-case="wellness"> <span data-template-id="case-action-wellness" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-one-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Website design</p>
+        <h2 data-template-id="project-one-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-one-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the challenge, the creative direction, and the project outcome.</p>
+        <p data-template-id="project-one-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20website%20project" data-template-id="project-one-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
-       <article class="case-card" data-case-id="hospitality" data-category="web strategy">
-        <div data-template-id="case-media-hospitality" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(255, 240, 219), rgb(255, 214, 164));">
-         <span data-template-id="case-media-label-hospitality" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+       <article data-template-id="project-card-two" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-two" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/5706015/pexels-photo-5706015.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of blank white business cards on a pastel orange background. Ideal for design mockups.">
+         <p data-template-id="project-media-label-two" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-hospitality" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Hospitality · Strategy</p>
-         <h2 data-template-id="case-title-hospitality" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Boutique stay, sharper story</h2>
-         <p data-template-id="case-summary-hospitality" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">An editorial booking journey that turns a physical atmosphere into an inviting first impression.</p><button type="button" class="case-open button-secondary mt-6" data-case="hospitality"> <span data-template-id="case-action-hospitality" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-two-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Brand presence</p>
+        <h2 data-template-id="project-two-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-two-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the identity system, communication need, and the work created.</p>
+        <p data-template-id="project-two-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20brand%20project" data-template-id="project-two-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
-       <article class="case-card" data-case-id="saas" data-category="web growth">
-        <div data-template-id="case-media-saas" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(220, 236, 255), rgb(179, 203, 255));">
-         <span data-template-id="case-media-label-saas" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+       <article data-template-id="project-card-three" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-three" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of a tablet displaying analytics charts on a wooden office desk, alongside a smartphone and coffee cup.">
+         <p data-template-id="project-media-label-three" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-saas" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SaaS · Growth</p>
-         <h2 data-template-id="case-title-saas" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">SaaS with a clearer signal</h2>
-         <p data-template-id="case-summary-saas" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A product story and conversion flow built around the moments buyers need most.</p><button type="button" class="case-open button-secondary mt-6" data-case="saas"> <span data-template-id="case-action-saas" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-three-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital marketing</p>
+        <h2 data-template-id="project-three-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-three-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the audience, campaign direction, and the marketing system delivered.</p>
+        <p data-template-id="project-three-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20growth%20project" data-template-id="project-three-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
-       <article class="case-card" data-case-id="fashion" data-category="branding web">
-        <div data-template-id="case-media-fashion" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(247, 233, 237), rgb(239, 191, 208));">
-         <span data-template-id="case-media-label-fashion" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+       <article data-template-id="project-card-four" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-four" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace.">
+         <p data-template-id="project-media-label-four" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-fashion" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Fashion · Branding</p>
-         <h2 data-template-id="case-title-fashion" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">An editorial fashion system</h2>
-         <p data-template-id="case-summary-fashion" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A flexible identity designed to hold campaign energy and commercial clarity together.</p><button type="button" class="case-open button-secondary mt-6" data-case="fashion"> <span data-template-id="case-action-fashion" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-four-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Commerce experience</p>
+        <h2 data-template-id="project-four-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-four-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the customer journey, product story, and the digital experience created.</p>
+        <p data-template-id="project-four-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20commerce%20project" data-template-id="project-four-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
-       <article class="case-card" data-case-id="professional" data-category="web strategy">
-        <div data-template-id="case-media-professional" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(233, 237, 242), rgb(199, 208, 220));">
-         <span data-template-id="case-media-label-professional" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+       <article data-template-id="project-card-five" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-five" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/54284/pexels-photo-54284.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of a smartphone displaying a billing app interface on a reflective surface.">
+         <p data-template-id="project-media-label-five" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-professional" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Professional Services · Web Design</p>
-         <h2 data-template-id="case-title-professional" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Authority without distance</h2>
-         <p data-template-id="case-summary-professional" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A people-first information system that makes complex expertise easier to trust.</p><button type="button" class="case-open button-secondary mt-6" data-case="professional"> <span data-template-id="case-action-professional" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-five-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital product</p>
+        <h2 data-template-id="project-five-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-five-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the interface, user need, and the product experience shaped.</p>
+        <p data-template-id="project-five-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20digital%20product%20project" data-template-id="project-five-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
-       <article class="case-card" data-case-id="food" data-category="branding growth">
-        <div data-template-id="case-media-food" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(255, 240, 213), rgb(247, 188, 126));">
-         <span data-template-id="case-media-label-food" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
+       <article data-template-id="project-card-six" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+        <div class="project-media"><img data-template-id="project-image-six" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/6476257/pexels-photo-6476257.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Team of diverse colleagues collaborating on project in modern office with digital devices and charts.">
+         <p data-template-id="project-media-label-six" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
         </div>
-        <div class="p-6">
-         <p data-template-id="case-category-food" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Food &amp; Beverage · Growth</p>
-         <h2 data-template-id="case-title-food" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A taste-led launch platform</h2>
-         <p data-template-id="case-summary-food" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A vivid launch system that helps a sensory product feel tangible before the first bite.</p><button type="button" class="case-open button-secondary mt-6" data-case="food"> <span data-template-id="case-action-food" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
-       </article>
-       <article class="case-card" data-case-id="education" data-category="web strategy">
-        <div data-template-id="case-media-education" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(230, 247, 240), rgb(174, 229, 210));">
-         <span data-template-id="case-media-label-education" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
-        </div>
-        <div class="p-6">
-         <p data-template-id="case-category-education" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Education · Web Design</p>
-         <h2 data-template-id="case-title-education" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Learning made easier to explore</h2>
-         <p data-template-id="case-summary-education" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Clearer pathways and modular content for a learning offer with room to grow.</p><button type="button" class="case-open button-secondary mt-6" data-case="education"> <span data-template-id="case-action-education" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
-       </article>
-       <article class="case-card" data-case-id="culture" data-category="branding strategy">
-        <div data-template-id="case-media-culture" class="canva-banner media-slot" style="background: linear-gradient(135deg, rgb(238, 231, 255), rgb(205, 187, 255));">
-         <span data-template-id="case-media-label-culture" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video · add descriptive alt text</span>
-        </div>
-        <div class="p-6">
-         <p data-template-id="case-category-culture" class="canva-tag tag" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Culture / Nonprofit · Branding</p>
-         <h2 data-template-id="case-title-culture" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A cultural platform with room to gather</h2>
-         <p data-template-id="case-summary-culture" class="canva-text summary mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">An expressive identity and event framework that makes participation feel more immediate.</p><button type="button" class="case-open button-secondary mt-6" data-case="culture"> <span data-template-id="case-action-culture" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">View case study</span><i data-lucide="arrow-right" width="16" aria-hidden="true"></i> </button>
-        </div>
+        <p data-template-id="project-six-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Campaign system</p>
+        <h2 data-template-id="project-six-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+        <p data-template-id="project-six-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the team context, campaign system, and the communication work delivered.</p>
+        <p data-template-id="project-six-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20team%20project" data-template-id="project-six-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
        </article>
       </div>
-      <section id="case-detail-wellness" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-wellness" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-wellness" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-wellness" data-template-id="detail-title-wellness" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A calmer path to conversion</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="wellness" aria-label="Close wellness case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-wellness" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-wellness" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Make a thoughtful, nuanced service feel simple to understand without flattening its human character.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-wellness" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-wellness" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Shape a calm hierarchy, clearer service pathways, and a low-friction route to enquiry.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-wellness" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-wellness" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A more coherent brand experience where the story and next step work together.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-wellness" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(234, 240, 255), rgb(203, 217, 255));"><span data-template-id="detail-media-label-wellness" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="wellness"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-wellness" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-hospitality" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-hospitality" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-hospitality" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-hospitality" data-template-id="detail-title-hospitality" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Boutique stay, sharper story</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="hospitality" aria-label="Close hospitality case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-hospitality" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-hospitality" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Translate a distinct in-person atmosphere into a more complete digital introduction.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-hospitality" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-hospitality" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Build a content-first structure for rooms, place, planning, and the details guests value.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-hospitality" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-hospitality" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A more memorable first impression that helps guests imagine the stay before booking.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-hospitality" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(255, 240, 219), rgb(255, 214, 164));"><span data-template-id="detail-media-label-hospitality" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="hospitality"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-hospitality" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-saas" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-saas" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-saas" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-saas" data-template-id="detail-title-saas" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">SaaS with a clearer signal</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="saas" aria-label="Close SaaS case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-saas" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-saas" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Explain a capable product when its feature set had outgrown the existing story.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-saas" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-saas" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Rebuild the journey around priority use cases, clear benefits, and timely proof.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-saas" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-saas" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A product narrative that is easier for prospective users and internal teams to follow.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-saas" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(220, 236, 255), rgb(179, 203, 255));"><span data-template-id="detail-media-label-saas" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="saas"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-saas" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-fashion" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-fashion" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-fashion" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-fashion" data-template-id="detail-title-fashion" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">An editorial fashion system</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="fashion" aria-label="Close fashion case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-fashion" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-fashion" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Create distinction in a crowded visual landscape while remaining commercially useful.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-fashion" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-fashion" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Develop a flexible visual toolkit for campaign, product, editorial, and social moments.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-fashion" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-fashion" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A recognisable rhythm that gives evolving releases a consistent point of view.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-fashion" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(247, 233, 237), rgb(239, 191, 208));"><span data-template-id="detail-media-label-fashion" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="fashion"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-fashion" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-professional" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-professional" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-professional" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-professional" data-template-id="detail-title-professional" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Authority without distance</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="professional" aria-label="Close professional services case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-professional" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-professional" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Communicate deep expertise in a direct, human way without generic professional-service language.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-professional" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-professional" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Balance people-led storytelling, clear services, and helpful guidance across the information system.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-professional" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-professional" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">An experience that makes confidence feel more approachable from the first visit.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-professional" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(233, 237, 242), rgb(199, 208, 220));"><span data-template-id="detail-media-label-professional" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="professional"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-professional" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-food" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-food" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-food" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-food" data-template-id="detail-title-food" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A taste-led launch platform</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="food" aria-label="Close food and beverage case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-food" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-food" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Make a sensory product feel vivid and desirable before someone could taste it themselves.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-food" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-food" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Use rich visual pacing, clearer product hierarchy, and well-timed offer moments.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-food" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-food" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A confident digital starting point ready to support a more considered launch.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-food" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(255, 240, 213), rgb(247, 188, 126));"><span data-template-id="detail-media-label-food" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="food"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-food" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-education" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-education" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-education" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-education" data-template-id="detail-title-education" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Learning made easier to explore</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="education" aria-label="Close education case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-education" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-education" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Organise a growing learning offer without losing the richness of its different pathways.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-education" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-education" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Create modular routes, useful course information, and clearer ways to choose a next step.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-education" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-education" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A learning platform concept that makes discovery feel more inviting and manageable.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-education" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(230, 247, 240), rgb(174, 229, 210));"><span data-template-id="detail-media-label-education" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="education"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-education" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-      <section id="case-detail-culture" class="detail-panel mt-8 p-6 md:p-9" aria-labelledby="detail-title-culture" tabindex="-1">
-       <div class="flex flex-wrap items-start justify-between gap-5">
-        <div>
-         <p data-template-id="detail-eyebrow-culture" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Case study</p>
-         <h2 id="detail-title-culture" data-template-id="detail-title-culture" class="canva-text display mt-3 text-4xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">A cultural platform with room to gather</h2>
-        </div><button type="button" class="case-close button-secondary !p-2.5" data-case="culture" aria-label="Close culture and nonprofit case study"><i data-lucide="x" width="18" aria-hidden="true"></i></button>
-       </div>
-       <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <div>
-         <h3 data-template-id="detail-challenge-label-culture" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Challenge</h3>
-         <p data-template-id="detail-challenge-culture" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Bring programs, people, events, and purpose together in one adaptable public-facing place.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-solution-label-culture" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Solution</h3>
-         <p data-template-id="detail-solution-culture" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Create an expressive identity and flexible event framework with structure beneath the energy.</p>
-        </div>
-        <div>
-         <h3 data-template-id="detail-result-label-culture" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 19px;">Result</h3>
-         <p data-template-id="detail-result-culture" class="canva-text detail-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A clearer public invitation to explore, participate, and return to the programme.</p>
-        </div>
-       </div>
-       <div data-template-id="detail-media-culture" class="canva-banner media-slot detail-media mt-8" style="background: linear-gradient(135deg, rgb(238, 231, 255), rgb(205, 187, 255));"><span data-template-id="detail-media-label-culture" class="canva-text media-label" style="background: rgb(17, 19, 24); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Optional project video or process footage · replace with media and descriptive alt text</span>
-       </div><button type="button" class="case-back button-secondary mt-7" data-case="culture"><i data-lucide="arrow-left" width="16" aria-hidden="true"></i><span data-template-id="detail-back-culture" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Back to work</span></button>
-      </section>
-     </div>
+     </section>
     </section>
    </main>
-   <footer class="border-t px-5 py-10" style="border-color:var(--line)">
-    <div class="content-width grid gap-8 md:grid-cols-[1.4fr_1fr_1fr_auto] md:items-end">
+   <footer class="border-t px-5 py-10" style="border-color: var(--line)">
+    <div class="content-width grid gap-10 md:grid-cols-[1.2fr_.7fr_1fr]">
      <div>
-      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"><span data-template-id="footer-brand-name" class="canva-text" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span></p>
-      <p data-template-id="footer-note" class="canva-text mt-3 max-w-xs text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Selected work, thoughtfully in progress.</p>
+      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"><span data-template-id="footer-brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span></p>
+      <p data-template-id="footer-note" class="canva-text body-copy mt-3 max-w-xs text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Thoughtful brand, web, and digital marketing systems for the next move.</p><a href="mailto:ianm49444@gmail.com?subject=Book%20a%20Call%20with%20ShiftStudio" data-template-id="footer-book-call" class="canva-link button-primary mt-5" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
      </div>
-     <div class="grid gap-2 text-sm">
-      <p data-template-id="footer-contact-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Contact</p><a data-template-id="footer-phone" class="canva-link nav-link" href="tel:0700843176" aria-label="Call ShiftStudio at 0700843176" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a data-template-id="footer-email" class="canva-link nav-link" href="mailto:ianm49444@gmail.com" aria-label="Email ShiftStudio at ianm49444@gmail.com" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a>
+     <nav aria-label="Footer navigation" class="grid content-start gap-3">
+      <p data-template-id="footer-nav-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Explore</p><a href="#" data-home-link="" data-template-id="footer-home" class="canva-link footer-link" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
+     </nav>
+     <div>
+      <p data-template-id="footer-contact-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Contact</p>
+      <div class="mt-4 grid gap-3"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a>
+      </div>
+      <div class="mt-5 flex gap-2"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-template-id="footer-instagram" class="canva-link social-link" aria-label="Open ShiftStudio Instagram in a new tab" style="color: rgb(17, 19, 24);"><i data-lucide="instagram" width="18" aria-hidden="true"></i></a> <a href="https://wa.me/254700843176" target="_blank" rel="noopener noreferrer" data-template-id="footer-whatsapp" class="canva-link social-link" aria-label="Message ShiftStudio on WhatsApp" style="color: rgb(17, 19, 24);"><i data-lucide="message-circle" width="18" aria-hidden="true"></i></a> <a href="https://x.com/" target="_blank" rel="noopener noreferrer" data-template-id="footer-x" class="canva-link social-link" aria-label="Open ShiftStudio on X in a new tab" style="color: rgb(17, 19, 24);"><i data-lucide="twitter" width="18" aria-hidden="true"></i></a>
+      </div>
      </div>
-     <div class="grid gap-2 text-sm">
-      <p data-template-id="footer-social-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Follow</p><a data-template-id="footer-instagram" class="canva-link nav-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="ShiftStudio on Instagram" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Instagram</a> <a data-template-id="footer-whatsapp" class="canva-link nav-link" href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" aria-label="Message ShiftStudio on WhatsApp" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp</a> <a data-template-id="footer-x" class="canva-link nav-link" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="ShiftStudio on X" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">X</a>
-     </div><a data-template-id="footer-book-call" class="canva-link button-primary whitespace-nowrap" href="mailto:ianm49444@gmail.com?subject=Book%20a%20Call" aria-label="Book a call with ShiftStudio" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
     </div>
-    <div class="content-width mt-8 flex flex-col justify-between gap-2 border-t pt-4 text-xs sm:flex-row" style="border-color:var(--line);color:var(--muted)">
+    <div class="content-width mt-10 flex flex-col justify-between gap-3 border-t pt-5 text-xs sm:flex-row" style="border-color: var(--line); color: var(--muted)">
      <p data-template-id="footer-copyright" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 ShiftStudio. All rights reserved.</p>
      <p data-template-id="footer-tagline" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Make the next move clearer.</p>
     </div>
@@ -689,24 +237,10 @@
   </div>
   <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
   <script>
-    // Stable mapping for owners maintaining case-study categories and editable template IDs.
-    const caseStudyData = [
-      { id: "wellness", categories: ["web", "branding"], titleTemplateId: "case-title-wellness", mediaTemplateId: "case-media-wellness" },
-      { id: "hospitality", categories: ["web", "strategy"], titleTemplateId: "case-title-hospitality", mediaTemplateId: "case-media-hospitality" },
-      { id: "saas", categories: ["web", "growth"], titleTemplateId: "case-title-saas", mediaTemplateId: "case-media-saas" },
-      { id: "fashion", categories: ["branding", "web"], titleTemplateId: "case-title-fashion", mediaTemplateId: "case-media-fashion" },
-      { id: "professional", categories: ["web", "strategy"], titleTemplateId: "case-title-professional", mediaTemplateId: "case-media-professional" },
-      { id: "food", categories: ["branding", "growth"], titleTemplateId: "case-title-food", mediaTemplateId: "case-media-food" },
-      { id: "education", categories: ["web", "strategy"], titleTemplateId: "case-title-education", mediaTemplateId: "case-media-education" },
-      { id: "culture", categories: ["branding", "strategy"], titleTemplateId: "case-title-culture", mediaTemplateId: "case-media-culture" }
-    ];
-
     const mobileMenu = document.getElementById("mobile-menu");
     const menuToggle = document.getElementById("menu-toggle");
     const themeToggle = document.getElementById("theme-toggle");
-    const mobileFilter = document.getElementById("mobile-filter");
-    const filterStatus = document.getElementById("filter-status");
-    let lastTrigger = null;
+    const mainContent = document.getElementById("main-content");
 
     function refreshIcons() {
       lucide.createIcons();
@@ -716,7 +250,37 @@
       mobileMenu.classList.remove("open");
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.innerHTML = '<i data-lucide="menu" width="19" aria-hidden="true"></i>';
+      refreshIcons();
     }
+
+    function goHome(moveFocus) {
+      if (window.location.hash) {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+      closeMenu();
+      window.scrollTo({ top: 0, behavior: "auto" });
+      if (moveFocus) mainContent.focus({ preventScroll: true });
+    }
+
+    document.querySelectorAll("[data-home-link]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        goHome(true);
+      });
+      link.addEventListener("keydown", (event) => {
+        if (event.key === " ") {
+          event.preventDefault();
+          link.click();
+        }
+      });
+    });
+
+    window.addEventListener("hashchange", () => {
+      if (window.location.hash) {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    });
 
     menuToggle.addEventListener("click", () => {
       const isOpen = mobileMenu.classList.toggle("open");
@@ -728,87 +292,19 @@
       refreshIcons();
     });
 
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener("click", closeMenu);
-    });
-
     themeToggle.addEventListener("click", () => {
-      const dark = document.body.classList.toggle("dark");
-      themeToggle.setAttribute("aria-pressed", String(dark));
-      themeToggle.setAttribute("aria-label", dark ? "Enable light mode" : "Enable dark mode");
-      themeToggle.innerHTML = dark
+      const isDark = document.body.classList.toggle("dark");
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeToggle.setAttribute("aria-label", isDark ? "Enable light mode" : "Enable dark mode");
+      themeToggle.innerHTML = isDark
         ? '<i data-lucide="sun" width="18" aria-hidden="true"></i>'
         : '<i data-lucide="moon" width="18" aria-hidden="true"></i>';
       refreshIcons();
     });
 
-    function applyFilter(filter) {
-      let visibleCount = 0;
-      document.querySelectorAll(".case-card").forEach(card => {
-        const show = filter === "all" || card.dataset.category.split(" ").includes(filter);
-        card.hidden = !show;
-        if (show) visibleCount += 1;
-      });
-
-      document.querySelectorAll(".filter-button").forEach(button => {
-        const selected = button.dataset.filter === filter;
-        button.classList.toggle("active", selected);
-        button.setAttribute("aria-pressed", String(selected));
-      });
-
-      mobileFilter.value = filter;
-      filterStatus.textContent = filter === "all"
-        ? `Showing all ${visibleCount} case studies.`
-        : `Showing ${visibleCount} ${filter} case studies.`;
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
     }
-
-    document.querySelectorAll(".filter-button").forEach(button => {
-      button.addEventListener("click", () => applyFilter(button.dataset.filter));
-    });
-
-    mobileFilter.addEventListener("change", event => applyFilter(event.target.value));
-
-    function openDetail(id, trigger) {
-      document.querySelectorAll(".detail-panel").forEach(panel => panel.classList.remove("open"));
-      const detail = document.getElementById(`case-detail-${id}`);
-      lastTrigger = trigger;
-      detail.classList.add("open");
-      requestAnimationFrame(() => {
-        detail.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
-        detail.focus({ preventScroll: true });
-      });
-    }
-
-    function closeDetail(id) {
-      const detail = document.getElementById(`case-detail-${id}`);
-      detail.classList.remove("open");
-      if (lastTrigger) {
-        lastTrigger.focus({ preventScroll: true });
-        lastTrigger = null;
-      }
-    }
-
-    document.querySelectorAll(".case-open").forEach(button => {
-      button.addEventListener("click", () => openDetail(button.dataset.case, button));
-    });
-
-    document.querySelectorAll(".case-close, .case-back").forEach(button => {
-      button.addEventListener("click", () => closeDetail(button.dataset.case));
-    });
-
-    document.addEventListener("keydown", event => {
-      if (event.key !== "Escape") return;
-      const openDetailPanel = document.querySelector(".detail-panel.open");
-      if (openDetailPanel) {
-        closeDetail(openDetailPanel.id.replace("case-detail-", ""));
-        return;
-      }
-      if (mobileMenu.classList.contains("open")) {
-        closeMenu();
-        menuToggle.focus();
-      }
-    });
-
     refreshIcons();
   </script>
  
