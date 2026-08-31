@@ -1,381 +1,158 @@
 <!doctype html>
-<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-05-891237f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ShiftStudio services for web design, brand identity, and digital growth.">
-  <title>ShiftStudio — Services</title>
+  <meta name="description" content="ShiftStudio connects strategy, design, and digital growth.">
+  <title>ShiftStudio – Services</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
   <style>
-    :root {
-      --ink: #101217;
-      --paper: #f7f7f4;
-      --surface: #ffffff;
-      --muted: #626978;
-      --line: #dce0e8;
-      --blue: #135cff;
-      --blue-deep: #093bb2;
-      --soft: #eaf0ff;
-      --grid: rgba(26, 55, 110, .075);
-    }
-    body.dark {
-      --ink: #f5f7ff;
-      --paper: #0c1018;
-      --surface: #151b26;
-      --muted: #afb7c6;
-      --line: #2b3546;
-      --blue: #82adff;
-      --blue-deep: #b4cbff;
-      --soft: #13254f;
-      --grid: rgba(166, 191, 246, .09);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "DM Sans", sans-serif;
-      transition: background .2s ease, color .2s ease;
-    }
-    a, button { outline-offset: 4px; }
-    a:focus-visible, button:focus-visible { outline: 3px solid var(--blue); }
-    .site-shell { width: 100%; min-height: calc(100 * min(var(--vh, 1vh), 1vh)); overflow: hidden; }
-    .content-width { width: 100%; max-width: 1180px; margin: 0 auto; }
-    .skip-link {
-      position: absolute; top: -5rem; left: 1rem; z-index: 100;
-      padding: .75rem 1rem; border-radius: .55rem; background: var(--blue);
-      color: #fff; font-weight: 700; text-decoration: none;
-    }
-    .skip-link:focus { top: 1rem; }
-    .site-header {
-      position: sticky; top: 0; z-index: 30; border-bottom: 1px solid var(--line);
-      background: color-mix(in srgb, var(--paper) 93%, transparent); backdrop-filter: blur(14px);
-    }
-    .wordmark {
-      color: var(--blue); font-size: 1.35rem; font-weight: 700;
-      letter-spacing: -.09em; text-decoration: none;
-    }
-    .nav-link, .footer-link {
-      color: var(--muted); font-size: .81rem; font-weight: 700;
-      text-decoration: none; transition: color .18s ease;
-    }
-    .nav-link { position: relative; padding: .5rem .1rem; }
-    .nav-link:hover, .nav-link.active, .footer-link:hover, .footer-link.active { color: var(--blue); }
-    .nav-link.active::after {
-      position: absolute; right: 0; bottom: -.82rem; left: 0; height: 2px;
-      background: var(--blue); content: "";
-    }
-    .mobile-menu { display: none; border-top: 1px solid var(--line); }
-    .mobile-menu.open { display: block; }
-    .mobile-link { display: block; padding: .8rem; border-radius: .65rem; }
-    .mobile-link.active { background: var(--soft); }
-    .icon-button, .button-primary, .button-secondary {
-      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
-      border-radius: .72rem; font-weight: 700; text-decoration: none;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-    }
-    .icon-button {
-      width: 2.65rem; height: 2.65rem; border: 1px solid var(--line);
-      background: var(--surface); color: var(--ink); cursor: pointer;
-    }
-    .button-primary, .button-secondary { padding: .82rem 1rem; border: 1px solid; }
-    .button-primary { border-color: var(--blue); background: var(--blue); color: #fff; }
-    .button-secondary { border-color: var(--line); background: var(--surface); color: var(--ink); }
-    .button-primary:hover, .button-secondary:hover, .icon-button:hover {
-      transform: translateY(-2px); border-color: var(--blue);
-    }
-    .button-primary:hover { background: var(--blue-deep); }
-    .eyebrow {
-      color: var(--blue); font-family: "Space Mono", monospace; font-size: .65rem;
-      font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-    }
-    .display {
-      max-width: 820px; font-size: clamp(3rem, 7vw, 6.25rem); font-weight: 700;
-      letter-spacing: -.085em; line-height: .91;
-    }
-    .body-copy { color: var(--muted); line-height: 1.72; }
-    .grid-hero {
-      position: relative; overflow: hidden;
-      background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 27px 27px;
-    }
-    .grid-hero::before {
-      position: absolute; top: -5.75rem; right: -3.5rem; width: 15rem; height: 15rem;
-      border: 1px solid var(--blue); border-radius: 50%; content: ""; opacity: .55;
-    }
-    .grid-hero::after {
-      position: absolute; right: 13%; bottom: -2rem; width: 5.1rem; height: 5.1rem;
-      border: 1px solid var(--blue); content: ""; opacity: .55; transform: rotate(28deg);
-    }
-    .section-pad { padding: 4.7rem 1.5rem; }
-    .service-card {
-      position: relative; display: flex; min-height: 16rem; flex-direction: column;
-      padding: 1.45rem; border: 1px solid var(--line); border-radius: 1rem;
-      background: var(--surface); overflow: hidden;
-      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
-    }
-    .service-card::after {
-      position: absolute; right: -1.3rem; bottom: -1.3rem; width: 4.7rem; height: 4.7rem;
-      border: 1px solid var(--line); border-radius: 50%; content: "";
-      transition: border-color .2s ease, transform .2s ease;
-    }
-    .service-card:hover { transform: translateY(-4px); border-color: var(--blue); box-shadow: 0 14px 34px rgba(15, 25, 49, .08); }
-    .service-card:hover::after { border-color: var(--blue); transform: scale(1.18); }
-    .service-number {
-      color: var(--blue); font-family: "Space Mono", monospace; font-size: .68rem;
-      font-weight: 700; letter-spacing: .08em;
-    }
-    .service-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -.055em; line-height: 1; }
-    .process-section { background: var(--ink); color: var(--paper); }
-    .process-copy { color: color-mix(in srgb, var(--paper) 72%, transparent); line-height: 1.7; }
-    .process-item { border-top: 1px solid color-mix(in srgb, var(--paper) 22%, transparent); padding: 1.45rem 0; }
-    .process-item:last-child { border-bottom: 1px solid color-mix(in srgb, var(--paper) 22%, transparent); }
-    .process-index { color: var(--blue); font-family: "Space Mono", monospace; font-size: .68rem; font-weight: 700; }
-    .process-title { font-size: clamp(1.7rem, 3vw, 2.55rem); font-weight: 700; letter-spacing: -.065em; line-height: 1; }
-    .cta-band {
-      border: 1px solid var(--line); border-radius: 1rem; background: var(--soft);
-      position: relative; overflow: hidden;
-    }
-    .cta-band::after {
-      position: absolute; top: -3.5rem; right: 6%; width: 9rem; height: 9rem;
-      border: 1px solid var(--blue); border-radius: 50%; content: ""; opacity: .55;
-    }
-    .footer { border-top: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 62%, transparent); }
-    .social-placeholder {
-      display: inline-flex; width: 2.55rem; height: 2.55rem; align-items: center; justify-content: center;
-      border: 1px solid var(--line); border-radius: .72rem; background: var(--surface); color: var(--muted);
-    }
-    .reveal { animation: rise .55s both; }
-    .reveal-delay { animation: rise .55s .12s both; }
-    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
-    @media (min-width: 768px) {
-      .section-pad { padding: 6.5rem 2.5rem; }
-      .grid-hero { padding: 7.5rem 2.5rem !important; }
-      .service-card { min-height: 17.5rem; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important;
-      }
-    }
+    :root{--ink:#101217;--paper:#f7f7f4;--surface:#fff;--muted:#626978;--line:#dce0e8;--blue:#135cff;--blue-deep:#093bb2;--soft:#eaf0ff;--grid:rgba(26,55,110,.075);--success:#18794e;--error:#b42318}
+    body.dark{--ink:#f5f7ff;--paper:#0c1018;--surface:#151b26;--muted:#afb7c6;--line:#2b3546;--blue:#82adff;--blue-deep:#b4cbff;--soft:#13254f;--grid:rgba(166,191,246,.09);--success:#76d6a5;--error:#ff9c96}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;transition:background .2s ease,color .2s ease}
+    .site-shell{width:100%;min-height:100vh;overflow:hidden}.content-width{width:100%;max-width:1180px;margin:auto}.skip-link{position:absolute;top:-5rem;left:1rem;z-index:100;padding:.75rem 1rem;border-radius:.55rem;background:var(--blue);color:#fff;font-weight:700;text-decoration:none}.skip-link:focus{top:1rem}
+    a,button,input,textarea,select{outline-offset:4px}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--blue)}
+    .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:blur(14px)}.wordmark{color:var(--blue);font-size:1.35rem;font-weight:700;letter-spacing:-.09em;text-decoration:none}
+    .nav-link,.footer-link{color:var(--muted);font-size:.81rem;font-weight:700;text-decoration:none;transition:color .18s ease}.nav-link{position:relative;padding:.5rem .1rem}.nav-link:hover,.nav-link.active,.footer-link:hover,.footer-link.active{color:var(--blue)}.nav-link.active:after{position:absolute;right:0;bottom:-.82rem;left:0;height:2px;background:var(--blue);content:""}
+    .mobile-menu{display:none;border-top:1px solid var(--line)}.mobile-menu.open{display:block}.mobile-link{display:block;padding:.8rem;border-radius:.65rem}.mobile-link.active{background:var(--soft)}
+    .icon-button,.button-primary,.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:.72rem;font-weight:700;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}.icon-button{width:2.65rem;height:2.65rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.button-primary,.button-secondary{padding:.88rem 1.05rem;border:1px solid;cursor:pointer}.button-primary{border-color:var(--blue);background:var(--blue);color:#fff}.button-secondary{border:1px solid var(--line);background:var(--surface);color:var(--ink)}.button-primary:hover{background:var(--blue-deep);transform:translateY(-2px)}.button-secondary:hover,.icon-button:hover{border-color:var(--blue);transform:translateY(-2px)}
+    .eyebrow{color:var(--blue);font-family:"Space Mono",monospace;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.display{max-width:880px;font-size:clamp(3.2rem,8vw,7rem);font-weight:700;letter-spacing:-.09em;line-height:.88}.section-heading{font-size:clamp(2.15rem,4vw,4.2rem);font-weight:700;letter-spacing:-.075em;line-height:.94}.card-title{font-size:1.35rem;font-weight:700;letter-spacing:-.055em}.body-copy{color:var(--muted);line-height:1.72}.section-pad{padding:4.7rem 1.5rem}.grid-hero{position:relative;overflow:hidden;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:27px 27px}.grid-hero:before{position:absolute;top:-6rem;right:-2.5rem;width:16rem;height:16rem;border:1px solid var(--blue);border-radius:50%;content:"";opacity:.55}.grid-hero:after{position:absolute;right:14%;bottom:-2.2rem;width:5.5rem;height:5.5rem;border:1px solid var(--blue);content:"";opacity:.55;transform:rotate(28deg)}.hero-rule{width:5rem;height:2px;background:var(--blue)}
+    .card{border:1px solid var(--line);border-radius:1rem;background:var(--surface);padding:1.45rem;transition:transform .2s ease,border-color .2s ease}.card:hover{border-color:var(--blue);transform:translateY(-4px)}
+    .route-view{display:block}.process-number{color:var(--blue);font-family:"Space Mono",monospace;font-size:.72rem;font-weight:700}
+    .footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 62%,transparent)}
+    .reveal{animation:rise .55s both}.reveal-delay{animation:rise .55s .12s both}@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(min-width:768px){.section-pad{padding:6.5rem 2.5rem}.grid-hero{padding:7.5rem 2.5rem!important}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
-  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
-  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
- </head>
- <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a href="#main-content" class="skip-link">Skip to main content</a>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
-   <header class="site-header">
-    <div class="content-width flex items-center justify-between gap-4 px-5 py-4"><a href="#/services" class="wordmark" aria-label="ShiftStudio Services homepage"> <span data-template-id="brand-name" class="canva-text" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span> </a>
-     <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-work" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
-     </nav>
-     <div class="flex items-center gap-2"><a href="#/contact" data-template-id="header-cta" class="canva-button button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a> <button id="theme-toggle" type="button" class="icon-button" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" height="18"></i> </button> <button id="menu-toggle" type="button" class="icon-button md:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"> <i data-lucide="menu" width="19" height="19"></i> </button>
-     </div>
-    </div>
-    <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
-     <div class="grid gap-1 pt-3"><a href="#/" data-route="/" data-template-id="mobile-work" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a> <a href="#/contact" data-template-id="mobile-cta" class="canva-button button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-     </div>
-    </nav>
-   </header>
-   <main id="main-content" tabindex="-1">
-    <section class="grid-hero section-pad" aria-labelledby="services-title">
-     <div class="content-width relative z-10">
-      <p data-template-id="services-eyebrow" class="canva-text eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">WHAT I DO</p>
-      <h1 id="services-title" data-template-id="services-title" class="canva-text display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Useful by design.</h1>
-      <p data-template-id="services-copy" class="canva-text body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">ShiftStudio connects strategy, design, and digital growth into clear systems that move organisations forward.</p><a href="#/contact" data-template-id="services-cta" class="canva-button button-primary mt-8 reveal-delay" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-     </div>
-    </section>
-    <section class="section-pad" aria-labelledby="service-list-title">
-     <div class="content-width">
-      <div class="mb-10 max-w-xl">
-       <p data-template-id="service-list-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">CAPABILITIES</p>
-       <h2 id="service-list-title" data-template-id="service-list-title" class="canva-text mt-3 text-3xl font-bold tracking-tight" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">The right pieces, working together.</h2>
-      </div>
-      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-       <article data-template-id="service-card-1" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-1" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">01</p>
-        <p data-template-id="service-detail-1" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">DIGITAL FOUNDATION</p>
-        <h3 data-template-id="service-title-1" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Web Design &amp; Development</h3>
-        <p data-template-id="service-copy-1" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Purposeful websites that make your offer clear, easy to navigate, and ready to grow with your organisation.</p>
-       </article>
-       <article data-template-id="service-card-2" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-2" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">02</p>
-        <p data-template-id="service-detail-2" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">PRODUCT EXPERIENCE</p>
-        <h3 data-template-id="service-title-2" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">UI/UX Design</h3>
-        <p data-template-id="service-copy-2" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Interfaces and journeys shaped around real user needs, clear decisions, and intuitive momentum.</p>
-       </article>
-       <article data-template-id="service-card-3" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-3" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">03</p>
-        <p data-template-id="service-detail-3" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">BRAND SYSTEM</p>
-        <h3 data-template-id="service-title-3" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Brand Identity</h3>
-        <p data-template-id="service-copy-3" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Distinctive identity systems that give your organisation a confident, consistent way to show up.</p>
-       </article>
-       <article data-template-id="service-card-4" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-4" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">04</p>
-        <p data-template-id="service-detail-4" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">SEARCH VISIBILITY</p>
-        <h3 data-template-id="service-title-4" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">SEO &amp; Organic Growth</h3>
-        <p data-template-id="service-copy-4" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Content, technical foundations, and search intent brought into one practical plan for earned visibility.</p>
-       </article>
-       <article data-template-id="service-card-5" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-5" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">05</p>
-        <p data-template-id="service-detail-5" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">PAID ACQUISITION</p>
-        <h3 data-template-id="service-title-5" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Performance Marketing</h3>
-        <p data-template-id="service-copy-5" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Focused campaign systems that connect your message, audience, landing experience, and next action.</p>
-       </article>
-       <article data-template-id="service-card-6" class="canva-card service-card" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-6" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">06</p>
-        <p data-template-id="service-detail-6" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">JOURNEY IMPROVEMENT</p>
-        <h3 data-template-id="service-title-6" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Conversion Optimization</h3>
-        <p data-template-id="service-copy-6" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Sharper calls to action, clearer pathways, and useful refinements that help more visitors move forward.</p>
-       </article>
-       <article data-template-id="service-card-7" class="canva-card service-card md:col-span-2 xl:col-span-3" style="background: rgb(255, 255, 255);">
-        <p data-template-id="service-number-7" class="canva-text service-number" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">07</p>
-        <div class="grid gap-4 md:grid-cols-2 md:items-end">
-         <div>
-          <p data-template-id="service-detail-7" class="canva-text eyebrow mt-8" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">PARTNERSHIP</p>
-          <h3 data-template-id="service-title-7" class="canva-text service-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Ongoing Strategy</h3>
-         </div>
-         <p data-template-id="service-copy-7" class="canva-text body-copy md:max-w-xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A collaborative rhythm for prioritising what matters, connecting the work, and keeping your digital presence moving in the right direction.</p>
+    <!-- HEADER (links to separate files) -->
+    <header class="site-header">
+      <div class="content-width flex items-center justify-between gap-4 px-5 py-4">
+        <a href="index.html" class="wordmark" aria-label="ShiftStudio home"><span style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span></a>
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="lab.html" class="nav-link">Lab</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="contact.html" class="button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Enable dark mode" aria-pressed="false"><i data-lucide="moon" width="18" height="18"></i></button>
+          <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" width="19" height="19"></i></button>
         </div>
-       </article>
       </div>
-     </div>
-    </section>
-    <section class="process-section section-pad" aria-labelledby="process-title">
-     <div class="content-width grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
-      <div>
-       <p data-template-id="process-eyebrow" class="canva-text eyebrow" style="color: rgb(130, 173, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">HOW IT WORKS</p>
-       <h2 id="process-title" data-template-id="process-title" class="canva-text mt-4 text-4xl font-bold tracking-tight" style="color: rgb(247, 247, 244); font-weight: 700; font-style: normal; font-size: 24px;">Clear thinking, then clear action.</h2>
-       <p data-template-id="process-copy" class="canva-text process-copy mt-5 max-w-md" style="color: rgb(212, 219, 232); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">Every engagement is shaped to meet the work where it is, while keeping the bigger picture in view.</p>
-      </div>
-      <div>
-       <article class="process-item grid gap-3 sm:grid-cols-[4rem_1fr]">
-        <p data-template-id="process-index-1" class="canva-text process-index" style="color: rgb(130, 173, 255); font-weight: 700; font-style: normal; font-size: 16px;">01</p>
-        <div>
-         <h3 data-template-id="process-stage-1" class="canva-text process-title" style="color: rgb(247, 247, 244); font-weight: 700; font-style: normal; font-size: 19px;">Discover</h3>
-         <p data-template-id="process-description-1" class="canva-text process-copy mt-3" style="color: rgb(212, 219, 232); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">We get close to the challenge, audience, offer, and opportunities worth focusing on.</p>
+      <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
+        <div class="grid gap-1 pt-3">
+          <a href="work.html" class="nav-link mobile-link">Work</a>
+          <a href="services.html" class="nav-link mobile-link active">Services</a>
+          <a href="about.html" class="nav-link mobile-link">About</a>
+          <a href="lab.html" class="nav-link mobile-link">Lab</a>
+          <a href="blog.html" class="nav-link mobile-link">Blog</a>
+          <a href="contact.html" class="nav-link mobile-link">Contact</a>
+          <a href="contact.html" class="button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
         </div>
-       </article>
-       <article class="process-item grid gap-3 sm:grid-cols-[4rem_1fr]">
-        <p data-template-id="process-index-2" class="canva-text process-index" style="color: rgb(130, 173, 255); font-weight: 700; font-style: normal; font-size: 16px;">02</p>
-        <div>
-         <h3 data-template-id="process-stage-2" class="canva-text process-title" style="color: rgb(247, 247, 244); font-weight: 700; font-style: normal; font-size: 19px;">Design</h3>
-         <p data-template-id="process-description-2" class="canva-text process-copy mt-3" style="color: rgb(212, 219, 232); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">We turn the strategy into a focused system of messages, moments, and visual decisions.</p>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <!-- SERVICES CONTENT -->
+      <section id="services-view" aria-labelledby="services-title">
+        <div class="grid-hero section-pad">
+          <div class="content-width relative z-10">
+            <p class="eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WHAT I DO</p>
+            <h1 id="services-title" class="display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Useful by design.</h1>
+            <p class="body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio connects strategy, design, and digital growth into clear systems that move organisations forward.</p>
+          </div>
         </div>
-       </article>
-       <article class="process-item grid gap-3 sm:grid-cols-[4rem_1fr]">
-        <p data-template-id="process-index-3" class="canva-text process-index" style="color: rgb(130, 173, 255); font-weight: 700; font-style: normal; font-size: 16px;">03</p>
-        <div>
-         <h3 data-template-id="process-stage-3" class="canva-text process-title" style="color: rgb(247, 247, 244); font-weight: 700; font-style: normal; font-size: 19px;">Launch</h3>
-         <p data-template-id="process-description-3" class="canva-text process-copy mt-3" style="color: rgb(212, 219, 232); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">We bring the work into the world with care, testing the essentials before the next move.</p>
+        <div class="section-pad">
+          <div class="content-width">
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Web Design &amp; Development</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Clear, responsive websites shaped around useful content and confident action.</p></article>
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">UI/UX Design</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Interfaces that make information easier to understand and use.</p></article>
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Brand Identity</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A visual and verbal foundation designed for recognition and consistency.</p></article>
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">SEO &amp; Organic Growth</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Search-friendly structure and content priorities that support discoverability.</p></article>
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Performance Marketing</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Focused digital campaigns aligned to a clear offer and audience.</p></article>
+              <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Conversion Optimization</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Practical improvements that reduce friction in important journeys.</p></article>
+              <article class="card md:col-span-2 lg:col-span-3"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Ongoing Strategy</h2><p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A considered rhythm for reviewing priorities, learning, and making the next useful shift.</p></article>
+            </div>
+          </div>
         </div>
-       </article>
-       <article class="process-item grid gap-3 sm:grid-cols-[4rem_1fr]">
-        <p data-template-id="process-index-4" class="canva-text process-index" style="color: rgb(130, 173, 255); font-weight: 700; font-style: normal; font-size: 16px;">04</p>
-        <div>
-         <h3 data-template-id="process-stage-4" class="canva-text process-title" style="color: rgb(247, 247, 244); font-weight: 700; font-style: normal; font-size: 19px;">Grow</h3>
-         <p data-template-id="process-description-4" class="canva-text process-copy mt-3" style="color: rgb(212, 219, 232); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">We learn from what is live and keep improving the system in practical, meaningful ways.</p>
+        <div class="section-pad pt-0">
+          <div class="content-width">
+            <p class="eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">HOW IT MOVES</p>
+            <h2 class="section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A simple working rhythm.</h2>
+            <div class="mt-9 grid gap-5 md:grid-cols-4">
+              <article class="card"><span class="process-number">01</span><h3 class="card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Discover</h3></article>
+              <article class="card"><span class="process-number">02</span><h3 class="card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Design</h3></article>
+              <article class="card"><span class="process-number">03</span><h3 class="card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Launch</h3></article>
+              <article class="card"><span class="process-number">04</span><h3 class="card-title mt-5" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Grow</h3></article>
+            </div>
+          </div>
         </div>
-       </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer px-5 py-10">
+      <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
+        <section>
+          <p class="wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
+          <p class="body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Thoughtful strategy, web design, and digital growth for the next move.</p>
+        </section>
+        <nav class="grid content-start gap-3" aria-label="Footer navigation">
+          <a href="work.html" class="footer-link">Work</a>
+          <a href="services.html" class="footer-link active">Services</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="lab.html" class="footer-link">Lab</a>
+          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </nav>
+        <address class="not-italic">
+          <a href="tel:0700843176" class="footer-link block">0700843176</a>
+          <a href="mailto:ianm49444@gmail.com" class="footer-link mt-3 block">ianm49444@gmail.com</a>
+          <a href="https://wa.me/0700843176" target="_blank" rel="noopener noreferrer" class="footer-link mt-3 block">WhatsApp</a>
+          <p class="body-copy mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Instagram and X links are placeholders to replace.</p>
+        </address>
       </div>
-     </div>
-    </section>
-    <section class="section-pad" aria-labelledby="closing-title">
-     <div data-template-id="closing-banner" class="canva-banner cta-band content-width px-6 py-10 md:px-12 md:py-14" style="background: rgb(234, 240, 255);">
-      <div class="relative z-10 max-w-2xl">
-       <p data-template-id="closing-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">NEXT MOVE</p>
-       <h2 id="closing-title" data-template-id="closing-title" class="canva-text mt-4 text-4xl font-bold tracking-tight md:text-5xl" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Make the useful move.</h2>
-       <p data-template-id="closing-copy" class="canva-text body-copy mt-5 max-w-xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">If you have a digital challenge that needs clarity, we can start with a straightforward conversation.</p><a href="#/contact" data-template-id="closing-cta" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-      </div>
-     </div>
-    </section>
-   </main>
-   <footer class="footer px-5 py-10">
-    <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
-     <section>
-      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
-      <p data-template-id="footer-tagline" class="canva-text body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Thoughtful brand, web, and digital marketing systems for the next move.</p>
-      <p data-template-id="footer-copyright" class="canva-text mt-7 text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 ShiftStudio. All rights reserved.</p>
-     </section>
-     <nav class="grid content-start gap-3" aria-label="Footer navigation"><a href="#/" data-route="/" data-template-id="footer-work" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a> <a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
-     </nav>
-     <section>
-      <address class="not-italic"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a></address>
-      <div class="mt-6 flex gap-2" aria-label="Social contact placeholders"><span data-template-id="social-instagram" class="canva-button social-placeholder" role="img" aria-label="Instagram placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="instagram" width="17" height="17"></i></span> <span data-template-id="social-whatsapp" class="canva-button social-placeholder" role="img" aria-label="WhatsApp placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="message-circle" width="17" height="17"></i></span> <span data-template-id="social-x" class="canva-button social-placeholder" role="img" aria-label="X placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="twitter" width="17" height="17"></i></span>
-      </div>
-     </section>
-    </div>
-   </footer>
+    </footer>
   </div>
-  <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
+
   <script>
-    const supportedRoute = "/services";
-    const menu = document.getElementById("mobile-menu");
-    const menuButton = document.getElementById("menu-toggle");
-    const themeToggle = document.getElementById("theme-toggle");
-    const mainContent = document.getElementById("main-content");
-
-    // Hash routing is intentional for GitHub Pages compatibility on this standalone Services page.
-    function normalizeRoute() {
-      const route = window.location.hash ? window.location.hash.slice(1) : "";
-      if (route !== supportedRoute) {
-        window.location.hash = supportedRoute;
-        return false;
-      }
-      return true;
-    }
-
-    function updateNavigation() {
-      document.querySelectorAll("[data-route]").forEach((link) => {
-        const active = link.dataset.route === supportedRoute;
-        link.classList.toggle("active", active);
-        if (active) link.setAttribute("aria-current", "page");
-        else link.removeAttribute("aria-current");
-      });
-    }
-
-    function closeMenu() {
-      menu.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Open navigation menu");
-    }
-
-    function renderRoute(focusMain) {
-      if (!normalizeRoute()) return;
-      updateNavigation();
-      closeMenu();
-      window.scrollTo({ top: 0, behavior: "auto" });
-      if (focusMain) mainContent.focus({ preventScroll: true });
-    }
-
-    menuButton.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-    });
-
-    themeToggle.addEventListener("click", () => {
-      const isDark = document.body.classList.toggle("dark");
-      themeToggle.setAttribute("aria-pressed", String(isDark));
-      themeToggle.setAttribute("aria-label", isDark ? "Enable light mode" : "Enable dark mode");
-      themeToggle.innerHTML = isDark
-        ? '<i data-lucide="sun" width="18" height="18"></i>'
-        : '<i data-lucide="moon" width="18" height="18"></i>';
+    // Dark mode
+    const theme = document.getElementById("theme-toggle");
+    theme.addEventListener("click", () => {
+      const dark = document.body.classList.toggle("dark");
+      theme.setAttribute("aria-pressed", String(dark));
+      theme.setAttribute("aria-label", dark ? "Enable light mode" : "Enable dark mode");
+      theme.innerHTML = dark ? '<i data-lucide="sun" width="18" height="18"></i>' : '<i data-lucide="moon" width="18" height="18"></i>';
       lucide.createIcons();
     });
 
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && menu.classList.contains("open")) {
-        closeMenu();
-        menuButton.focus();
-      }
+    // Mobile menu toggle
+    const menu = document.getElementById("mobile-menu");
+    const menuButton = document.getElementById("menu-toggle");
+    menuButton.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     });
 
-    window.addEventListener("hashchange", () => renderRoute(true));
+    // Close mobile menu on link click (optional)
+    document.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
 
+    // Lucide icons
     lucide.createIcons();
-    renderRoute(false);
   </script>
- 
-</body></html>
+</body>
+</html>
