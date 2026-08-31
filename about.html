@@ -27,12 +27,11 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
-    <!-- HEADER -->
     <header class="site-header">
       <div class="content-width flex items-center justify-between gap-4 px-5 py-4">
         <a href="index.html" class="wordmark" aria-label="ShiftStudio home"><span style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span></a>
         <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation">
-          <a href="work.html" class="nav-link">Work</a>
+          <a href="index.html" class="nav-link">Work</a>
           <a href="services.html" class="nav-link">Services</a>
           <a href="about.html" class="nav-link active">About</a>
           <a href="lab.html" class="nav-link">Lab</a>
@@ -47,7 +46,7 @@
       </div>
       <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
         <div class="grid gap-1 pt-3">
-          <a href="work.html" class="nav-link mobile-link">Work</a>
+          <a href="index.html" class="nav-link mobile-link">Work</a>
           <a href="services.html" class="nav-link mobile-link">Services</a>
           <a href="about.html" class="nav-link mobile-link active">About</a>
           <a href="lab.html" class="nav-link mobile-link">Lab</a>
@@ -59,7 +58,6 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <!-- ABOUT CONTENT -->
       <section id="about-view" aria-labelledby="about-title">
         <div class="grid-hero section-pad">
           <div class="content-width relative z-10">
@@ -68,7 +66,6 @@
             <p class="body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px;">ShiftStudio brings strategy, design, and digital growth together to help organisations communicate clearly and move with confidence.</p>
           </div>
         </div>
-
         <div class="section-pad">
           <div class="content-width grid gap-8 lg:grid-cols-2">
             <div>
@@ -79,7 +76,6 @@
             <div class="media-placeholder large"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with founder photo</span></div>
           </div>
         </div>
-
         <div class="section-pad pt-0">
           <div class="content-width">
             <p class="eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">VALUES</p>
@@ -89,7 +85,6 @@
               <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Momentum</h2></article>
               <article class="card"><h2 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Partnership</h2></article>
             </div>
-
             <h2 class="section-heading mt-14" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">An approach that connects the dots.</h2>
             <div class="mt-8 grid gap-5 md:grid-cols-3">
               <article class="card"><h3 class="card-title" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Strategy</h3></article>
@@ -101,7 +96,6 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer px-5 py-10">
       <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
         <section>
@@ -109,7 +103,7 @@
           <p class="body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Thoughtful strategy, web design, and digital growth for the next move.</p>
         </section>
         <nav class="grid content-start gap-3" aria-label="Footer navigation">
-          <a href="work.html" class="footer-link">Work</a>
+          <a href="index.html" class="footer-link">Work</a>
           <a href="services.html" class="footer-link">Services</a>
           <a href="about.html" class="footer-link active">About</a>
           <a href="lab.html" class="footer-link">Lab</a>
@@ -127,7 +121,8 @@
   </div>
 
   <script>
-    // Dark mode
+    function setVH(){document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px')}
+    setVH(); window.addEventListener('resize', setVH);
     const theme = document.getElementById("theme-toggle");
     theme.addEventListener("click", () => {
       const dark = document.body.classList.toggle("dark");
@@ -136,8 +131,6 @@
       theme.innerHTML = dark ? '<i data-lucide="sun" width="18" height="18"></i>' : '<i data-lucide="moon" width="18" height="18"></i>';
       lucide.createIcons();
     });
-
-    // Mobile menu toggle
     const menu = document.getElementById("mobile-menu");
     const menuButton = document.getElementById("menu-toggle");
     menuButton.addEventListener("click", () => {
@@ -145,8 +138,6 @@
       menuButton.setAttribute("aria-expanded", String(open));
       menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     });
-
-    // Close mobile menu on link click
     document.querySelectorAll(".mobile-link").forEach(link => {
       link.addEventListener("click", () => {
         menu.classList.remove("open");
@@ -154,7 +145,6 @@
         menuButton.setAttribute("aria-label", "Open navigation menu");
       });
     });
-
     lucide.createIcons();
   </script>
 </body>
