@@ -2,128 +2,355 @@
 <html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-05-891237f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ShiftStudio portfolio — thoughtful web design and digital marketing systems.">
-  <title>ShiftStudio</title>
+  <meta name="description" content="ShiftStudio selected work: website, brand, and digital marketing projects.">
+  <title>ShiftStudio — Selected Work</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #111318;
+      --ink: #101217;
       --paper: #f7f7f4;
       --surface: #ffffff;
       --muted: #626978;
       --line: #dce0e8;
       --blue: #135cff;
-      --blue-dark: #0a3db0;
+      --blue-deep: #093bb2;
       --soft-blue: #eaf0ff;
-      --radius: 1.25rem;
-      --shadow: 0 18px 50px rgba(18,29,61,.10);
+      --grid: rgba(26, 55, 110, .075);
+      --radius: 1.15rem;
     }
+
     body.dark {
-      --ink: #f4f7ff;
+      --ink: #f5f7ff;
       --paper: #0c1018;
       --surface: #151b26;
-      --muted: #adb5c4;
-      --line: #2a3446;
-      --blue: #70a0ff;
-      --blue-dark: #a8c2ff;
+      --muted: #afb7c6;
+      --line: #2b3546;
+      --blue: #82adff;
+      --blue-deep: #b4cbff;
       --soft-blue: #13254f;
-      --shadow: 0 20px 55px rgba(0,0,0,.30);
+      --grid: rgba(166, 191, 246, .09);
     }
+
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
       font-family: "DM Sans", sans-serif;
-      transition: background .25s ease, color .25s ease;
+      transition: background .22s ease, color .22s ease;
     }
+
     button, a { outline-offset: 4px; }
-    button:focus-visible, a:focus-visible { outline: 3px solid var(--blue); }
-    .site-shell { width: 100%; min-height: calc(100 * min(var(--vh, 1vh), 1vh)); overflow: hidden; }
-    .content-width { width: 100%; max-width: 1180px; margin: 0 auto; }
-    .skip-link {
-      position: absolute; top: -5rem; left: 1rem; z-index: 100; padding: .75rem 1rem;
-      border-radius: .7rem; background: var(--blue); color: #fff; font-weight: 700; text-decoration: none;
+
+    button:focus-visible, a:focus-visible {
+      outline: 3px solid var(--blue);
     }
+
+    .site-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      overflow: hidden;
+    }
+
+    .content-width {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      z-index: 100;
+      padding: .7rem 1rem;
+      border-radius: .6rem;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
     .skip-link:focus { top: 1rem; }
+
     .site-header {
-      border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 91%, transparent);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 92%, transparent);
       backdrop-filter: blur(16px);
     }
-    .wordmark { color: var(--ink); font-size: 1.5rem; font-weight: 700; letter-spacing: -.08em; text-decoration: none; }
+
+    .wordmark {
+      color: var(--ink);
+      font-size: 1.42rem;
+      font-weight: 700;
+      letter-spacing: -.085em;
+      text-decoration: none;
+    }
+
     .wordmark-mark { color: var(--blue); }
-    .nav-link {
-      position: relative; color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none;
+
+    .nav-link, .footer-link {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+      text-decoration: none;
       transition: color .2s ease;
     }
-    .nav-link:hover, .nav-link.active { color: var(--blue); }
+
+    .nav-link {
+      position: relative;
+      padding: .45rem .1rem;
+    }
+
+    .nav-link:hover, .nav-link.active, .footer-link:hover { color: var(--blue); }
+
     .nav-link.active::after {
-      position: absolute; right: 0; bottom: -.52rem; left: 0; height: 2px; border-radius: 999px;
-      background: var(--blue); content: "";
+      position: absolute;
+      right: 0;
+      bottom: -.68rem;
+      left: 0;
+      height: 2px;
+      background: var(--blue);
+      content: "";
     }
-    .mobile-nav-link { border-radius: .75rem; padding: .8rem .9rem; }
-    .mobile-nav-link.active { background: var(--soft-blue); }
-    .mobile-nav-link.active::after { display: none; }
-    .button-primary, .button-secondary {
-      display: inline-flex; align-items: center; justify-content: center; gap: .55rem; cursor: pointer;
-      font-weight: 700; text-decoration: none; transition: transform .2s ease, color .2s ease, background .2s ease, border-color .2s ease;
+
+    .mobile-menu {
+      display: none;
+      border-top: 1px solid var(--line);
     }
-    .button-primary {
-      border: 1px solid var(--blue); border-radius: .8rem; padding: .9rem 1.1rem; background: var(--blue); color: #fff;
-    }
-    .button-secondary {
-      border: 1px solid var(--line); border-radius: .8rem; padding: .78rem 1rem; background: var(--surface); color: var(--ink);
-    }
-    .button-primary:hover, .button-secondary:hover { transform: translateY(-2px); }
-    .button-primary:hover { background: var(--blue-dark); }
-    .button-secondary:hover { border-color: var(--blue); color: var(--blue); }
-    .mobile-menu { display: none; border-top: 1px solid var(--line); }
+
     .mobile-menu.open { display: block; }
-    .eyebrow { color: var(--blue); font-family: "Space Mono", monospace; font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
-    .display { letter-spacing: -.075em; line-height: .94; }
-    .body-copy { color: var(--muted); line-height: 1.72; }
-    .hero-grid {
-      position: relative; overflow: hidden; padding: 5.8rem 1.5rem 5rem;
-      background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-      background-size: 34px 34px;
+
+    .mobile-link {
+      display: block;
+      padding: .8rem .9rem;
+      border-radius: .65rem;
     }
-    .hero-grid::before {
-      position: absolute; top: -7rem; right: -5rem; width: 18rem; height: 18rem; border: 2px solid var(--blue);
-      border-radius: 50%; content: ""; opacity: .28;
+
+    .mobile-link.active {
+      background: var(--soft-blue);
+      color: var(--blue);
     }
-    .hero-grid::after {
-      position: absolute; right: 20%; bottom: -3rem; width: 6rem; height: 6rem; border: 2px solid var(--blue);
-      content: ""; opacity: .3; transform: rotate(28deg);
+
+    .mobile-link.active::after { display: none; }
+
+    .icon-button, .button-primary, .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      border-radius: .75rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
     }
-    .section-pad { padding: 4.75rem 1.5rem; }
-    .project-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 1.35rem; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
-    .project-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
-    .project-media { position: relative; min-height: 13rem; overflow: hidden; border: 1px solid var(--line); border-radius: .9rem; background: var(--soft-blue); }
-    .project-media img { width: 100%; height: 100%; min-height: 13rem; object-fit: cover; opacity: .68; filter: saturate(.72); transition: opacity .25s ease, transform .4s ease; }
-    .project-card:hover .project-media img { opacity: .86; transform: scale(1.03); }
+
+    .icon-button {
+      width: 2.7rem;
+      height: 2.7rem;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+    }
+
+    .button-primary, .button-secondary {
+      padding: .86rem 1.06rem;
+      border: 1px solid transparent;
+    }
+
+    .button-primary {
+      border-color: var(--blue);
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .button-secondary {
+      border-color: var(--line);
+      background: var(--surface);
+      color: var(--ink);
+    }
+
+    .icon-button:hover, .button-secondary:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .button-primary:hover {
+      background: var(--blue-deep);
+      transform: translateY(-2px);
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-family: "Space Mono", monospace;
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .display {
+      letter-spacing: -.075em;
+      line-height: .94;
+    }
+
+    .body-copy {
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .work-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 5.6rem 1.5rem 5.1rem;
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 27px 27px;
+    }
+
+    .work-hero::before {
+      position: absolute;
+      top: -7.3rem;
+      right: -3.5rem;
+      width: 16rem;
+      height: 16rem;
+      border: 1px solid var(--blue);
+      border-radius: 50%;
+      opacity: .46;
+      content: "";
+    }
+
+    .work-hero::after {
+      position: absolute;
+      right: 18%;
+      bottom: -2.2rem;
+      width: 5.7rem;
+      height: 5.7rem;
+      border: 1px solid var(--blue);
+      opacity: .42;
+      transform: rotate(28deg);
+      content: "";
+    }
+
+    .section-pad { padding: 4.9rem 1.5rem; }
+
+    .project-card {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      padding: 1.15rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 18px 48px rgba(18, 31, 66, .12);
+      transform: translateY(-4px);
+    }
+
+    .media-box {
+      position: relative;
+      display: grid;
+      min-height: 13.5rem;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background:
+        linear-gradient(135deg, transparent 0 49.5%, color-mix(in srgb, var(--blue) 26%, transparent) 49.5% 50.5%, transparent 50.5%),
+        repeating-linear-gradient(135deg, var(--soft-blue) 0 10px, transparent 10px 21px);
+    }
+
+    .media-box::before,
+    .media-box::after {
+      position: absolute;
+      width: 4.2rem;
+      height: 4.2rem;
+      border: 1px solid color-mix(in srgb, var(--blue) 48%, transparent);
+      content: "";
+    }
+
+    .media-box::before {
+      top: 1rem;
+      left: 1rem;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    .media-box::after {
+      right: 1rem;
+      bottom: 1rem;
+      border-top: 0;
+      border-left: 0;
+    }
+
     .media-label {
-      position: absolute; right: .75rem; bottom: .75rem; left: .75rem; padding: .65rem .75rem;
-      border: 1px solid color-mix(in srgb, var(--blue) 36%, transparent); border-radius: .65rem;
-      background: color-mix(in srgb, var(--paper) 90%, transparent); color: var(--ink);
-      font-family: "Space Mono", monospace; font-size: .65rem; font-weight: 700; line-height: 1.45; backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 1;
+      max-width: 82%;
+      padding: .58rem .72rem;
+      border: 1px solid color-mix(in srgb, var(--blue) 38%, transparent);
+      border-radius: .55rem;
+      background: color-mix(in srgb, var(--paper) 91%, transparent);
+      color: var(--ink);
+      font-family: "Space Mono", monospace;
+      font-size: .62rem;
+      font-weight: 700;
+      line-height: 1.48;
+      text-align: center;
     }
-    .guidance { color: var(--muted); font-size: .76rem; line-height: 1.5; }
-    .footer-link { color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none; transition: color .2s ease; }
-    .footer-link:hover { color: var(--blue); }
-    .social-link {
-      display: inline-flex; align-items: center; justify-content: center; width: 2.35rem; height: 2.35rem;
-      border: 1px solid var(--line); border-radius: .7rem; color: var(--ink); transition: color .2s ease, border-color .2s ease, transform .2s ease;
+
+    .guidance {
+      color: var(--muted);
+      font-size: .75rem;
+      line-height: 1.5;
     }
-    .social-link:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
+
+    .card-action { margin-top: auto; }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      background: color-mix(in srgb, var(--surface) 60%, transparent);
+    }
+
+    .social-placeholder {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .social-placeholder:hover { color: var(--blue); }
+
     @media (min-width: 768px) {
-      .hero-grid { padding: 7.5rem 2.5rem 6rem; }
-      .section-pad { padding: 6.5rem 2.5rem; }
+      .work-hero { padding: 7rem 2.5rem 6.1rem; }
+      .section-pad { padding: 6rem 2.5rem; }
+      .media-box { min-height: 15.5rem; }
     }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
     }
   </style>
   <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
@@ -131,181 +358,158 @@
  </head>
  <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-shell">
-   <header class="site-header sticky top-0 z-50">
-    <div class="content-width flex items-center justify-between px-5 py-4"><a href="#" data-home-link="" data-template-id="brand-wordmark" class="canva-link wordmark" aria-label="ShiftStudio home" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"> <span data-template-id="brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span> </a>
-     <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation"><a href="#" data-home-link="" data-template-id="nav-home" class="canva-link nav-link active" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
+   <header class="site-header">
+    <div class="content-width flex items-center justify-between px-5 py-4"><a href="#/" data-route="/" data-template-id="brand-link" class="canva-link wordmark" aria-label="ShiftStudio Work homepage" style="color: rgb(16, 18, 23);"> <span data-template-id="brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</span> </a>
+     <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-work-home" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a>
      </nav>
-     <div class="flex items-center gap-2"><button id="theme-toggle" type="button" class="button-secondary !p-2.5" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" aria-hidden="true"></i> </button> <button id="menu-toggle" type="button" class="button-secondary !p-2.5 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"> <i data-lucide="menu" width="19" aria-hidden="true"></i> </button>
+     <div class="flex items-center gap-2"><button id="theme-toggle" class="icon-button" type="button" aria-label="Enable dark mode" aria-pressed="false"> <i data-lucide="moon" width="18" height="18"></i> </button> <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"> <i data-lucide="menu" width="19" height="19"></i> </button>
      </div>
     </div>
     <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
-     <div class="grid gap-1 pt-3"><a href="#" data-home-link="" data-template-id="mobile-home" class="canva-link nav-link mobile-nav-link active" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
+     <div class="pt-3"><a href="#/" data-route="/" data-template-id="mobile-work-home" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a>
      </div>
     </nav>
    </header>
    <main id="main-content" tabindex="-1">
-    <section aria-labelledby="portfolio-title">
-     <div class="hero-grid">
+    <section id="work-view" aria-labelledby="work-title">
+     <div class="work-hero">
       <div class="content-width relative z-10">
-       <p data-template-id="work-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Selected work</p>
-       <h1 id="portfolio-title" data-template-id="work-title" class="canva-text display mt-5 max-w-3xl font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 32px; letter-spacing: -0.075rem; line-height: 0.94;">Room for the work to speak.</h1>
-       <p data-template-id="work-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">A flexible portfolio space for the website, brand, and digital marketing projects that best show how ShiftStudio helps organisations make their next move with more clarity.</p>
+       <p data-template-id="work-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SELECTED WORK</p>
+       <h1 id="work-title" data-template-id="work-title" class="canva-text display mt-5 max-w-3xl font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px; letter-spacing: -0.075rem; line-height: 0.94;">Room for the work to speak.</h1>
+       <p data-template-id="work-copy" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">A flexible portfolio space for the website, brand, and digital marketing projects that best show how ShiftStudio helps organisations make their next move with more clarity.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20project%20enquiry" data-template-id="hero-book-call" class="canva-link button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
       </div>
      </div>
-     <section class="section-pad" aria-label="Selected ShiftStudio projects">
-      <div class="content-width grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-       <article data-template-id="project-card-one" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-one" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A stylish workspace featuring a laptop and monitors displaying design software.">
-         <p data-template-id="project-media-label-one" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-one-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Website design</p>
-        <h2 data-template-id="project-one-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-one-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the challenge, the creative direction, and the project outcome.</p>
-        <p data-template-id="project-one-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20website%20project" data-template-id="project-one-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
-       <article data-template-id="project-card-two" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-two" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/5706015/pexels-photo-5706015.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of blank white business cards on a pastel orange background. Ideal for design mockups.">
-         <p data-template-id="project-media-label-two" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-two-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Brand presence</p>
-        <h2 data-template-id="project-two-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-two-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the identity system, communication need, and the work created.</p>
-        <p data-template-id="project-two-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20brand%20project" data-template-id="project-two-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
-       <article data-template-id="project-card-three" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-three" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of a tablet displaying analytics charts on a wooden office desk, alongside a smartphone and coffee cup.">
-         <p data-template-id="project-media-label-three" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-three-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital marketing</p>
-        <h2 data-template-id="project-three-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-three-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the audience, campaign direction, and the marketing system delivered.</p>
-        <p data-template-id="project-three-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20growth%20project" data-template-id="project-three-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
-       <article data-template-id="project-card-four" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-four" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace.">
-         <p data-template-id="project-media-label-four" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-four-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Commerce experience</p>
-        <h2 data-template-id="project-four-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-four-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the customer journey, product story, and the digital experience created.</p>
-        <p data-template-id="project-four-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20commerce%20project" data-template-id="project-four-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
-       <article data-template-id="project-card-five" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-five" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/54284/pexels-photo-54284.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of a smartphone displaying a billing app interface on a reflective surface.">
-         <p data-template-id="project-media-label-five" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-five-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital product</p>
-        <h2 data-template-id="project-five-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-five-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the interface, user need, and the product experience shaped.</p>
-        <p data-template-id="project-five-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20digital%20product%20project" data-template-id="project-five-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
-       <article data-template-id="project-card-six" class="canva-card project-card" style="background: rgb(255, 255, 255);">
-        <div class="project-media"><img data-template-id="project-image-six" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/6476257/pexels-photo-6476257.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Team of diverse colleagues collaborating on project in modern office with digital devices and charts.">
-         <p data-template-id="project-media-label-six" class="canva-text media-label" style="background: rgba(247, 247, 244, 0.9); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</p>
-        </div>
-        <p data-template-id="project-six-category" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Campaign system</p>
-        <h2 data-template-id="project-six-title" class="canva-text mt-3 font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
-        <p data-template-id="project-six-copy" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the team context, campaign system, and the communication work delivered.</p>
-        <p data-template-id="project-six-guidance" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Image guidance: use descriptive alt text that explains the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=Project%20enquiry%20for%20a%20similar%20team%20project" data-template-id="project-six-action" class="canva-link button-secondary mt-5" style="background: rgb(255, 255, 255); color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
-       </article>
+     <section class="section-pad" aria-label="Selected project concepts">
+      <div class="content-width">
+       <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <article data-template-id="project-card-1" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-1" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-1" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Website concept</p>
+         <h2 data-template-id="project-title-1" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-1" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the challenge, creative direction, and website experience shaped.</p>
+         <p data-template-id="project-guide-1" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-1" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+        <article data-template-id="project-card-2" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-2" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-2" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Brand identity concept</p>
+         <h2 data-template-id="project-title-2" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-2" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the identity system, communication need, and design work created.</p>
+         <p data-template-id="project-guide-2" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-2" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+        <article data-template-id="project-card-3" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-3" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-3" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital marketing concept</p>
+         <h2 data-template-id="project-title-3" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-3" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the audience, campaign direction, and digital marketing system delivered.</p>
+         <p data-template-id="project-guide-3" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-3" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+        <article data-template-id="project-card-4" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-4" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-4" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Commerce experience concept</p>
+         <h2 data-template-id="project-title-4" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-4" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the customer journey, product story, and digital experience created.</p>
+         <p data-template-id="project-guide-4" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-4" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+        <article data-template-id="project-card-5" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-5" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-5" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Digital product concept</p>
+         <h2 data-template-id="project-title-5" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-5" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the interface, user need, and product experience shaped.</p>
+         <p data-template-id="project-guide-5" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-5" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+        <article data-template-id="project-card-6" class="canva-card project-card" style="background: rgb(255, 255, 255);">
+         <div class="media-box" aria-label="Project media placeholder"><span data-template-id="project-media-6" class="canva-text media-label" style="background: rgb(247, 247, 244); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Replace with project image or video</span>
+         </div>
+         <p data-template-id="project-category-6" class="canva-text eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Campaign system concept</p>
+         <h2 data-template-id="project-title-6" class="canva-text mt-3 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Project title placeholder</h2>
+         <p data-template-id="project-copy-6" class="canva-text body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Add a concise description of the team context, campaign system, and communication work delivered.</p>
+         <p data-template-id="project-guide-6" class="canva-text guidance mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Alt text guidance: describe the visible project image or video poster frame.</p><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20similar%20project%20enquiry" data-template-id="project-action-6" class="canva-link button-secondary card-action mt-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Discuss a similar project</a>
+        </article>
+       </div>
       </div>
      </section>
     </section>
    </main>
-   <footer class="border-t px-5 py-10" style="border-color: var(--line)">
-    <div class="content-width grid gap-10 md:grid-cols-[1.2fr_.7fr_1fr]">
-     <div>
-      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(17, 19, 24); font-weight: 700; font-size: 24px;"><span data-template-id="footer-brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 24px;">ShiftStudio</span></p>
-      <p data-template-id="footer-note" class="canva-text body-copy mt-3 max-w-xs text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Thoughtful brand, web, and digital marketing systems for the next move.</p><a href="mailto:ianm49444@gmail.com?subject=Book%20a%20Call%20with%20ShiftStudio" data-template-id="footer-book-call" class="canva-link button-primary mt-5" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-     </div>
-     <nav aria-label="Footer navigation" class="grid content-start gap-3">
-      <p data-template-id="footer-nav-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Explore</p><a href="#" data-home-link="" data-template-id="footer-home" class="canva-link footer-link" aria-current="page" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Home</a>
+   <footer class="footer px-5 py-10">
+    <div class="content-width grid gap-8 md:grid-cols-[1.2fr_.8fr_.75fr]">
+     <section aria-label="ShiftStudio information">
+      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</p>
+      <p data-template-id="footer-tagline" class="canva-text body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Thoughtful brand, web, and digital marketing systems for the next move.</p>
+     </section>
+     <nav class="grid content-start gap-3" aria-label="Footer navigation"><a href="#/" data-route="/" data-template-id="footer-work-home" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20project%20enquiry" data-template-id="footer-book-call" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
      </nav>
-     <div>
-      <p data-template-id="footer-contact-label" class="canva-text font-bold" style="color: rgb(17, 19, 24); font-weight: 700; font-style: normal; font-size: 16px;">Contact</p>
-      <div class="mt-4 grid gap-3"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a>
-      </div>
-      <div class="mt-5 flex gap-2"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-template-id="footer-instagram" class="canva-link social-link" aria-label="Open ShiftStudio Instagram in a new tab" style="color: rgb(17, 19, 24);"><i data-lucide="instagram" width="18" aria-hidden="true"></i></a> <a href="https://wa.me/254700843176" target="_blank" rel="noopener noreferrer" data-template-id="footer-whatsapp" class="canva-link social-link" aria-label="Message ShiftStudio on WhatsApp" style="color: rgb(17, 19, 24);"><i data-lucide="message-circle" width="18" aria-hidden="true"></i></a> <a href="https://x.com/" target="_blank" rel="noopener noreferrer" data-template-id="footer-x" class="canva-link social-link" aria-label="Open ShiftStudio on X in a new tab" style="color: rgb(17, 19, 24);"><i data-lucide="twitter" width="18" aria-hidden="true"></i></a>
-      </div>
-     </div>
-    </div>
-    <div class="content-width mt-10 flex flex-col justify-between gap-3 border-t pt-5 text-xs sm:flex-row" style="border-color: var(--line); color: var(--muted)">
-     <p data-template-id="footer-copyright" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 ShiftStudio. All rights reserved.</p>
-     <p data-template-id="footer-tagline" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Make the next move clearer.</p>
+     <address class="not-italic"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a> <a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a>
+      <div class="mt-5 flex flex-wrap gap-x-4 gap-y-3"><a href="mailto:ianm49444@gmail.com?subject=ShiftStudio%20social%20enquiry" data-template-id="footer-social-email" class="canva-link social-placeholder" style="color: rgb(98, 105, 120);"> <i data-lucide="mail" width="15" height="15"></i> <span class="canva-text">Email</span> </a> <a href="tel:0700843176" data-template-id="footer-social-phone" class="canva-link social-placeholder" style="color: rgb(98, 105, 120);"> <i data-lucide="phone" width="15" height="15"></i> <span class="canva-text">Phone</span> </a>
+      </div></address>
     </div>
    </footer>
   </div>
   <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
   <script>
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuToggle = document.getElementById("menu-toggle");
-    const themeToggle = document.getElementById("theme-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const menuButton = document.getElementById("menu-toggle");
+    const themeButton = document.getElementById("theme-toggle");
     const mainContent = document.getElementById("main-content");
 
-    function refreshIcons() {
-      lucide.createIcons();
+    // Hash routing and the root hash are intentional for GitHub Pages compatibility.
+    function currentRoute() {
+      return window.location.hash === "#/" || window.location.hash === "" ? "/" : null;
     }
 
-    function closeMenu() {
-      mobileMenu.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "Open navigation menu");
-      menuToggle.innerHTML = '<i data-lucide="menu" width="19" aria-hidden="true"></i>';
-      refreshIcons();
-    }
-
-    function goHome(moveFocus) {
-      if (window.location.hash) {
-        history.replaceState(null, "", window.location.pathname + window.location.search);
+    function setRouteState(moveFocus) {
+      if (!currentRoute()) {
+        window.location.hash = "#/";
+        return;
       }
-      closeMenu();
-      window.scrollTo({ top: 0, behavior: "auto" });
-      if (moveFocus) mainContent.focus({ preventScroll: true });
+
+      document.querySelectorAll("[data-route]").forEach((link) => {
+        const active = link.dataset.route === "/";
+        link.classList.toggle("active", active);
+        if (active) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+
+      if (moveFocus) {
+        mainContent.focus({ preventScroll: true });
+      }
     }
 
-    document.querySelectorAll("[data-home-link]").forEach((link) => {
+    menuButton.addEventListener("click", () => {
+      const isOpen = menu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    });
+
+    themeButton.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark");
+      themeButton.setAttribute("aria-pressed", String(isDark));
+      themeButton.setAttribute("aria-label", isDark ? "Enable light mode" : "Enable dark mode");
+    });
+
+    window.addEventListener("hashchange", () => setRouteState(true));
+
+    document.querySelectorAll("[data-route]").forEach((link) => {
       link.addEventListener("click", (event) => {
-        event.preventDefault();
-        goHome(true);
-      });
-      link.addEventListener("keydown", (event) => {
-        if (event.key === " ") {
+        if (currentRoute() === "/") {
           event.preventDefault();
-          link.click();
+          setRouteState(true);
         }
       });
     });
 
-    window.addEventListener("hashchange", () => {
-      if (window.location.hash) {
-        history.replaceState(null, "", window.location.pathname + window.location.search);
-      }
-    });
-
-    menuToggle.addEventListener("click", () => {
-      const isOpen = mobileMenu.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-      menuToggle.innerHTML = isOpen
-        ? '<i data-lucide="x" width="19" aria-hidden="true"></i>'
-        : '<i data-lucide="menu" width="19" aria-hidden="true"></i>';
-      refreshIcons();
-    });
-
-    themeToggle.addEventListener("click", () => {
-      const isDark = document.body.classList.toggle("dark");
-      themeToggle.setAttribute("aria-pressed", String(isDark));
-      themeToggle.setAttribute("aria-label", isDark ? "Enable light mode" : "Enable dark mode");
-      themeToggle.innerHTML = isDark
-        ? '<i data-lucide="sun" width="18" aria-hidden="true"></i>'
-        : '<i data-lucide="moon" width="18" aria-hidden="true"></i>';
-      refreshIcons();
-    });
-
-    if (window.location.hash) {
-      history.replaceState(null, "", window.location.pathname + window.location.search);
-    }
-    refreshIcons();
+    lucide.createIcons();
+    setRouteState(false);
   </script>
  
 </body></html>
