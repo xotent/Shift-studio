@@ -2,230 +2,153 @@
 <html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-05-891237f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ShiftStudio Blog — practical thinking on web design, strategy, SEO, conversion, and creative process.">
+  <meta name="description" content="ShiftStudio Blog — notes on web design, strategy, SEO, conversion and process.">
   <title>ShiftStudio — Blog</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
   <style>
-    :root {
-      --ink: #101217;
-      --paper: #f7f7f4;
-      --surface: #ffffff;
-      --muted: #626978;
-      --line: #dce0e8;
-      --blue: #135cff;
-      --blue-deep: #093bb2;
-      --soft-blue: #eaf0ff;
-      --grid: rgba(26, 55, 110, .075);
-      --radius: 1.15rem;
-    }
-    body.dark {
-      --ink: #f5f7ff;
-      --paper: #0c1018;
-      --surface: #151b26;
-      --muted: #afb7c6;
-      --line: #2b3546;
-      --blue: #82adff;
-      --blue-deep: #b4cbff;
-      --soft-blue: #13254f;
-      --grid: rgba(166, 191, 246, .09);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; transition: background .22s ease, color .22s ease; }
-    button, a { outline-offset: 4px; }
-    button:focus-visible, a:focus-visible { outline: 3px solid var(--blue); }
-    .site-shell { width: 100%; min-height: calc(100 * min(var(--vh, 1vh), 1vh)); overflow: hidden; }
-    .content-width { width: 100%; max-width: 1180px; margin: 0 auto; }
-    .skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 100; padding: .7rem 1rem; border-radius: .6rem; background: var(--blue); color: #fff; font-weight: 700; text-decoration: none; }
-    .skip-link:focus { top: 1rem; }
-    .site-header { position: sticky; top: 0; z-index: 40; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(16px); }
-    .wordmark { color: var(--ink); font-size: 1.42rem; font-weight: 700; letter-spacing: -.085em; text-decoration: none; }
-    .wordmark-mark { color: var(--blue); }
-    .nav-link, .footer-link, .contact-link { color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; transition: color .2s ease; }
-    .nav-link { position: relative; padding: .45rem .1rem; }
-    .nav-link:hover, .nav-link.active, .footer-link:hover, .contact-link:hover { color: var(--blue); }
-    .nav-link.active::after { position: absolute; right: 0; bottom: -.68rem; left: 0; height: 2px; background: var(--blue); content: ""; }
-    .mobile-menu { display: none; border-top: 1px solid var(--line); }
-    .mobile-menu.open { display: block; }
-    .mobile-link { display: block; padding: .8rem .9rem; border-radius: .65rem; }
-    .mobile-link.active { background: var(--soft-blue); color: var(--blue); }
-    .mobile-link.active::after { display: none; }
-    .icon-button, .button-primary, .button-secondary, .article-button, .filter-button { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; border-radius: .75rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease; }
-    .icon-button { width: 2.7rem; height: 2.7rem; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
-    .button-primary, .button-secondary, .article-button { padding: .9rem 1.12rem; border: 1px solid transparent; }
-    .button-primary { border-color: var(--blue); background: var(--blue); color: #fff; }
-    .button-secondary, .article-button { border-color: var(--line); background: var(--surface); color: var(--ink); }
-    .icon-button:hover, .button-secondary:hover, .article-button:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
-    .button-primary:hover { background: var(--blue-deep); transform: translateY(-2px); }
-    .eyebrow { color: var(--blue); font-family: "Space Mono", monospace; font-size: .67rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
-    .display { letter-spacing: -.075em; line-height: .94; }
-    .body-copy { color: var(--muted); line-height: 1.72; }
-    .blog-hero { position: relative; overflow: hidden; padding: 5.7rem 1.5rem 4.8rem; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 27px 27px; }
-    .blog-hero::before { position: absolute; top: -7rem; right: 7%; width: 18rem; height: 18rem; border: 1px solid var(--blue); border-radius: 50%; content: ""; opacity: .55; }
-    .blog-hero::after { position: absolute; right: 20%; bottom: -2.5rem; width: 7rem; height: 7rem; border: 1px solid var(--blue); content: ""; opacity: .52; transform: rotate(27deg); }
-    .hero-index { display: inline-flex; align-items: center; gap: .65rem; color: var(--muted); font-family: "Space Mono", monospace; font-size: .7rem; }
-    .hero-index::before { width: 2.2rem; height: 1px; background: var(--blue); content: ""; }
-    .section-pad { padding: 3.8rem 1.5rem 5.4rem; }
-    .listing-head { display: grid; gap: 1.5rem; align-items: end; margin-bottom: 2rem; }
-    .filter-row { display: flex; flex-wrap: wrap; gap: .55rem; }
-    .filter-button { padding: .6rem .78rem; border: 1px solid var(--line); background: transparent; color: var(--muted); font-size: .76rem; }
-    .filter-button:hover, .filter-button.active { border-color: var(--blue); background: var(--soft-blue); color: var(--blue); }
-    .post-grid { display: grid; gap: 1rem; }
-    .post-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); transition: border-color .22s ease, box-shadow .22s ease, transform .22s ease; }
-    .post-card:hover { border-color: var(--blue); box-shadow: 0 18px 48px rgba(18,31,66,.1); transform: translateY(-4px); }
-    .post-card[hidden] { display: none; }
-    .post-media, .article-media { position: relative; display: flex; min-height: 14rem; aspect-ratio: 16 / 10; align-items: flex-end; overflow: hidden; padding: 1rem; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, color-mix(in srgb, var(--soft-blue) 92%, var(--surface)), var(--surface)); }
-    .article-media { min-height: 17rem; border: 1px solid var(--line); border-radius: .85rem; }
-    .post-media::before, .article-media::before { position: absolute; top: 16%; left: 13%; width: 53%; height: 53%; border: 1px solid color-mix(in srgb, var(--blue) 58%, transparent); border-radius: 50%; content: ""; }
-    .post-media::after, .article-media::after { position: absolute; top: 23%; right: 14%; width: 4.5rem; height: 4.5rem; border: 1px solid var(--blue); content: ""; opacity: .8; transform: rotate(45deg); }
-    .media-grid { position: absolute; inset: 0; background-image: linear-gradient(color-mix(in srgb, var(--blue) 12%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--blue) 12%, transparent) 1px, transparent 1px); background-size: 23px 23px; opacity: .72; }
-    .media-label { position: relative; z-index: 2; max-width: 16rem; padding: .5rem .65rem; border: 1px dashed color-mix(in srgb, var(--blue) 70%, transparent); border-radius: .42rem; background: color-mix(in srgb, var(--surface) 82%, transparent); color: var(--blue); font-family: "Space Mono", monospace; font-size: .63rem; font-weight: 700; line-height: 1.45; text-transform: uppercase; }
-    .post-body { display: flex; flex: 1; flex-direction: column; padding: 1.35rem; }
-    .post-meta { display: flex; flex-wrap: wrap; gap: .45rem .85rem; color: var(--muted); font-family: "Space Mono", monospace; font-size: .62rem; font-weight: 700; letter-spacing: .055em; text-transform: uppercase; }
-    .post-category { color: var(--blue); }
-    .post-title { letter-spacing: -.045em; line-height: 1.04; }
-    .article-button { margin-top: auto; font-size: .86rem; }
-    .footer { border-top: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 60%, transparent); }
-    .footer-bottom { border-top: 1px solid var(--line); }
-    .social-placeholder { display: inline-flex; align-items: center; gap: .45rem; color: var(--muted); font-size: .78rem; font-weight: 700; }
-    .article-overlay { position: fixed; inset: 0; z-index: 80; display: none; align-items: center; justify-content: center; padding: 1rem; background: rgba(8,12,22,.62); backdrop-filter: blur(5px); }
-    .article-overlay.open { display: flex; }
-    .article-panel { display: none; width: 100%; max-width: 52rem; max-height: calc(92 * min(var(--vh, 1vh), 1vh)); overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 24px 80px rgba(0,0,0,.28); }
-    .article-panel.active { display: block; }
-    .article-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.2rem 1.2rem 0; }
-    .article-close { width: 2.65rem; height: 2.65rem; flex: 0 0 auto; border: 1px solid var(--line); border-radius: .7rem; background: var(--surface); color: var(--ink); cursor: pointer; }
-    .article-close:hover { border-color: var(--blue); color: var(--blue); }
-    .article-content { padding: 1.5rem 1.2rem 2rem; }
-    .article-content h3 { margin: 2rem 0 .7rem; font-size: 1.15rem; letter-spacing: -.03em; }
-    .article-content p { color: var(--muted); line-height: 1.75; }
-    @media (min-width: 700px) {
-      .blog-hero { padding: 7rem 2.5rem 5.9rem; }
-      .section-pad { padding: 4.8rem 2.5rem 6.2rem; }
-      .listing-head { grid-template-columns: minmax(0,1fr) minmax(22rem,.85fr); }
-      .post-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-      .post-card:nth-child(3n+1) { transform: translateY(1rem); }
-      .post-card:nth-child(3n+1):hover { transform: translateY(.75rem); }
-      .article-top { padding: 1.5rem 2rem 0; }
-      .article-content { padding: 1.8rem 2rem 2.5rem; }
-    }
-    @media (min-width: 1050px) { .post-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
-    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+    :root{--ink:#101217;--paper:#f7f7f4;--surface:#fff;--muted:#626978;--line:#dce0e8;--blue:#135cff;--blue-deep:#093bb2;--soft:#eaf0ff;--grid:rgba(26,55,110,.075)}
+    body.dark{--ink:#f5f7ff;--paper:#0c1018;--surface:#151b26;--muted:#afb7c6;--line:#2b3546;--blue:#82adff;--blue-deep:#b4cbff;--soft:#13254f;--grid:rgba(166,191,246,.09)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;transition:background .2s ease,color .2s ease}
+    a,button{outline-offset:4px} a:focus-visible,button:focus-visible{outline:3px solid var(--blue)}
+    .site-shell{width:100%;min-height:calc(100 * min(var(--vh,1vh),1vh));overflow:hidden}.content-width{width:100%;max-width:1180px;margin:0 auto}
+    .skip-link{position:absolute;top:-5rem;left:1rem;z-index:100;padding:.75rem 1rem;border-radius:.55rem;background:var(--blue);color:#fff;font-weight:700;text-decoration:none}.skip-link:focus{top:1rem}
+    .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:blur(14px)}
+    .wordmark{color:var(--blue);font-size:1.35rem;font-weight:700;letter-spacing:-.09em;text-decoration:none}.nav-link,.footer-link{color:var(--muted);font-size:.81rem;font-weight:700;text-decoration:none;transition:color .18s ease}.nav-link{position:relative;padding:.5rem .1rem}.nav-link:hover,.nav-link.active,.footer-link:hover,.footer-link.active{color:var(--blue)}.nav-link.active:after{position:absolute;right:0;bottom:-.82rem;left:0;height:2px;background:var(--blue);content:""}
+    .mobile-menu{display:none;border-top:1px solid var(--line)}.mobile-menu.open{display:block}.mobile-link{display:block;padding:.8rem;border-radius:.65rem}.mobile-link.active{background:var(--soft)}
+    .icon-button,.button-primary,.button-secondary,.article-action,.filter-button{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:.72rem;font-weight:700;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+    .icon-button{width:2.65rem;height:2.65rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.button-primary,.button-secondary,.article-action{padding:.82rem 1rem;border:1px solid;cursor:pointer}.button-primary,.article-action{border-color:var(--blue);background:var(--blue);color:#fff}.button-secondary{border-color:var(--line);background:var(--surface);color:var(--ink)}.button-primary:hover,.article-action:hover{background:var(--blue-deep);transform:translateY(-2px)}.button-secondary:hover,.icon-button:hover{border-color:var(--blue);transform:translateY(-2px)}
+    .eyebrow{color:var(--blue);font-family:"Space Mono",monospace;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.display{max-width:900px;font-size:clamp(3rem,7vw,6.25rem);font-weight:700;letter-spacing:-.085em;line-height:.91}.section-heading{font-size:clamp(2.1rem,4vw,4.1rem);font-weight:700;letter-spacing:-.075em;line-height:.95}.body-copy{color:var(--muted);line-height:1.72}.section-pad{padding:4.7rem 1.5rem}
+    .grid-hero{position:relative;overflow:hidden;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:27px 27px}.grid-hero:before{position:absolute;top:-5.75rem;right:-3.5rem;width:15rem;height:15rem;border:1px solid var(--blue);border-radius:50%;content:"";opacity:.55}.grid-hero:after{position:absolute;right:13%;bottom:-2rem;width:5.1rem;height:5.1rem;border:1px solid var(--blue);content:"";opacity:.55;transform:rotate(28deg)}
+    .editorial-note{border-left:2px solid var(--blue);padding-left:1rem}.filter-button{padding:.62rem .86rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}.filter-button:hover,.filter-button.active{border-color:var(--blue);background:var(--soft);color:var(--blue)}
+    .article-card{display:flex;min-height:100%;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:1rem;background:var(--surface);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.article-card:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 16px 34px rgba(15,25,48,.08)}.article-card[hidden]{display:none}
+    .media-placeholder{position:relative;display:flex;min-height:16rem;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line);background:var(--soft);background-image:linear-gradient(45deg,transparent 48%,var(--line) 49%,var(--line) 51%,transparent 52%)}.media-placeholder:before{position:absolute;top:15%;left:13%;width:46%;aspect-ratio:1;border:1px solid var(--blue);border-radius:50%;content:"";opacity:.62}.media-placeholder:after{position:absolute;right:12%;top:21%;width:24%;aspect-ratio:1;border:1px solid var(--blue);content:"";opacity:.62;transform:rotate(30deg)}.placeholder-copy{position:relative;z-index:1;width:100%;padding:1rem;background:color-mix(in srgb,var(--surface) 88%,transparent)}
+    .card-content{display:flex;flex:1;flex-direction:column;padding:1.35rem}.article-title{font-size:1.65rem;font-weight:700;letter-spacing:-.06em;line-height:1}.meta{color:var(--muted);font-family:"Space Mono",monospace;font-size:.68rem;line-height:1.5}.footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 62%,transparent)}.social-placeholder{display:inline-flex;width:2.55rem;height:2.55rem;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:.72rem;background:var(--surface);color:var(--muted)}
+    .dialog-backdrop{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:1rem;background:rgba(8,12,20,.58)}.dialog-backdrop.open{display:flex}.detail-panel{width:100%;max-width:750px;max-height:calc(88 * min(var(--vh,1vh),1vh));overflow:auto;border:1px solid var(--line);border-radius:1rem;background:var(--surface);box-shadow:0 24px 70px rgba(0,0,0,.28)}.detail-media{min-height:13rem;border-bottom:1px solid var(--line);background:var(--soft)}.reveal{animation:rise .55s both}.reveal-delay{animation:rise .55s .12s both}@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:768px){.section-pad{padding:6.5rem 2.5rem}.grid-hero{padding:7.5rem 2.5rem!important}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
   <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
  </head>
- <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a class="skip-link" href="#main-content">Skip to main content</a>
+ <body data-template-id="__page-root" style="background: rgb(247, 247, 244);"><a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site-shell">
    <header class="site-header">
-    <div class="content-width flex items-center justify-between px-5 py-4"><a href="#/" data-route="/" data-template-id="brand-link" class="canva-link wordmark" aria-label="ShiftStudio Work homepage" style="color: rgb(16, 18, 23);"><span data-template-id="brand-name" class="canva-text wordmark-mark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</span></a>
-     <nav class="hidden items-center gap-5 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-home" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+    <div class="content-width flex items-center justify-between gap-4 px-5 py-4"><a href="#/blog" class="wordmark" aria-label="ShiftStudio Blog page"><span data-template-id="brand-name" class="canva-text" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</span></a>
+     <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation"><a href="#/" data-route="/" data-template-id="nav-work" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a><a href="#/services" data-route="/services" data-template-id="nav-services" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a><a href="#/about" data-route="/about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a><a href="#/lab" data-route="/lab" data-template-id="nav-lab" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a><a href="#/blog" data-route="/blog" data-template-id="nav-blog" class="canva-link nav-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a><a href="#/contact" data-route="/contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
      </nav>
-     <div class="flex items-center gap-2"><a href="#/contact" data-route="/contact" data-template-id="header-book-call" class="canva-link button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a> <button id="theme-toggle" class="icon-button" type="button" aria-label="Enable dark mode" aria-pressed="false"><i data-lucide="moon" width="18" height="18"></i></button> <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" width="19" height="19"></i></button>
+     <div class="flex items-center gap-2"><a href="#/contact" data-template-id="header-cta" class="canva-button button-primary hidden sm:inline-flex" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a> <button id="theme-toggle" type="button" class="icon-button" aria-label="Enable dark mode" aria-pressed="false"><i data-lucide="moon" width="18" height="18"></i></button> <button id="menu-toggle" type="button" class="icon-button md:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" width="19" height="19"></i></button>
      </div>
     </div>
     <nav id="mobile-menu" class="mobile-menu px-5 pb-4 md:hidden" aria-label="Mobile navigation">
-     <div class="grid gap-1 pt-3"><a href="#/" data-route="/" data-template-id="mobile-home" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a> <a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a> <a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a> <a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a> <a href="#/contact" data-route="/contact" data-template-id="mobile-book-call" class="canva-link button-primary mt-2" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
+     <div class="grid gap-1 pt-3"><a href="#/" data-route="/" data-template-id="mobile-work" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a><a href="#/services" data-route="/services" data-template-id="mobile-services" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a><a href="#/about" data-route="/about" data-template-id="mobile-about" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a><a href="#/lab" data-route="/lab" data-template-id="mobile-lab" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a><a href="#/blog" data-route="/blog" data-template-id="mobile-blog" class="canva-link nav-link mobile-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a><a href="#/contact" data-route="/contact" data-template-id="mobile-contact" class="canva-link nav-link mobile-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a><a href="#/contact" data-template-id="mobile-cta" class="canva-button button-primary mt-3" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
      </div>
     </nav>
    </header>
    <main id="main-content" tabindex="-1">
-    <section class="blog-hero" aria-labelledby="blog-title">
+    <section class="grid-hero section-pad" aria-labelledby="blog-title">
      <div class="content-width relative z-10">
-      <p data-template-id="blog-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">FROM THE BLOG</p>
-      <h1 id="blog-title" data-template-id="blog-title" class="canva-text display mt-5 max-w-4xl font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 54px; letter-spacing: -0.075rem; line-height: 0.94;">Ideas that move brands forward.</h1>
-      <p data-template-id="blog-intro" class="canva-text body-copy mt-7 max-w-2xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">Practical thinking for better digital work — across web design, digital strategy, SEO, conversion, and the creative process behind making useful things.</p>
-      <p data-template-id="blog-index" class="canva-text hero-index mt-10" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">01 — NOTES FOR THE NEXT MOVE</p>
+      <p data-template-id="blog-eyebrow" class="canva-text eyebrow reveal" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">SHIFTSTUDIO JOURNAL</p>
+      <h1 id="blog-title" data-template-id="blog-title" class="canva-text display mt-5 reveal" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 32px;">Useful thoughts for sharper digital work.</h1>
+      <p data-template-id="blog-copy" class="canva-text body-copy mt-7 max-w-2xl reveal-delay" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.72;">Notes on shaping clearer websites, more deliberate strategy, and content that helps people decide what to do next.</p>
+      <div class="editorial-note mt-8 reveal-delay">
+       <p data-template-id="blog-note" class="canva-text body-copy max-w-xl" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A flexible editorial starting point. Replace every placeholder with your own article imagery, video, and writing.</p>
+      </div>
      </div>
     </section>
     <section class="section-pad" aria-labelledby="articles-title">
      <div class="content-width">
-      <div class="listing-head">
+      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
        <div>
-        <p data-template-id="articles-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">LATEST THINKING</p>
-        <h2 id="articles-title" data-template-id="articles-title" class="canva-text display mt-4 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">Useful perspectives, clearly put.</h2>
-       </div>
-       <div aria-label="Filter articles by category" class="filter-row"><button type="button" class="filter-button active" data-filter="all" aria-pressed="true" data-template-id="filter-all" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">All</button> <button type="button" class="filter-button" data-filter="web-design" aria-pressed="false" data-template-id="filter-web-design" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Web Design</button> <button type="button" class="filter-button" data-filter="strategy" aria-pressed="false" data-template-id="filter-strategy" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Strategy</button> <button type="button" class="filter-button" data-filter="seo" aria-pressed="false" data-template-id="filter-seo" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">SEO</button> <button type="button" class="filter-button" data-filter="conversion" aria-pressed="false" data-template-id="filter-conversion" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Conversion</button> <button type="button" class="filter-button" data-filter="process" aria-pressed="false" data-template-id="filter-process" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Process</button>
-       </div>
+        <p data-template-id="articles-eyebrow" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">LATEST NOTES</p>
+        <h2 id="articles-title" data-template-id="articles-title" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Read, rethink, refine.</h2>
+       </div><a href="#/contact" data-template-id="articles-cta" class="canva-button button-secondary" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
       </div>
-      <div id="post-grid" class="post-grid">
-       <article data-category="web-design" data-template-id="post-card-1" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-1" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-1" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-1" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Web Design</span><span data-template-id="post-date-1" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-1" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">5 min read</span>
+      <div class="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter articles by category"><button type="button" class="filter-button active" data-filter="All" aria-pressed="true" data-template-id="filter-all" style="background: rgb(234, 240, 255); color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">All</button> <button type="button" class="filter-button" data-filter="Web Design" aria-pressed="false" data-template-id="filter-web-design" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Web Design</button> <button type="button" class="filter-button" data-filter="Strategy" aria-pressed="false" data-template-id="filter-strategy" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Strategy</button> <button type="button" class="filter-button" data-filter="SEO" aria-pressed="false" data-template-id="filter-seo" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">SEO</button> <button type="button" class="filter-button" data-filter="Conversion" aria-pressed="false" data-template-id="filter-conversion" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Conversion</button> <button type="button" class="filter-button" data-filter="Process" aria-pressed="false" data-template-id="filter-process" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Process</button>
+      </div>
+      <div class="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+       <article data-category="Web Design" data-template-id="post-card-1" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-1" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-1" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-1" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-1" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">A homepage should create direction, not just decoration.</h3>
-         <p data-template-id="post-excerpt-1" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A practical look at building a homepage that helps people understand what matters, where to look, and what to do next.</p><button type="button" data-article="article-1" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-1" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-1" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">WEB DESIGN</p>
+         <h3 data-template-id="post-title-1" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">Making room for a clearer first impression</h3>
+         <p data-template-id="post-excerpt-1" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A practical placeholder for an article about hierarchy, pace, and helping a homepage say the important thing first.</p>
+         <p data-template-id="post-meta-1" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-1" data-template-id="post-action-1" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
-       <article data-category="strategy" data-template-id="post-card-2" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-2" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-2" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-2" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Strategy</span><span data-template-id="post-date-2" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-2" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">6 min read</span>
+       <article data-category="Strategy" data-template-id="post-card-2" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-2" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-2" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-2" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-2" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">Start with the next decision, not the whole roadmap.</h3>
-         <p data-template-id="post-excerpt-2" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A simpler way to frame strategy conversations when the work feels broad, uncertain, or full of competing priorities.</p><button type="button" data-article="article-2" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-2" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-2" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">STRATEGY</p>
+         <h3 data-template-id="post-title-2" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">A useful starting point for digital direction</h3>
+         <p data-template-id="post-excerpt-2" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A placeholder story about using simple questions to bring focus to an evolving digital project.</p>
+         <p data-template-id="post-meta-2" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-2" data-template-id="post-action-2" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
-       <article data-category="seo" data-template-id="post-card-3" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-3" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-3" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-3" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SEO</span><span data-template-id="post-date-3" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-3" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">4 min read</span>
+       <article data-category="SEO" data-template-id="post-card-3" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-3" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-3" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-3" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-3" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">SEO works better when it begins with real questions.</h3>
-         <p data-template-id="post-excerpt-3" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Search visibility starts with useful language, clear intent, and pages that genuinely answer what people came to find.</p><button type="button" data-article="article-3" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-3" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-3" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">SEO</p>
+         <h3 data-template-id="post-title-3" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">Writing pages that are easier to find and use</h3>
+         <p data-template-id="post-excerpt-3" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A neutral introduction to organising useful content around the questions people are already asking.</p>
+         <p data-template-id="post-meta-3" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-3" data-template-id="post-action-3" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
-       <article data-category="conversion" data-template-id="post-card-4" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-4" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-4" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-4" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Conversion</span><span data-template-id="post-date-4" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-4" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">5 min read</span>
+       <article data-category="Conversion" data-template-id="post-card-4" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-4" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-4" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-4" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-4" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">Make the next step feel obvious, not urgent.</h3>
-         <p data-template-id="post-excerpt-4" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Conversion is often less about pressure and more about removing the small points of friction that make people pause.</p><button type="button" data-article="article-4" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-4" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-4" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">CONVERSION</p>
+         <h3 data-template-id="post-title-4" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">Small decisions that make the next step easier</h3>
+         <p data-template-id="post-excerpt-4" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A placeholder for thinking through calls to action, helpful context, and calm decision-making moments.</p>
+         <p data-template-id="post-meta-4" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-4" data-template-id="post-action-4" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
-       <article data-category="process" data-template-id="post-card-5" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-5" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-5" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-5" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Process</span><span data-template-id="post-date-5" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-5" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">7 min read</span>
+       <article data-category="Process" data-template-id="post-card-5" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-5" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-5" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-5" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-5" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">Good creative process gives ideas room to get sharper.</h3>
-         <p data-template-id="post-excerpt-5" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A working process is not about making creativity rigid. It is about creating enough structure for better decisions to emerge.</p><button type="button" data-article="article-5" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-5" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">PROCESS</p>
+         <h3 data-template-id="post-title-5" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">Keeping a creative process visible</h3>
+         <p data-template-id="post-excerpt-5" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A simple editorial placeholder about sharing progress, defining decisions, and giving work room to develop.</p>
+         <p data-template-id="post-meta-5" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-5" data-template-id="post-action-5" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
-       <article data-category="strategy" data-template-id="post-card-6" class="canva-card post-card" style="background: rgb(255, 255, 255);">
-        <div data-template-id="post-media-6" class="canva-panel post-media" style="background: rgb(234, 240, 255);">
-         <div class="media-grid" aria-hidden="true"></div>
-         <p data-template-id="post-media-label-6" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video</p>
-        </div>
-        <div class="post-body">
-         <div class="post-meta">
-          <span data-template-id="post-category-6" class="canva-text post-category" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Strategy</span><span data-template-id="post-date-6" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Date to add</span><span data-template-id="post-time-6" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">5 min read</span>
+       <article data-category="Web Design" data-template-id="post-card-6" class="canva-card article-card" style="background: rgb(255, 255, 255);">
+        <div data-template-id="post-media-6" class="canva-panel media-placeholder" role="img" aria-label="Article media placeholder. Replace with an article image or video and add descriptive alt text." style="background: rgb(234, 240, 255);">
+         <div class="placeholder-copy">
+          <p data-template-id="media-label-6" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">Replace with article image or video</p>
+          <p data-template-id="media-guidance-6" class="canva-text body-copy mt-2" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Add descriptive alt text that explains the article media.</p>
          </div>
-         <h3 data-template-id="post-title-6" class="canva-text post-title mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 26px;">A distinctive brand is a system for making choices.</h3>
-         <p data-template-id="post-excerpt-6" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Beyond visual consistency, brand strategy can make the everyday decisions around voice, focus, and action easier to make.</p><button type="button" data-article="article-6" class="article-button mt-7" aria-haspopup="dialog" data-template-id="post-read-6" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
+        </div>
+        <div class="card-content">
+         <p data-template-id="post-category-6" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">WEB DESIGN</p>
+         <h3 data-template-id="post-title-6" class="canva-text article-title mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 22px;">Designing an editorial rhythm for the web</h3>
+         <p data-template-id="post-excerpt-6" class="canva-text body-copy mt-4" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">A placeholder article about balancing scanning, reading, and visual pause within a modern content system.</p>
+         <p data-template-id="post-meta-6" class="canva-text meta mt-5" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">ARTICLE META PLACEHOLDER</p><button type="button" data-detail="detail-6" data-template-id="post-action-6" class="canva-button article-action mt-6 self-start" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Read article</button>
         </div>
        </article>
       </div>
@@ -233,221 +156,127 @@
     </section>
    </main>
    <footer class="footer px-5 py-10">
-    <div class="content-width grid gap-10 md:grid-cols-[1.15fr_.85fr]">
-     <section aria-label="ShiftStudio information">
-      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 23px;">ShiftStudio</p>
+    <div class="content-width grid gap-9 md:grid-cols-[1.2fr_.8fr_.9fr]">
+     <section>
+      <p data-template-id="footer-brand" class="canva-text wordmark" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 22px;">ShiftStudio</p>
       <p data-template-id="footer-tagline" class="canva-text body-copy mt-3 max-w-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Thoughtful brand, web, and digital marketing systems for the next move.</p>
-      <div class="mt-6 grid gap-2">
-       <a href="tel:0700843176" class="contact-link"><span data-template-id="footer-phone" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</span></a><a href="mailto:ianm49444@gmail.com" class="contact-link"><span data-template-id="footer-email" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</span></a>
-      </div>
-      <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2" aria-label="Social and contact placeholders">
-       <span class="social-placeholder"><i data-lucide="linkedin" width="15" height="15"></i><span data-template-id="social-linkedin" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">LinkedIn coming soon</span></span><span class="social-placeholder"><i data-lucide="instagram" width="15" height="15"></i><span data-template-id="social-instagram" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Instagram coming soon</span></span>
+      <p data-template-id="footer-copyright" class="canva-text mt-7 text-sm" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 ShiftStudio. All rights reserved.</p>
+     </section>
+     <nav class="grid content-start gap-3" aria-label="Footer navigation">
+      <a href="#/" data-route="/" data-template-id="footer-work" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work</a><a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a><a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a><a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a><a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link active" aria-current="page" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a><a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+     </nav>
+     <section>
+      <address class="not-italic"><a href="tel:0700843176" data-template-id="footer-phone" class="canva-link footer-link block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">0700843176</a><a href="mailto:ianm49444@gmail.com" data-template-id="footer-email" class="canva-link footer-link mt-3 block" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">ianm49444@gmail.com</a></address>
+      <div class="mt-6 flex gap-2" aria-label="Social contact placeholders">
+       <span data-template-id="social-instagram" class="canva-button social-placeholder" role="img" aria-label="Instagram placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="instagram" width="17" height="17"></i></span><span data-template-id="social-whatsapp" class="canva-button social-placeholder" role="img" aria-label="WhatsApp placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="message-circle" width="17" height="17"></i></span><span data-template-id="social-x" class="canva-button social-placeholder" role="img" aria-label="X placeholder" style="background: rgb(255, 255, 255); color: rgb(98, 105, 120);"><i data-lucide="twitter" width="17" height="17"></i></span>
       </div>
      </section>
-     <nav class="grid grid-cols-2 content-start gap-x-6 gap-y-3 sm:grid-cols-3" aria-label="Footer navigation"><a href="#/" data-route="/" data-template-id="footer-home" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Work / Home</a><a href="#/services" data-route="/services" data-template-id="footer-services" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Services</a><a href="#/about" data-route="/about" data-template-id="footer-about" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">About</a><a href="#/lab" data-route="/lab" data-template-id="footer-lab" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Lab</a><a href="#/blog" data-route="/blog" data-template-id="footer-blog" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Blog</a><a href="#/contact" data-route="/contact" data-template-id="footer-contact" class="canva-link footer-link" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a><a href="#/contact" data-route="/contact" data-template-id="footer-book-call" class="canva-link button-secondary mt-3 w-fit" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Book a Call</a>
-     </nav>
-    </div>
-    <div class="content-width footer-bottom mt-10 pt-5">
-     <p data-template-id="footer-copyright" class="canva-text body-copy" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 13px;">© 2026 ShiftStudio. All rights reserved.</p>
     </div>
    </footer>
   </div>
-  <div id="article-overlay" class="article-overlay" aria-hidden="true">
-   <section id="article-1" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-1">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-1" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-1" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WEB DESIGN</p>
-     <h2 id="article-title-1" data-template-id="article-title-1" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">A homepage should create direction, not just decoration.</h2>
-     <p data-template-id="article-meta-1" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Web Design · Date to add · 5 min read</p>
-     <div data-template-id="article-media-1" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-1" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  <div id="detail-1" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-1">
+    <div data-template-id="detail-media-1" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-1" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">WEB DESIGN</p>
+       <h2 id="detail-title-1" data-template-id="detail-title-text-1" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Making room for a clearer first impression</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-1" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">A homepage has a short window to make the value of a business understandable. The clearest pages do not try to say everything at once; they create a useful first direction.</p>
-     <h3 data-template-id="article-heading-1" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Clarity is a design decision.</h3>
-     <p data-template-id="article-body-1" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">Start with the question a visitor is trying to answer: what is this, is it for me, and where should I go next? A visual system can support those answers through hierarchy, generous spacing, and calls to action that feel connected to the content around them. Decoration earns its place when it helps the page feel memorable without hiding the path forward.</p>
+     <p data-template-id="detail-copy-1" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this article view for the full story. Add useful context, practical examples, and the thinking behind the design decisions in a readable editorial format.</p><button type="button" data-close="" data-template-id="detail-close-1" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
-   <section id="article-2" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-2">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-2" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-2" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">STRATEGY</p>
-     <h2 id="article-title-2" data-template-id="article-title-2" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">Start with the next decision, not the whole roadmap.</h2>
-     <p data-template-id="article-meta-2" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Strategy · Date to add · 6 min read</p>
-     <div data-template-id="article-media-2" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-2" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  </div>
+  <div id="detail-2" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-2">
+    <div data-template-id="detail-media-2" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-2" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">STRATEGY</p>
+       <h2 id="detail-title-2" data-template-id="detail-title-text-2" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A useful starting point for digital direction</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-2" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">Strategy can become overwhelming when every possible future is treated as equally urgent. Good momentum often begins by naming the next decision that will make the rest of the work easier.</p>
-     <h3 data-template-id="article-heading-2" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Make progress visible.</h3>
-     <p data-template-id="article-body-2" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">Instead of trying to solve every channel, audience, message, and metric in a single workshop, define what must become clearer first. This can be a sharper offer, a more useful page structure, or a focused audience question. Once a team shares that decision, creative work can move with more confidence and less noise.</p>
+     <p data-template-id="detail-copy-2" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this space to expand on the question, the framing, and the choices that can help a project move forward with more clarity.</p><button type="button" data-close="" data-template-id="detail-close-2" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
-   <section id="article-3" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-3">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-3" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-3" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SEO</p>
-     <h2 id="article-title-3" data-template-id="article-title-3" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">SEO works better when it begins with real questions.</h2>
-     <p data-template-id="article-meta-3" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">SEO · Date to add · 4 min read</p>
-     <div data-template-id="article-media-3" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-3" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  </div>
+  <div id="detail-3" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-3">
+    <div data-template-id="detail-media-3" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-3" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">SEO</p>
+       <h2 id="detail-title-3" data-template-id="detail-title-text-3" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Writing pages that are easier to find and use</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-3" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">Search content becomes more useful when it starts with the language people already use to describe a problem, compare options, or understand a decision.</p>
-     <h3 data-template-id="article-heading-3" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Write for intent before format.</h3>
-     <p data-template-id="article-body-3" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">A useful SEO page does more than repeat a phrase. It gives a visitor a clear answer, signals what they can expect, and makes the next piece of information easy to find. That approach creates pages that work for search systems and, more importantly, for people who need an answer before they are ready to make a decision.</p>
+     <p data-template-id="detail-copy-3" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this view for a longer article that turns a search-led content idea into clear, helpful page structure and editorial guidance.</p><button type="button" data-close="" data-template-id="detail-close-3" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
-   <section id="article-4" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-4">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-4" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-4" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">CONVERSION</p>
-     <h2 id="article-title-4" data-template-id="article-title-4" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">Make the next step feel obvious, not urgent.</h2>
-     <p data-template-id="article-meta-4" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Conversion · Date to add · 5 min read</p>
-     <div data-template-id="article-media-4" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-4" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  </div>
+  <div id="detail-4" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-4">
+    <div data-template-id="detail-media-4" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-4" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">CONVERSION</p>
+       <h2 id="detail-title-4" data-template-id="detail-title-text-4" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Small decisions that make the next step easier</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-4" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">The best calls to action feel like a natural continuation of the page. They are specific, well placed, and grounded in the information a visitor has already seen.</p>
-     <h3 data-template-id="article-heading-4" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Reduce the reason to hesitate.</h3>
-     <p data-template-id="article-body-4" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">When people pause, the problem is often not motivation. It is uncertainty. Clear labels, focused page sections, helpful context, and a realistic next action can reduce that uncertainty. Conversion work is not about manufacturing urgency; it is about making a useful action feel proportionate to the moment.</p>
+     <p data-template-id="detail-copy-4" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this article space to describe how content, hierarchy, and thoughtful calls to action can support a more confident next step.</p><button type="button" data-close="" data-template-id="detail-close-4" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
-   <section id="article-5" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-5">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-5" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-5" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROCESS</p>
-     <h2 id="article-title-5" data-template-id="article-title-5" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">Good creative process gives ideas room to get sharper.</h2>
-     <p data-template-id="article-meta-5" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Process · Date to add · 7 min read</p>
-     <div data-template-id="article-media-5" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-5" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  </div>
+  <div id="detail-5" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-5">
+    <div data-template-id="detail-media-5" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-5" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">PROCESS</p>
+       <h2 id="detail-title-5" data-template-id="detail-title-text-5" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Keeping a creative process visible</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-5" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">Creative work benefits from enough structure to keep moving and enough openness to let an idea improve once it meets a real constraint.</p>
-     <h3 data-template-id="article-heading-5" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Structure supports better judgement.</h3>
-     <p data-template-id="article-body-5" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">A useful process creates regular moments to look again, ask better questions, and choose between options. It keeps purpose visible while allowing the work to evolve. Briefs, drafts, references, and feedback are not barriers to originality; together, they create a shared language for making a stronger result.</p>
+     <p data-template-id="detail-copy-5" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this longer format to share an adaptable working process, explain decisions, and create a useful record of how an idea took shape.</p><button type="button" data-close="" data-template-id="detail-close-5" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
-   <section id="article-6" class="article-panel" role="dialog" aria-modal="true" aria-labelledby="article-title-6">
-    <div class="article-top">
-     <button type="button" class="article-button" data-back-article="" data-template-id="article-back-6" style="background: rgb(255, 255, 255); color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 16px;">Back to blog</button><button type="button" class="article-close" data-close-article="" aria-label="Close article"><i data-lucide="x" width="18" height="18"></i></button>
-    </div>
-    <div class="article-content">
-     <p data-template-id="article-category-6" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">STRATEGY</p>
-     <h2 id="article-title-6" data-template-id="article-title-6" class="canva-text display mt-5 font-bold" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 38px; letter-spacing: -0.075rem; line-height: 0.94;">A distinctive brand is a system for making choices.</h2>
-     <p data-template-id="article-meta-6" class="canva-text post-meta mt-6" style="color: rgb(98, 105, 120); font-weight: 700; font-style: normal; font-size: 16px;">Strategy · Date to add · 5 min read</p>
-     <div data-template-id="article-media-6" class="canva-panel article-media mt-8" style="background: rgb(234, 240, 255);">
-      <div class="media-grid" aria-hidden="true"></div>
-      <p data-template-id="article-media-label-6" class="canva-text media-label" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">Replace with article image or video · Add descriptive alt text</p>
+  </div>
+  <div id="detail-6" class="dialog-backdrop" role="presentation">
+   <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-6">
+    <div data-template-id="detail-media-6" class="canva-panel detail-media" style="background: rgb(234, 240, 255);"></div>
+    <div class="p-6 md:p-8">
+     <div class="flex items-start justify-between gap-5">
+      <div>
+       <p data-template-id="detail-category-6" class="canva-text eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">WEB DESIGN</p>
+       <h2 id="detail-title-6" data-template-id="detail-title-text-6" class="canva-text section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">Designing an editorial rhythm for the web</h2>
+      </div><button type="button" data-close="" class="icon-button" aria-label="Close article"><i data-lucide="x" width="20" height="20"></i></button>
      </div>
-     <p data-template-id="article-intro-6" class="canva-text body-copy mt-8" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.72;">A brand becomes useful when it helps a team decide how to sound, what to prioritise, and how to create a more recognisable experience over time.</p>
-     <h3 data-template-id="article-heading-6" class="canva-text" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Consistency should still leave room to move.</h3>
-     <p data-template-id="article-body-6" class="canva-text" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.75;">Visual identity is only one part of a brand system. The more useful part is the shared set of principles underneath: what the organisation wants to be known for, how it makes choices, and what should remain clear in every new expression. That foundation can make the work more coherent without making it feel repetitive.</p>
+     <p data-template-id="detail-copy-6" class="canva-text body-copy mt-6" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.72;">Use this view to develop an article about composition, pace, and how a content system can make a longer page feel inviting to read.</p><button type="button" data-close="" data-template-id="detail-close-6" class="canva-button button-primary mt-8" style="background: rgb(19, 92, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Back to articles</button>
     </div>
    </section>
   </div>
   <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
   <script>
-    const menu = document.getElementById("mobile-menu");
-    const menuButton = document.getElementById("menu-toggle");
-    const themeButton = document.getElementById("theme-toggle");
-    const overlay = document.getElementById("article-overlay");
-    const panels = document.querySelectorAll(".article-panel");
-    const cards = document.querySelectorAll(".post-card");
-    let lastFocusedTrigger = null;
-    let selectedFilter = "all";
+    const supportedRoute="/blog", menu=document.getElementById("mobile-menu"), menuButton=document.getElementById("menu-toggle"), themeToggle=document.getElementById("theme-toggle"), mainContent=document.getElementById("main-content");
+    let opener=null,activeDialog=null,activeFilter="All";
 
-    // Hash routing is intentional for GitHub Pages compatibility.
-    function currentRoute() {
-      return window.location.hash.replace(/^#/, "") || "/blog";
-    }
-
-    function setRouteState() {
-      const route = currentRoute();
-      document.querySelectorAll("[data-route]").forEach((link) => {
-        const active = link.dataset.route === route;
-        link.classList.toggle("active", active);
-        if (active) link.setAttribute("aria-current", "page");
-        else link.removeAttribute("aria-current");
-      });
-      menu.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Open navigation menu");
-    }
-
-    function setFilter(filter) {
-      selectedFilter = filter;
-      document.querySelectorAll("[data-filter]").forEach((button) => {
-        const active = button.dataset.filter === filter;
-        button.classList.toggle("active", active);
-        button.setAttribute("aria-pressed", String(active));
-      });
-      cards.forEach((card) => {
-        card.hidden = filter !== "all" && card.dataset.category !== filter;
-      });
-    }
-
-    function openArticle(id, trigger) {
-      lastFocusedTrigger = trigger;
-      panels.forEach((panel) => panel.classList.toggle("active", panel.id === id));
-      overlay.classList.add("open");
-      overlay.setAttribute("aria-hidden", "false");
-      document.getElementById(id).querySelector("[data-close-article]").focus();
-    }
-
-    function closeArticle() {
-      overlay.classList.remove("open");
-      overlay.setAttribute("aria-hidden", "true");
-      panels.forEach((panel) => panel.classList.remove("active"));
-      setFilter(selectedFilter);
-      if (lastFocusedTrigger) lastFocusedTrigger.focus();
-    }
-
-    menuButton.addEventListener("click", () => {
-      const open = menu.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(open));
-      menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
-    });
-
-    themeButton.addEventListener("click", () => {
-      const dark = document.body.classList.toggle("dark");
-      themeButton.setAttribute("aria-pressed", String(dark));
-      themeButton.setAttribute("aria-label", dark ? "Enable light mode" : "Enable dark mode");
-    });
-
-    document.querySelectorAll("[data-filter]").forEach((button) => {
-      button.addEventListener("click", () => setFilter(button.dataset.filter));
-    });
-
-    document.querySelectorAll("[data-article]").forEach((button) => {
-      button.addEventListener("click", () => openArticle(button.dataset.article, button));
-    });
-
-    document.querySelectorAll("[data-close-article], [data-back-article]").forEach((button) => {
-      button.addEventListener("click", closeArticle);
-    });
-
-    overlay.addEventListener("click", (event) => {
-      if (event.target === overlay) closeArticle();
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && overlay.classList.contains("open")) closeArticle();
-    });
-
-    window.addEventListener("hashchange", setRouteState);
-    lucide.createIcons();
-    setRouteState();
+    // Hash routing is intentional for GitHub Pages compatibility on this standalone Blog page.
+    function closeMenu(){menu.classList.remove("open");menuButton.setAttribute("aria-expanded","false");menuButton.setAttribute("aria-label","Open navigation menu")}
+    function closeDetail(returnFocus=true){if(!activeDialog)return;activeDialog.classList.remove("open");document.body.style.overflow="";const prior=opener;activeDialog=null;opener=null;if(returnFocus&&prior)prior.focus()}
+    function applyFilter(filter){activeFilter=filter;document.querySelectorAll("[data-filter]").forEach(button=>{const selected=button.dataset.filter===filter;button.classList.toggle("active",selected);button.setAttribute("aria-pressed",String(selected))});document.querySelectorAll("[data-category]").forEach(card=>card.hidden=filter!=="All"&&card.dataset.category!==filter)}
+    function updateNavigation(){document.querySelectorAll("[data-route]").forEach(link=>{const active=link.dataset.route===supportedRoute;link.classList.toggle("active",active);if(active)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current")})}
+    function renderRoute(focusMain){closeDetail(false);closeMenu();if(location.hash.slice(1)!==supportedRoute){location.hash=supportedRoute;return}updateNavigation();window.scrollTo({top:0,behavior:"auto"});if(focusMain)mainContent.focus({preventScroll:true})}
+    menuButton.addEventListener("click",()=>{const open=menu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open));menuButton.setAttribute("aria-label",open?"Close navigation menu":"Open navigation menu")});
+    themeToggle.addEventListener("click",()=>{const dark=document.body.classList.toggle("dark");themeToggle.setAttribute("aria-pressed",String(dark));themeToggle.setAttribute("aria-label",dark?"Enable light mode":"Enable dark mode");themeToggle.innerHTML=dark?'<i data-lucide="sun" width="18" height="18"></i>':'<i data-lucide="moon" width="18" height="18"></i>';lucide.createIcons()});
+    document.querySelectorAll("[data-filter]").forEach(button=>button.addEventListener("click",()=>applyFilter(button.dataset.filter)));
+    document.querySelectorAll("[data-detail]").forEach(button=>button.addEventListener("click",()=>{opener=button;activeDialog=document.getElementById(button.dataset.detail);activeDialog.classList.add("open");document.body.style.overflow="hidden";activeDialog.querySelector("[data-close]").focus()}));
+    document.querySelectorAll("[data-close]").forEach(button=>button.addEventListener("click",()=>closeDetail()));
+    document.querySelectorAll(".dialog-backdrop").forEach(dialog=>dialog.addEventListener("click",event=>{if(event.target===dialog)closeDetail()}));
+    document.addEventListener("keydown",event=>{if(event.key==="Escape"){if(activeDialog)closeDetail();else if(menu.classList.contains("open")){closeMenu();menuButton.focus()}}});
+    window.addEventListener("hashchange",()=>renderRoute(true));lucide.createIcons();applyFilter(activeFilter);renderRoute(false);
   </script>
  
 </body></html>
