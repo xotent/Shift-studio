@@ -19,7 +19,7 @@
     .mobile-menu{display:none;border-top:1px solid var(--line)}.mobile-menu.open{display:block}.mobile-link{display:block;padding:.8rem;border-radius:.65rem}.mobile-link.active{background:var(--soft)}
     .icon-button,.button-primary,.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:.72rem;font-weight:700;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}.icon-button{width:2.65rem;height:2.65rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.button-primary,.button-secondary{padding:.88rem 1.05rem;border:1px solid;cursor:pointer}.button-primary{border-color:var(--blue);background:var(--blue);color:#fff}.button-secondary{border:1px solid var(--line);background:var(--surface);color:var(--ink)}.button-primary:hover{background:var(--blue-deep);transform:translateY(-2px)}.button-secondary:hover,.icon-button:hover{border-color:var(--blue);transform:translateY(-2px)}
     .eyebrow{color:var(--blue);font-family:"Space Mono",monospace;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.display{max-width:880px;font-size:clamp(3.2rem,8vw,7rem);font-weight:700;letter-spacing:-.09em;line-height:.88}.section-heading{font-size:clamp(2.15rem,4vw,4.2rem);font-weight:700;letter-spacing:-.075em;line-height:.94}.card-title{font-size:1.35rem;font-weight:700;letter-spacing:-.055em}.body-copy{color:var(--muted);line-height:1.72}.section-pad{padding:4.7rem 1.5rem}.grid-hero{position:relative;overflow:hidden;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:27px 27px}.grid-hero:before{position:absolute;top:-6rem;right:-2.5rem;width:16rem;height:16rem;border:1px solid var(--blue);border-radius:50%;content:"";opacity:.55}.grid-hero:after{position:absolute;right:14%;bottom:-2.2rem;width:5.5rem;height:5.5rem;border:1px solid var(--blue);content:"";opacity:.55;transform:rotate(28deg)}.hero-rule{width:5rem;height:2px;background:var(--blue)}
-    .card,.media-placeholder{border:1px solid var(--line);border-radius:1rem;background:var(--surface)}.card{padding:1.45rem;transition:transform .2s ease,border-color .2s ease}.card:hover{border-color:var(--blue);transform:translateY(-4px)}.media-placeholder{display:flex;min-height:13rem;align-items:center;justify-content:center;padding:1.5rem;background:linear-gradient(135deg,var(--soft),var(--surface));color:var(--muted);text-align:center}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:1rem;overflow:hidden;transition:transform .2s ease,border-color .2s ease}.card:hover{border-color:var(--blue);transform:translateY(-4px)}.card-content{padding:1.45rem}.card-image{width:100%;height:200px;object-fit:cover;display:block}
     .footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 62%,transparent)}
     .reveal{animation:rise .55s both}.reveal-delay{animation:rise .55s .12s both}@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(min-width:768px){.section-pad{padding:6.5rem 2.5rem}.grid-hero{padding:7.5rem 2.5rem!important}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
@@ -58,7 +58,6 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <!-- WORK CONTENT -->
       <section id="work-view" aria-labelledby="work-title">
         <div class="grid-hero section-pad">
           <div class="content-width relative z-10">
@@ -75,23 +74,34 @@
             <p class="eyebrow" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">SELECTED WORK</p>
             <h2 class="section-heading mt-4" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 24px;">A curated space for what comes next.</h2>
             <div class="mt-9 grid gap-5 md:grid-cols-3">
+              <!-- Project 1 - Mark Davis UI/UX Designer -->
               <article class="card">
-                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
+                <img src="images/Web Design.jpg" alt="Web Design & UI/UX Portfolio - Mark Davis" class="card-image">
+                <div class="card-content">
+                  <p class="eyebrow mt-0" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">UI/UX DESIGN</p>
+                  <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Web Design &amp; UI/UX</h3>
+                  <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Digital experiences that make an impact — UI/UX design for startups and businesses.</p>
+                </div>
               </article>
+
+              <!-- Project 2 - Jenna Ortega Personal Portfolio -->
               <article class="card">
-                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
+                <img src="images/Personal Portfolio WordPress Theme___.jpg" alt="Personal Portfolio WordPress Theme - Jenna Ortega" class="card-image">
+                <div class="card-content">
+                  <p class="eyebrow mt-0" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">WORDPRESS</p>
+                  <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Personal Portfolio Theme</h3>
+                  <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A clean, modern WordPress portfolio theme designed for creative professionals.</p>
+                </div>
               </article>
+
+              <!-- Project 3 - MERN Stack Developer -->
               <article class="card">
-                <div class="media-placeholder"><span style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Replace with project image or video</span></div>
-                <p class="eyebrow mt-5" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">PROJECT PLACEHOLDER</p>
-                <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">Project title placeholder</h3>
-                <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">A neutral placeholder for a future website, campaign, or brand system.</p>
+                <img src="images/Build Modern MERN Stack Applications with React, Node_js & MongoDB.jpg" alt="MERN Stack Web Applications - React Node.js MongoDB" class="card-image">
+                <div class="card-content">
+                  <p class="eyebrow mt-0" style="color: rgb(19, 92, 255); font-weight: 700; font-style: normal; font-size: 16px;">FULL STACK</p>
+                  <h3 class="card-title mt-3" style="color: rgb(16, 18, 23); font-weight: 700; font-style: normal; font-size: 19px;">MERN Stack Web Applications</h3>
+                  <p class="body-copy mt-3" style="color: rgb(98, 105, 120); font-weight: 400; font-style: normal; font-size: 16px;">Fast, responsive and user-focused web applications built with React, Node.js &amp; MongoDB.</p>
+                </div>
               </article>
             </div>
           </div>
